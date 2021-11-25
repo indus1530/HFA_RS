@@ -1654,4 +1654,46 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     }*/
 
 
+    //Functions that dealing with table data
+    public UsersContract getLoginUser(String username, String password) {
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor c = null;
+        String[] columns = {
+                UsersContract.singleUser._ID,
+                UsersContract.singleUser.ROW_USERNAME,
+                UsersContract.singleUser.ROW_PASSWORD,
+                UsersContract.singleUser.DIST_ID,
+        };
+        String whereClause = UsersContract.singleUser.ROW_USERNAME + "=? AND " + UsersContract.singleUser.ROW_PASSWORD + "=?";
+        String[] whereArgs = {username, password};
+        String groupBy = null;
+        String having = null;
+        String orderBy = UsersContract.singleUser._ID + " ASC";
+
+        UsersContract all = null;
+        try {
+            c = db.query(
+                    UsersContract.singleUser.TABLE_NAME,  // The table to query
+                    columns,                   // The columns to return
+                    whereClause,               // The columns for the WHERE clause
+                    whereArgs,                 // The values for the WHERE clause
+                    groupBy,                   // don't group the rows
+                    having,                    // don't filter by row groups
+                    orderBy                    // The sort order
+            );
+            while (c.moveToNext()) {
+                all = new UsersContract().Hydrate(c);
+            }
+        } finally {
+            if (c != null) {
+                c.close();
+            }
+            if (db != null) {
+                db.close();
+            }
+        }
+        return all;
+    }
+
+
 }

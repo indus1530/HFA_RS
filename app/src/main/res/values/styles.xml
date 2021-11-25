@@ -8,7 +8,7 @@
     </style>
 
     <style name="AppTheme1" parent="Theme.AppCompat.Light.DarkActionBar">
-        <item name="colorPrimary">@color/colorPrimary</item>
+        <!--<item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="android:scrollViewStyle">@style/BackgroundStyle</item>
         <item name="android:actionBarStyle">@style/topBarStyle</item>
@@ -22,7 +22,27 @@
         <item name="android:fillAfter">true</item>
         <item name="android:enterFadeDuration">600</item>
         <item name="android:exitFadeDuration">200</item>
+        <item name="android:animateLayoutChanges">false</item>-->
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:spinnerStyle">@style/spinner</item>
+        <item name="android:actionBarStyle">@style/topBarStyle</item>
+        <item name="android:textViewStyle">@style/labels</item>
+        <item name="android:editTextStyle">@style/textInput</item>
+        <item name="radioButtonStyle">@style/radiobutton</item>
+        <item name="checkboxStyle">@style/checkbox</item>
+        <item name="hintEnabled">false</item>
+        <item name="android:buttonStyle">@style/button</item>
+        <item name="android:textColorHint">@color/grayLight</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:fillAfter">true</item>
+        <item name="android:enterFadeDuration">600</item>
+        <item name="android:exitFadeDuration">200</item>
+        <item name="android:layoutDirection">ltr</item>
         <item name="android:animateLayoutChanges">false</item>
+
     </style>
 
     <style name="buttons_bottom">
@@ -36,11 +56,14 @@
     </style>
 
     <style name="btnNext" parent="@style/buttons_bottom">
-        <item name="android:background">@color/colorPrimaryBeta1</item>
+        <item name="android:background">@drawable/capsule</item>
+        <item name="android:backgroundTint">@color/colorAccent</item>
+        <item name="android:backgroundTintMode">src_atop</item>
     </style>
 
     <style name="btnEnd" parent="@style/buttons_bottom">
-        <item name="android:background">@color/red</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textColor">@color/colorPrimary</item>
     </style>
 
 
@@ -105,12 +128,18 @@
     <style name="labels" parent="@android:style/TextAppearance.Widget.TextView">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">18sp</item>
         <item name="android:layout_marginTop">24dp</item>
-        <item name="android:textColor">@color/colorPrimary</item>
-        <item name="android:textSize">19sp</item>
-        <item name="android:padding">16dp</item>
-        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Small</item>
-        <!--        <item name="android:background">@drawable/bottom_options</item>-->
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingStart">15dp</item>
+        <item name="android:paddingEnd">6dp</item>
+        <item name="android:paddingTop">6dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:minHeight">52dp</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Medium</item>
+        <item name="android:background">@color/colorPrimary</item>
     </style>
 
     <style name="HeadingTitle" parent="@android:style/TextAppearance.Widget.TextView">
@@ -142,7 +171,7 @@
         <item name="android:padding">16dp</item>
     </style>
 
-    <style name="info">
+    <!--<style name="info">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginTop">0dp</item>
@@ -153,7 +182,7 @@
         <item name="android:textSize">20sp</item>
         <item name="android:padding">16dp</item>
 
-    </style>
+    </style>-->
 
     <style name="sub">
         <item name="android:layout_width">match_parent</item>
@@ -268,6 +297,7 @@
         <item name="android:layout_gravity">center_vertical</item>
         <item name="android:textAlignment">center</item>
         <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:background">@color/white</item>
         <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
         <item name="android:textSize">18sp</item>
         <item name="android:drawable">@drawable/textview_background_grad</item>
@@ -488,15 +518,29 @@
     </style>
 
     <style name="quesNum">
-        <item name="android:background">@color/colorPrimary</item>
-        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@color/colorAccent</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
         <item name="android:textAllCaps">true</item>
-        <item name="android:padding">12dp</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:minHeight">52dp</item>
         <item name="android:textSize">18sp</item>
-        <item name="android:paddingTop">16dp</item>
-        <item name="android:paddingStart">8dp</item>
         <item name="android:gravity">center</item>
+        <item name="android:fontFamily">@font/roboto</item>
         <item name="android:textAppearance">@style/TextAppearance.AppCompat.Subhead</item>
+        <item name="android:typeface">sans</item>
+    </style>
+
+    <style name="info">
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:background">#FFEB9C</item>
+        <item name="android:textColor">@color/redLight</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:minHeight">52dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:letterSpacing">0.04</item>
+
+
     </style>
 
     <style name="topBarStyle" parent="Theme.AppCompat.Light.DarkActionBar">
