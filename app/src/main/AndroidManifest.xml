@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.aku.hassannaqvi.hfa_rs">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- Needed only if your app targets Android 5.0 (API level 21) or higher. -->
+    <uses-feature android:name="android.hardware.location.gps" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.hardware.location.gps" /> <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:name="edu.aku.hassannaqvi.hfa_rs.core.MainApp"
+        android:allowBackup="true"
+        android:icon="@drawable/uen_hfa_logo"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme1">
+
+        <activity
+            android:name="edu.aku.hassannaqvi.hfa_rs.ui.list_activity.FormsReportDate"
+            android:label="Forms Report"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="edu.aku.hassannaqvi.hfa_rs.ui.list_activity.PendingFormsActivity"
+            android:label="Unfinished Forms"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="edu.aku.hassannaqvi.hfa_rs.ui.other.SectionMainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="edu.aku.hassannaqvi.hfa_rs.ui.sections.SectionAActivity"
+            android:label="@string/modatitle"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="edu.aku.hassannaqvi.hfa_rs.ui.sections.SectionBActivity"
+            android:label="@string/modbtitle"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="edu.aku.hassannaqvi.hfa_rs.ui.sections.SectionC1Activity"
+            android:label="@string/modctitle"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="edu.aku.hassannaqvi.hfa_rs.ui.sections.SectionC2Activity"
+            android:label="@string/modctitle"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="edu.aku.hassannaqvi.hfa_rs.ui.sections.SectionD1Activity"
+            android:label="@string/moddtitle"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="edu.aku.hassannaqvi.hfa_rs.ui.sections.SectionD2Activity"
+            android:label="@string/moddtitle"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="edu.aku.hassannaqvi.hfa_rs.ui.sections.SectionD3Activity"
+            android:label="@string/moddtitle"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="edu.aku.hassannaqvi.hfa_rs.ui.sections.SectionD4Activity"
+            android:label="@string/moddtitle"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="edu.aku.hassannaqvi.hfa_rs.ui.sections.SectionD5Activity"
+            android:label="@string/moddtitle"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="edu.aku.hassannaqvi.hfa_rs.ui.sections.SectionD6Activity"
+            android:label="@string/moddtitle"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="edu.aku.hassannaqvi.hfa_rs.ui.sections.SectionD7Activity"
+            android:label="@string/moddtitle"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="edu.aku.hassannaqvi.hfa_rs.ui.sections.SectionD8Activity"
+            android:label="@string/moddtitle"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="edu.aku.hassannaqvi.hfa_rs.ui.sections.SectionE1Activity"
+            android:label="@string/modetitle"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="edu.aku.hassannaqvi.hfa_rs.ui.sections.SectionE2Activity"
+            android:label="@string/modetitle"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="edu.aku.hassannaqvi.hfa_rs.ui.sections.SectionE31Activity"
+            android:label="@string/modetitle"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="edu.aku.hassannaqvi.hfa_rs.ui.sections.SectionE32Activity"
+            android:label="@string/modetitle"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="edu.aku.hassannaqvi.hfa_rs.ui.sections.SectionE33Activity"
+            android:label="@string/modetitle"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="edu.aku.hassannaqvi.hfa_rs.ui.sections.SectionE41Activity"
+            android:label="@string/modetitle"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="edu.aku.hassannaqvi.hfa_rs.ui.sections.SectionE42Activity"
+            android:label="@string/modetitle"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="edu.aku.hassannaqvi.hfa_rs.ui.sections.SectionE5Activity"
+            android:label="@string/modetitle"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="edu.aku.hassannaqvi.hfa_rs.ui.sections.SectionE6Activity"
+            android:label="@string/modetitle"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="edu.aku.hassannaqvi.hfa_rs.ui.sections.SectionE7Activity"
+            android:label="@string/modetitle"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="edu.aku.hassannaqvi.hfa_rs.ui.sections.SectionE8Activity"
+            android:label="@string/modetitle"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="edu.aku.hassannaqvi.hfa_rs.ui.sections.SectionF1Activity"
+            android:label="@string/modftitle"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="edu.aku.hassannaqvi.hfa_rs.ui.sections.SectionF2Activity"
+            android:label="@string/modftitle"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="edu.aku.hassannaqvi.hfa_rs.ui.sections.SectionF3Activity"
+            android:label="@string/modftitle"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="edu.aku.hassannaqvi.hfa_rs.ui.sections.SectionF4Activity"
+            android:label="@string/modftitle"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="edu.aku.hassannaqvi.hfa_rs.ui.sections.SectionF5Activity"
+            android:label="@string/modftitle"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="edu.aku.hassannaqvi.hfa_rs.ui.sections.SectionF6Activity"
+            android:label="@string/modftitle"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="edu.aku.hassannaqvi.hfa_rs.ui.sections.SectionF7Activity"
+            android:label="@string/modftitle"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="edu.aku.hassannaqvi.hfa_rs.ui.sections.SectionG1Activity"
+            android:label="@string/modgtitle"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="edu.aku.hassannaqvi.hfa_rs.ui.sections.SectionG2Activity"
+            android:label="@string/modgtitle"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="edu.aku.hassannaqvi.hfa_rs.ui.sections.SectionG3Activity"
+            android:label="@string/modgtitle"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="edu.aku.hassannaqvi.hfa_rs.ui.sections.SectionG411Activity"
+            android:label="@string/modgtitle"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="edu.aku.hassannaqvi.hfa_rs.ui.sections.SectionG412Activity"
+            android:label="@string/modgtitle"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="edu.aku.hassannaqvi.hfa_rs.ui.sections.SectionG413Activity"
+            android:label="@string/modgtitle"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="edu.aku.hassannaqvi.hfa_rs.ui.sections.SectionG414Activity"
+            android:label="@string/modgtitle"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="edu.aku.hassannaqvi.hfa_rs.ui.sections.SectionG415Activity"
+            android:label="@string/modgtitle"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="edu.aku.hassannaqvi.hfa_rs.ui.sections.SectionG421Activity"
+            android:label="@string/modgtitle"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="edu.aku.hassannaqvi.hfa_rs.ui.sections.SectionG422Activity"
+            android:label="@string/modgtitle"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="edu.aku.hassannaqvi.hfa_rs.ui.sections.SectionG423Activity"
+            android:label="@string/modgtitle"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="edu.aku.hassannaqvi.hfa_rs.ui.sections.SectionG424Activity"
+            android:label="@string/modgtitle"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="edu.aku.hassannaqvi.hfa_rs.ui.sections.SectionG425Activity"
+            android:label="@string/modgtitle"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="edu.aku.hassannaqvi.hfa_rs.ui.sections.SectionH1Activity"
+            android:label="@string/modhtitle"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="edu.aku.hassannaqvi.hfa_rs.ui.sections.SectionH2Activity"
+            android:label="@string/modhtitle"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="edu.aku.hassannaqvi.hfa_rs.ui.sections.SectionH31Activity"
+            android:label="@string/modhtitle"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="edu.aku.hassannaqvi.hfa_rs.ui.sections.SectionH32Activity"
+            android:label="@string/modhtitle"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="edu.aku.hassannaqvi.hfa_rs.ui.sections.SectionH33Activity"
+            android:label="@string/modhtitle"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="edu.aku.hassannaqvi.hfa_rs.ui.sections.SectionH4Activity"
+            android:label="@string/modhtitle"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="edu.aku.hassannaqvi.hfa_rs.ui.sections.SectionH5Activity"
+            android:label="@string/modhtitle"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="edu.aku.hassannaqvi.hfa_rs.ui.sections.SectionH6Activity"
+            android:label="@string/modhtitle"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="edu.aku.hassannaqvi.hfa_rs.ui.sections.SectionH7Activity"
+            android:label="@string/modhtitle"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="edu.aku.hassannaqvi.hfa_rs.ui.sections.SectionH8Activity"
+            android:label="@string/modhtitle"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="edu.aku.hassannaqvi.hfa_rs.ui.sections.SectionH9Activity"
+            android:label="@string/modhtitle"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="edu.aku.hassannaqvi.hfa_rs.ui.sections.SectionH10Activity"
+            android:label="@string/modhtitle"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="edu.aku.hassannaqvi.hfa_rs.ui.sections.SectionH11Activity"
+            android:label="@string/modhtitle"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="edu.aku.hassannaqvi.hfa_rs.ui.sections.SectionH12Activity"
+            android:label="@string/modhtitle"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="edu.aku.hassannaqvi.hfa_rs.ui.sections.SectionH13Activity"
+            android:label="@string/modhtitle"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="edu.aku.hassannaqvi.hfa_rs.ui.sections.SectionH14Activity"
+            android:label="@string/modhtitle"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="edu.aku.hassannaqvi.hfa_rs.ui.sections.SectionH151Activity"
+            android:label="@string/modhtitle"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="edu.aku.hassannaqvi.hfa_rs.ui.sections.SectionH152Activity"
+            android:label="@string/modhtitle"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="edu.aku.hassannaqvi.hfa_rs.ui.sections.SectionH153Activity"
+            android:label="@string/modhtitle"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="edu.aku.hassannaqvi.hfa_rs.ui.sections.SectionH16Activity"
+            android:label="@string/modhtitle"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="edu.aku.hassannaqvi.hfa_rs.ui.sections.SectionH17Activity"
+            android:label="@string/modhtitle"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="edu.aku.hassannaqvi.hfa_rs.ui.sections.SectionI1Activity"
+            android:label="@string/modititle"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="edu.aku.hassannaqvi.hfa_rs.ui.sections.SectionI2Activity"
+            android:label="@string/modititle"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="edu.aku.hassannaqvi.hfa_rs.ui.sections.SectionI3Activity"
+            android:label="@string/modititle"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="edu.aku.hassannaqvi.hfa_rs.ui.sections.SectionI4Activity"
+            android:label="@string/modititle"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="edu.aku.hassannaqvi.hfa_rs.ui.sections.SectionJ1Activity"
+            android:label="@string/modjtitle"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="edu.aku.hassannaqvi.hfa_rs.ui.sections.SectionJ2Activity"
+            android:label="@string/modjtitle"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="edu.aku.hassannaqvi.hfa_rs.ui.sections.SectionJ3Activity"
+            android:label="@string/modjtitle"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="edu.aku.hassannaqvi.hfa_rs.ui.sections.SectionJ4Activity"
+            android:label="@string/modjtitle"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="edu.aku.hassannaqvi.hfa_rs.ui.sections.SectionJ5Activity"
+            android:label="@string/modjtitle"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="edu.aku.hassannaqvi.hfa_rs.ui.sections.SectionJ6Activity"
+            android:label="@string/modjtitle"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="edu.aku.hassannaqvi.hfa_rs.ui.sections.SectionJ7Activity"
+            android:label="@string/modjtitle"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="edu.aku.hassannaqvi.hfa_rs.ui.sections.SectionJ8Activity"
+            android:label="@string/modjtitle"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="edu.aku.hassannaqvi.hfa_rs.ui.sections.SectionJ9Activity"
+            android:label="@string/modjtitle"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="edu.aku.hassannaqvi.hfa_rs.ui.sections.SectionK1Activity"
+            android:label="@string/modktitle"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="edu.aku.hassannaqvi.hfa_rs.ui.sections.SectionK2Activity"
+            android:label="@string/modktitle"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="edu.aku.hassannaqvi.hfa_rs.ui.sections.SectionK3Activity"
+            android:label="@string/modktitle"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="edu.aku.hassannaqvi.hfa_rs.ui.sections.SectionK4Activity"
+            android:label="@string/modktitle"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="edu.aku.hassannaqvi.hfa_rs.ui.sections.SectionK5Activity"
+            android:label="@string/modktitle"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="edu.aku.hassannaqvi.hfa_rs.ui.sections.SectionK61Activity"
+            android:label="@string/modktitle"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="edu.aku.hassannaqvi.hfa_rs.ui.sections.SectionK62Activity"
+            android:label="@string/modktitle"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="edu.aku.hassannaqvi.hfa_rs.ui.sections.SectionK63Activity"
+            android:label="@string/modktitle"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="edu.aku.hassannaqvi.hfa_rs.ui.sections.SectionK7Activity"
+            android:label="@string/modktitle"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="edu.aku.hassannaqvi.hfa_rs.ui.other.SplashscreenActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="edu.aku.hassannaqvi.hfa_rs.ui.other.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="edu.aku.hassannaqvi.hfa_rs.ui.other.EndingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="edu.aku.hassannaqvi.hfa_rs.ui.other.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
+        <activity
+            android:name="edu.aku.hassannaqvi.hfa_rs.core.AndroidDatabaseManager"
+            android:parentActivityName="edu.aku.hassannaqvi.hfa_rs.ui.other.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="edu.aku.hassannaqvi.hfa_rs.ui.sync.SyncActivity"
+            android:parentActivityName="edu.aku.hassannaqvi.hfa_rs.ui.other.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+
+        <service android:name="edu.aku.hassannaqvi.hfa_rs.DownloadFileService" />
+    </application>
+
+</manifest>

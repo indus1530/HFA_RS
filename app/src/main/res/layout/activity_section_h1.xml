@@ -1,0 +1,340 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <!--<variable
+            name="formsContract"
+            type="edu.aku.hassannaqvi.uen_hfa_ml.contracts.FormsContract" />-->
+
+        <variable
+            name="callback"
+            type="edu.aku.hassannaqvi.hfa_rs.ui.sections.SectionH1Activity" />
+    </data>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:id="@+id/GrpName"
+            style="@style/vlinearlayout">
+
+
+            <!-- h01  SectionTitle   -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fldGrpCVh01"
+                style="@style/cardView">
+
+                <LinearLayout style="@style/vlinearlayout">
+
+                    <TextView
+                        style="@style/textView3Head"
+                        android:text="@string/h01" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!-- h0101  Input-Numeric   -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fldGrpCVh0101"
+                style="@style/cardView">
+
+                <LinearLayout style="@style/vlinearlayout">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_h0101"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_h0101"
+                            android:text="@string/h0101" />
+
+                        <TextView
+                            android:id="@+id/q_h0101"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_h0101"
+                            android:layout_alignBottom="@id/qtxt_h0101"
+                            android:text="@string/Q_h0101" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout style="@style/hlinearlayout">
+
+                        <TextView
+                            android:id="@+id/h0101a"
+                            style="@style/textviewh"
+                            android:layout_width="0dp"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:id="@+id/h0101b"
+                            style="@style/textviewh"
+                            android:layout_width="0dp"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:id="@+id/h0101c"
+                            style="@style/textviewh"
+                            android:layout_width="0dp"
+                            android:layout_weight="1" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!-- h0101a  Title   -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fldGrpCVh0101a"
+                style="@style/cardView">
+
+                <LinearLayout style="@style/vlinearlayout">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_h0101a"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_h0101a"
+                            android:text="@string/h0101a" />
+
+                        <TextView
+                            android:id="@+id/q_h0101a"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_h0101a"
+                            android:layout_alignBottom="@id/qtxt_h0101a"
+                            android:text="@string/Q_h0101a" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout style="@style/hlinearlayout">
+
+                        <LinearLayout
+                            style="@style/vlinearlayout"
+                            android:layout_width="0dp"
+                            android:layout_weight="1">
+
+                            <TextView
+                                style="@style/textviewh"
+                                android:text="@string/h0101aa" />
+
+                            <EditText
+                                android:id="@+id/h0101aa"
+                                style="@style/EditTextAlpha"
+                                android:gravity="center"
+                                android:hint="@string/month" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            style="@style/vlinearlayout"
+                            android:layout_width="0dp"
+                            android:layout_weight="1">
+
+                            <TextView
+                                style="@style/textviewh"
+                                android:text="@string/h0101ab" />
+
+                            <EditText
+                                android:id="@+id/h0101ab"
+                                style="@style/EditTextAlpha"
+                                android:gravity="center"
+                                android:hint="@string/year" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!-- h0101b  Title   -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fldGrpCVh0101b"
+                style="@style/cardView">
+
+                <LinearLayout style="@style/vlinearlayout">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_h0101b"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_h0101b"
+                            android:text="@string/h0101b" />
+
+                        <TextView
+                            android:id="@+id/q_h0101b"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_h0101b"
+                            android:layout_alignBottom="@id/qtxt_h0101b"
+                            android:text="@string/Q_h0101b" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout style="@style/hlinearlayout">
+
+                        <LinearLayout
+                            style="@style/vlinearlayout"
+                            android:layout_width="0dp"
+                            android:layout_weight="1">
+
+                            <TextView
+                                style="@style/textviewh"
+                                android:text="@string/h0101ba" />
+
+                            <EditText
+                                android:id="@+id/h0101ba"
+                                style="@style/EditTextAlpha"
+                                android:gravity="center"
+                                android:hint="@string/month" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            style="@style/vlinearlayout"
+                            android:layout_width="0dp"
+                            android:layout_weight="1">
+
+                            <TextView
+                                style="@style/textviewh"
+                                android:text="@string/h0101bb" />
+
+                            <EditText
+                                android:id="@+id/h0101bb"
+                                style="@style/EditTextAlpha"
+                                android:gravity="center"
+                                android:hint="@string/year" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!-- h0101c  Title   -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fldGrpCVh0101c"
+                style="@style/cardView">
+
+                <LinearLayout style="@style/vlinearlayout">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_h0101c"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_h0101c"
+                            android:text="@string/h0101c" />
+
+                        <TextView
+                            android:id="@+id/q_h0101c"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_h0101c"
+                            android:layout_alignBottom="@id/qtxt_h0101c"
+                            android:text="@string/Q_h0101c" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout style="@style/hlinearlayout">
+
+                        <LinearLayout
+                            style="@style/vlinearlayout"
+                            android:layout_width="0dp"
+                            android:layout_weight="1">
+
+                            <TextView
+                                style="@style/textviewh"
+                                android:text="@string/h0101ca" />
+
+                            <EditText
+                                android:id="@+id/h0101ca"
+                                style="@style/EditTextAlpha"
+                                android:gravity="center"
+                                android:hint="@string/month" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            style="@style/vlinearlayout"
+                            android:layout_width="0dp"
+                            android:layout_weight="1">
+
+                            <TextView
+                                style="@style/textviewh"
+                                android:text="@string/h0101cb" />
+
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/h0101cb"
+                                style="@style/EditTextAlpha"
+                                android:gravity="center"
+                                android:hint="@string/year" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!--EndButton LinearLayout-->
+            <LinearLayout
+                style="@style/hlinearlayout"
+                android:layout_gravity="end"
+                android:layout_marginTop="18dp">
+
+                <Button
+                    android:id="@+id/btn_Continue"
+                    style="@style/btnNext"
+                    android:onClick="@{() -> callback.BtnContinue()}"
+                    android:text="Save" />
+
+            </LinearLayout>
+            <!--EndButton LinearLayout-->
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</layout>

@@ -1,0 +1,142 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="callback"
+            type="edu.aku.hassannaqvi.hfa_rs.ui.sections.SectionH5Activity" />
+    </data>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/GrpName"
+            style="@style/vlinearlayout">
+
+
+            <!-- h05  SectionTitle   -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fldGrpCVh05"
+                style="@style/cardView">
+
+                <LinearLayout style="@style/vlinearlayout">
+
+                    <TextView
+                        style="@style/textView3Head"
+                        android:text="@string/h05" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!-- h0501  Radio   -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fldGrpCVh0501"
+                style="@style/cardView">
+
+                <LinearLayout style="@style/vlinearlayout">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_h0501"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_h0501"
+                            android:text="@string/h0501" />
+
+                        <TextView
+                            android:id="@+id/q_h0501"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_h0501"
+                            android:layout_alignBottom="@id/qtxt_h0501"
+                            android:drawableStart="@drawable/ic_info_outline_black_24dp"
+                            android:drawablePadding="16dp"
+                            android:onClick="showTooltip"
+                            android:text="@string/Q_h0501" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llh0501check"
+                        style="@style/vlinearlayout"
+                        android:tag="0">
+
+                        <CheckBox
+                            android:id="@+id/h0501a"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/h0501a" />
+
+                        <CheckBox
+                            android:id="@+id/h0501b"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/h0501b" />
+
+                        <CheckBox
+                            android:id="@+id/h0501c"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/h0501c" />
+
+                        <CheckBox
+                            android:id="@+id/h0501x"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/other" />
+
+                        <EditText
+                            android:id="@+id/h0501xx"
+                            style="@style/EditTextAlpha"
+                            android:hint="@string/specify"
+                            android:tag="h0501x"
+                            android:text='@{h0501x.checked ? h0501xx.getText().toString() : ""}'
+                            android:visibility='@{h0501x.checked ? View.VISIBLE : View.GONE}' />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!--EndButton LinearLayout-->
+            <LinearLayout
+                style="@style/hlinearlayout"
+                android:layout_gravity="end"
+                android:layout_marginTop="18dp">
+
+                <Button
+                    android:id="@+id/btn_End"
+                    style="@style/btnEnd"
+                    android:onClick="@{() -> callback.BtnEnd()}"
+                    android:text="End" />
+
+                <Button
+                    android:id="@+id/btn_Continue"
+                    style="@style/btnNext"
+                    android:onClick="@{() -> callback.BtnContinue()}"
+                    android:text="Save" />
+
+            </LinearLayout>
+            <!--EndButton LinearLayout-->
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</layout>

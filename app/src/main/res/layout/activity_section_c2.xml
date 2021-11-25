@@ -1,0 +1,431 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="callback"
+            type="edu.aku.hassannaqvi.hfa_rs.ui.sections.SectionC2Activity" />
+    </data>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btn_AddMore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="50dp"
+            android:onClick="@{callback::btnAddMore}"
+            android:src="@android:drawable/ic_input_add"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:id="@+id/GrpName"
+                style="@style/vlinearlayout">
+
+
+                <!-- c2  Title   -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fldGrpCVc2"
+                    style="@style/cardView">
+
+                    <LinearLayout style="@style/vlinearlayout">
+
+                        <TextView
+                            style="@style/textView3Head"
+                            android:text="@string/c2" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <!-- c02a  EditText   -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fldGrpCVc02"
+                    style="@style/cardView">
+
+                    <LinearLayout style="@style/vlinearlayout">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bottom">
+
+                            <TextView
+                                android:id="@+id/qtxt_c02"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_toEndOf="@id/q_c02"
+                                android:text="@string/c02" />
+
+                            <TextView
+                                android:id="@+id/q_c02"
+                                style="@style/quesNum"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignTop="@id/qtxt_c02"
+                                android:layout_alignBottom="@id/qtxt_c02"
+                                android:text="@string/Q_c02" />
+
+                        </RelativeLayout>
+
+
+                        <LinearLayout style="@style/hlinearlayout">
+
+                            <TextView
+                                style="@style/textviewh"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:text="@string/c021a" />
+
+                            <EditText
+                                android:id="@+id/c021a"
+                                style="@style/EditTextAlpha"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:hint="@string/name"
+                                android:maxLength="20" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <!-- c021b  Radio   -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fldGrpCVc021b"
+                    style="@style/cardView">
+
+                    <LinearLayout style="@style/vlinearlayout">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bottom">
+
+                            <TextView
+                                android:id="@+id/qtxt_c021b"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_toEndOf="@id/q_c021b"
+                                android:text="@string/c021b" />
+
+                            <TextView
+                                android:id="@+id/q_c021b"
+                                style="@style/quesNum"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignTop="@id/qtxt_c021b"
+                                android:layout_alignBottom="@id/qtxt_c021b"
+                                android:text="@string/Q_c021b" />
+
+                        </RelativeLayout>
+
+                        <RadioGroup
+                            android:id="@+id/c021b"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <RadioButton
+                                android:id="@+id/c021ba"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/c021ba" />
+
+                            <RadioButton
+                                android:id="@+id/c021bb"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/c021bb" />
+
+                            <RadioButton
+                                android:id="@+id/c021bc"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/c021bc" />
+
+                            <RadioButton
+                                android:id="@+id/c021bd"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/c021bd" />
+
+                            <RadioButton
+                                android:id="@+id/c021be"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/c021be" />
+
+                            <RadioButton
+                                android:id="@+id/c021bf"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/c021bf" />
+
+                            <EditText
+                                android:id="@+id/c021bfx"
+                                style="@style/EditTextAlphaNmeric"
+                                android:hint="@string/specify"
+                                android:tag="c021bf"
+                                android:text='@{c021bf.checked ? c021bfx.getText().toString() : ""}'
+                                android:visibility='@{c021bf.checked ? View.VISIBLE : View.GONE}' />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <!-- c021c  EditText   -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fldGrpCVc021c"
+                    style="@style/cardView">
+
+                    <LinearLayout style="@style/vlinearlayout">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bottom">
+
+                            <TextView
+                                android:id="@+id/qtxt_c021c"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_toEndOf="@id/q_c021c"
+                                android:text="@string/c021c" />
+
+                            <TextView
+                                android:id="@+id/q_c021c"
+                                style="@style/quesNum"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignTop="@id/qtxt_c021c"
+                                android:layout_alignBottom="@id/qtxt_c021c"
+                                android:text="@string/Q_c021c" />
+
+                        </RelativeLayout>
+
+                        <EditText
+                            android:id="@+id/c021c"
+                            style="@style/EditTextAlphaNmeric"
+                            android:hint="@string/c021c"
+                            android:tag="c021c" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <!-- c021d  Radio   -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fldGrpCVc021d"
+                    style="@style/cardView">
+
+                    <LinearLayout style="@style/vlinearlayout">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bottom">
+
+                            <TextView
+                                android:id="@+id/qtxt_c021d"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_toEndOf="@id/q_c021d"
+                                android:text="@string/c021d" />
+
+                            <TextView
+                                android:id="@+id/q_c021d"
+                                style="@style/quesNum"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignTop="@id/qtxt_c021d"
+                                android:layout_alignBottom="@id/qtxt_c021d"
+                                android:text="@string/Q_c021d" />
+
+                        </RelativeLayout>
+
+                        <RadioGroup
+                            android:id="@+id/c021d"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <RadioButton
+                                android:id="@+id/c021da"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/c021da" />
+
+                            <RadioButton
+                                android:id="@+id/c021db"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/c021db" />
+
+                            <RadioButton
+                                android:id="@+id/c021dc"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/c021dc" />
+
+                            <RadioButton
+                                android:id="@+id/c021dd"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/c021dd" />
+
+                            <RadioButton
+                                android:id="@+id/c021de"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/c021de" />
+
+                            <RadioButton
+                                android:id="@+id/c021df"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/c021df" />
+
+                            <RadioButton
+                                android:id="@+id/c021dg"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/c021dg" />
+
+                            <EditText
+                                android:id="@+id/c021dgx"
+                                style="@style/EditTextAlphaNmeric"
+                                android:hint="@string/specify"
+                                android:tag="c021dg"
+                                android:text='@{c021dg.checked ? c021dgx.getText().toString() : ""}'
+                                android:visibility='@{c021dg.checked ? View.VISIBLE : View.GONE}' />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <!-- c021e  EditText   -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fldGrpCVc021e"
+                    style="@style/cardView">
+
+                    <LinearLayout style="@style/vlinearlayout">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bottom">
+
+                            <TextView
+                                android:id="@+id/qtxt_c021e"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_toEndOf="@id/q_c021e"
+                                android:text="@string/c021e" />
+
+                            <TextView
+                                android:id="@+id/q_c021e"
+                                style="@style/quesNum"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignTop="@id/qtxt_c021e"
+                                android:layout_alignBottom="@id/qtxt_c021e"
+                                android:text="@string/Q_c021e" />
+
+                        </RelativeLayout>
+
+
+                        <LinearLayout style="@style/hlinearlayout">
+
+                            <TextView
+                                style="@style/textviewh"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:text="@string/days" />
+
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/c021e"
+                                style="@style/EditTextNum"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:hint="##"
+                                android:maxLength="2"
+                                android:tag="c021e"
+                                app:maxValue="20"
+                                app:minValue="1"
+                                app:type="range" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <!--<LinearLayout
+                    android:id="@+id/pofpa15Items"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" />
+
+                <Button
+                    android:id="@+id/pofpa15Btn"
+                    style="@style/button"
+                    android:text="Add Health Provider"
+                    android:textColor="@color/black" />-->
+
+                <!--EndButton LinearLayout-->
+                <LinearLayout
+                    style="@style/hlinearlayout"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="18dp"
+                    android:visibility="gone">
+
+                    <Button
+                        android:id="@+id/btn_End"
+                        style="@style/btnEnd"
+                        android:onClick="@{callback::btnEnd}"
+                        android:text="End" />
+
+                    <Button
+                        android:id="@+id/btn_Continue"
+                        style="@style/btnNext"
+                        android:onClick="@{callback::btnContinue}"
+                        android:text="Save" />
+
+                </LinearLayout>
+                <!--EndButton LinearLayout-->
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
