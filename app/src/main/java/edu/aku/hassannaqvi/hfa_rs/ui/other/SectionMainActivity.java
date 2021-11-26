@@ -53,10 +53,6 @@ public class SectionMainActivity extends AppCompatActivity {
 
             try {
                 json.put("countC2", String.valueOf(countC2));
-            } catch (JSONException e) {
-                e.printStackTrace();
-            }
-            try {
                 JSONObject json_merge = JSONUtils.mergeJSONObjects(new JSONObject(fc.getsC()), json);
                 fc.setsC(String.valueOf(json_merge));
             } catch (JSONException e) {
