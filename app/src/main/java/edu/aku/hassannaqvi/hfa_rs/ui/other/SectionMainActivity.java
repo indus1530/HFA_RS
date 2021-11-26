@@ -69,55 +69,72 @@ public class SectionMainActivity extends AppCompatActivity {
         }
 
 
-        if (fc.getsB() != null) {
-            bi.form01.setEnabled(false);
-            bi.form01.setBackgroundResource(R.color.dullWhite);
-        }
+        try {
 
-        if (fc.getsC() != null || fc.getA10().equals("2")) {
-            bi.form02.setEnabled(false);
-            bi.form02.setBackgroundResource(R.color.dullWhite);
-            flag = true;
-        }
+            if (!new JSONObject(fc.getsB()).get("b05").equals("")) {
+                bi.formB.setEnabled(false);
+                bi.checkedB.setVisibility(View.VISIBLE);
+                bi.formB.setBackgroundResource(R.color.dullWhite);
+            }
 
-        if (fc.getsD() != null) {
-            bi.form03.setEnabled(false);
-            bi.form03.setBackgroundResource(R.color.dullWhite);
-        }
+            if (!new JSONObject(fc.getsC()).get("c01le").equals("") || fc.getA10().equals("2")) {
+                bi.formC.setEnabled(false);
+                bi.checkedC.setVisibility(View.VISIBLE);
+                bi.formC.setBackgroundResource(R.color.dullWhite);
+                flag = true;
+            }
 
-        if (fc.getsE() != null) {
-            bi.form04.setEnabled(false);
-            bi.form04.setBackgroundResource(R.color.dullWhite);
-        }
+            if (!new JSONObject(fc.getsD()).get("d0801j0fq").equals("")) {
+                bi.formD.setEnabled(false);
+                bi.checkedD.setVisibility(View.VISIBLE);
+                bi.formD.setBackgroundResource(R.color.dullWhite);
+            }
 
-        if (fc.getsF() != null || fc.getA10().equals("2")) {
-            bi.form05.setEnabled(false);
-            bi.form05.setBackgroundResource(R.color.dullWhite);
-        }
+            if (!new JSONObject(fc.getsE()).get("e0814").equals("")) {
+                bi.formE.setEnabled(false);
+                bi.checkedE.setVisibility(View.VISIBLE);
+                bi.formE.setBackgroundResource(R.color.dullWhite);
+            }
 
-        if (fc.getsG() != null || fc.getA10().equals("2")) {
-            bi.form06.setEnabled(false);
-            bi.form06.setBackgroundResource(R.color.dullWhite);
-        }
+            if (!new JSONObject(fc.getsF()).get("f0701aad0fyx").equals("") || fc.getA10().equals("2")) {
+                bi.formF.setEnabled(false);
+                bi.checkedF.setVisibility(View.VISIBLE);
+                bi.formF.setBackgroundResource(R.color.dullWhite);
+            }
 
-        if (fc.getsH() != null) {
-            bi.form07.setEnabled(false);
-            bi.form07.setBackgroundResource(R.color.dullWhite);
-        }
+            if (!new JSONObject(fc.getsG()).get("g040460sm").equals("") || fc.getA10().equals("2")) {
+                bi.formG.setEnabled(false);
+                bi.checkedG.setVisibility(View.VISIBLE);
+                bi.formG.setBackgroundResource(R.color.dullWhite);
+            }
 
-        if (fc.getsI() != null) {
-            bi.form08.setEnabled(false);
-            bi.form08.setBackgroundResource(R.color.dullWhite);
-        }
+            if (!new JSONObject(fc.getsH()).get("h1605xx").equals("")) {
+                bi.formH.setEnabled(false);
+                bi.checkedH.setVisibility(View.VISIBLE);
+                bi.formH.setBackgroundResource(R.color.dullWhite);
+            }
 
-        if (fc.getsJ() != null) {
-            bi.form09.setEnabled(false);
-            bi.form09.setBackgroundResource(R.color.dullWhite);
-        }
+            if (!fc.getsI().equals("")) {
+                bi.formI.setEnabled(false);
+                bi.checkedI.setVisibility(View.VISIBLE);
+                bi.formI.setBackgroundResource(R.color.dullWhite);
+            }
 
-        if (fc.getsK() != null) {
-            bi.form10.setEnabled(false);
-            bi.form10.setBackgroundResource(R.color.dullWhite);
+            if (!new JSONObject(fc.getsJ()).get("j0901fxx").equals("")) {
+                bi.formJ.setEnabled(false);
+                bi.checkedJ.setVisibility(View.VISIBLE);
+                bi.formJ.setBackgroundResource(R.color.dullWhite);
+            }
+
+            if (!new JSONObject(fc.getsK()).get("k007011").equals("")) {
+                bi.formK.setEnabled(false);
+                bi.checkedK.setVisibility(View.VISIBLE);
+                bi.formK.setBackgroundResource(R.color.dullWhite);
+            }
+
+        } catch (JSONException e) {
+            e.printStackTrace();
+            Toast.makeText(this, "Error: " + e.getMessage(), Toast.LENGTH_SHORT).show();
         }
 
 
@@ -130,16 +147,16 @@ public class SectionMainActivity extends AppCompatActivity {
 
 
     public void BtnContinue() {
-        if (!bi.form01.isEnabled()
-                && !bi.form02.isEnabled()
-                && !bi.form03.isEnabled()
-                && !bi.form04.isEnabled()
-                && !bi.form05.isEnabled()
-                && !bi.form06.isEnabled()
-                && !bi.form07.isEnabled()
-                && !bi.form08.isEnabled()
-                && !bi.form09.isEnabled()
-                && !bi.form10.isEnabled()) {
+        if (!bi.formB.isEnabled()
+                && !bi.formC.isEnabled()
+                && !bi.formD.isEnabled()
+                && !bi.formE.isEnabled()
+                && !bi.formF.isEnabled()
+                && !bi.formG.isEnabled()
+                && !bi.formH.isEnabled()
+                && !bi.formI.isEnabled()
+                && !bi.formJ.isEnabled()
+                && !bi.formK.isEnabled()) {
             finish();
             startActivity(new Intent(this, EndingActivity.class).putExtra("complete", true));
             //MainApp.endActivity(this, SectionBActivity.class);
@@ -150,16 +167,16 @@ public class SectionMainActivity extends AppCompatActivity {
 
 
     public void BtnEnd() {
-        if (bi.form01.isEnabled()
-                || bi.form02.isEnabled()
-                || bi.form03.isEnabled()
-                || bi.form04.isEnabled()
-                || bi.form05.isEnabled()
-                || bi.form06.isEnabled()
-                || bi.form07.isEnabled()
-                || bi.form08.isEnabled()
-                || bi.form09.isEnabled()
-                || bi.form10.isEnabled()) {
+        if (bi.formB.isEnabled()
+                || bi.formC.isEnabled()
+                || bi.formD.isEnabled()
+                || bi.formE.isEnabled()
+                || bi.formF.isEnabled()
+                || bi.formG.isEnabled()
+                || bi.formH.isEnabled()
+                || bi.formI.isEnabled()
+                || bi.formJ.isEnabled()
+                || bi.formK.isEnabled()) {
             finish();
             startActivity(new Intent(this, EndingActivity.class).putExtra("complete", false));
             //MainApp.endActivity(this, EndingActivity.class).putExtra("complete", false);
@@ -174,32 +191,32 @@ public class SectionMainActivity extends AppCompatActivity {
         Intent oF = new Intent();
         if (!MainApp.userName.equals("0000")) {
             switch (id) {
-                case R.id.form01:
+                case R.id.formB:
                     oF = new Intent(this, SectionBActivity.class);
                     break;
-                case R.id.form02:
+                case R.id.formC:
                     oF = new Intent(this, SectionC1Activity.class);
                     break;
-                case R.id.form03:
+                case R.id.formD:
                     oF = new Intent(this, SectionD1Activity.class);
                     break;
-                case R.id.form04:
+                case R.id.formE:
                     oF = new Intent(this, SectionE1Activity.class);
                     break;
-                case R.id.form05:
+                case R.id.formF:
                     oF = new Intent(this, SectionF1Activity.class);
                     break;
-                case R.id.form06:
+                case R.id.formG:
                     oF = new Intent(this, SectionG1Activity.class);
                     break;
-                case R.id.form07:
+                case R.id.formH:
                     oF = new Intent(this, fc.getA10().equals("2") ? SectionH16Activity.class : SectionH2Activity.class);
                     break;
-                case R.id.form08:
+                case R.id.formI:
                     countI = 0;
                     oF = new Intent(this, SectionI1Activity.class);
                     break;
-                case R.id.form09:
+                case R.id.formJ:
                     if (fc.getA10().equals("1")) {
                         oF = new Intent(this, SectionJ1Activity.class);
                     } else {
@@ -214,7 +231,7 @@ public class SectionMainActivity extends AppCompatActivity {
                         }
                     }
                     break;
-                case R.id.form10:
+                case R.id.formK:
                     oF = new Intent(this, SectionK1Activity.class);
                     break;
             }

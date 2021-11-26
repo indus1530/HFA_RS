@@ -7,8 +7,8 @@
         <!-- Customize your theme here. -->
     </style>
 
-    <style name="AppTheme1" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!--<item name="colorPrimary">@color/colorPrimary</item>
+    <!--<style name="AppTheme1" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="android:scrollViewStyle">@style/BackgroundStyle</item>
         <item name="android:actionBarStyle">@style/topBarStyle</item>
@@ -22,18 +22,27 @@
         <item name="android:fillAfter">true</item>
         <item name="android:enterFadeDuration">600</item>
         <item name="android:exitFadeDuration">200</item>
-        <item name="android:animateLayoutChanges">false</item>-->
+        <item name="android:animateLayoutChanges">false</item>
+    </style>-->
 
+    <style name="AppTheme1" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:textSize">16dp</item>
+
+        <item name="fontFamily">@font/roboto</item>
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="android:spinnerStyle">@style/spinner</item>
-        <item name="android:actionBarStyle">@style/topBarStyle</item>
+        <item name="spinnerStyle">@style/spinner</item>
+        <item name="android:actionBarStyle">@style/ToolbarTheme</item>
+        <item name="android:toolbarStyle">@style/CustomToolbarTheme</item>
         <item name="android:textViewStyle">@style/labels</item>
         <item name="android:editTextStyle">@style/textInput</item>
         <item name="radioButtonStyle">@style/radiobutton</item>
         <item name="checkboxStyle">@style/checkbox</item>
         <item name="hintEnabled">false</item>
+        <item name="toolbarStyle">@style/ToolbarTheme</item>
         <item name="android:buttonStyle">@style/button</item>
         <item name="android:textColorHint">@color/grayLight</item>
         <item name="android:typeface">sans</item>
@@ -42,7 +51,6 @@
         <item name="android:exitFadeDuration">200</item>
         <item name="android:layoutDirection">ltr</item>
         <item name="android:animateLayoutChanges">false</item>
-
     </style>
 
     <style name="buttons_bottom">
@@ -128,18 +136,22 @@
     <style name="labels" parent="@android:style/TextAppearance.Widget.TextView">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:textSize">18sp</item>
         <item name="android:layout_marginTop">24dp</item>
         <item name="android:textColor">@color/white</item>
         <item name="android:fontFamily">@font/roboto</item>
         <item name="android:gravity">center_vertical</item>
+        <item name="android:elevation">24dp</item>
         <item name="android:paddingStart">15dp</item>
-        <item name="android:paddingEnd">6dp</item>
-        <item name="android:paddingTop">6dp</item>
-        <item name="android:paddingBottom">8dp</item>
+        <item name="android:paddingEnd">4dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">6dp</item>
         <item name="android:minHeight">52dp</item>
         <item name="android:textAppearance">@style/TextAppearance.AppCompat.Medium</item>
-        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:background">@drawable/grad_lable</item>
+        <item name="android:shadowColor">#7f000000</item>
+        <item name="android:shadowDx">2</item>
+        <item name="android:shadowDy">2</item>
+        <item name="android:shadowRadius">2</item>
     </style>
 
     <style name="HeadingTitle" parent="@android:style/TextAppearance.Widget.TextView">
@@ -545,6 +557,60 @@
 
     <style name="topBarStyle" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="android:background">@color/colorPrimary</item>
+    </style>
+
+    <style name="ToolbarTheme" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <!-- android:textColorPrimary is the color of the title text in the Toolbar  -->
+        <item name="android:textColorPrimary">@color/white</item>
+        <!-- actionMenuTextColor is the color of the text of action (menu) items  -->
+        <item name="actionMenuTextColor">@color/white</item>
+        <!-- Tints the input fields like checkboxes and text fields -->
+        <item name="colorAccent">@color/colorAccent</item>
+        <!-- Applies to views in their normal state. -->
+        <item name="colorControlNormal">@color/colorPrimary</item>
+        <!-- Applies to views in their activated state (i.e checked or switches) -->
+        <item name="colorControlActivated">@color/colorAccentLight</item>
+        <!-- Applied to framework control highlights (i.e ripples or list selectors) -->
+        <item name="colorControlHighlight">@color/colorAccent</item>
+        <item name="android:textColorSecondary">@color/white</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:fontFamily">@font/jameel</item>
+        <item name="android:maxHeight">@dimen/abc_action_bar_default_height_material</item>
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+        <item name="titleTextAppearance">@style/Toolbar.TitleText</item>
+        <item name="subtitleTextAppearance">@style/Toolbar.SubtitleText</item>
+        <!-- Enable these below if you want clicking icons to trigger a ripple effect -->
+        <!--
+        <item name="selectableItemBackground">?android:selectableItemBackground</item>
+        <item name="selectableItemBackgroundBorderless">?android:selectableItemBackground</item>
+        -->
+    </style>
+
+    <style name="CustomToolbarTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:windowBackground">@color/colorPrimaryDark</item>
+        <item name="android:navigationBarColor">@color/colorAccentLightOverlay</item>
+    </style>
+
+    <style name="CustomPopupTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textColorPrimary">@color/colorPrimary</item>
+    </style>
+
+    <!-- This configures the styles for the title within the Toolbar  -->
+    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">20sp</item>
+        <item name="android:letterSpacing">0.15</item>
+        <item name="android:textStyle">bold|italic</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="Toolbar.SubtitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Subtitle">
+        <item name="android:textStyle">italic</item>
+        <item name="android:background">@null</item>
     </style>
 
 </resources>

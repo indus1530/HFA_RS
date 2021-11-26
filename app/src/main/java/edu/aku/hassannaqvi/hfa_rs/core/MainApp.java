@@ -81,6 +81,7 @@ public class MainApp extends Application {
     public static String userName = "0000";
     public static int deathCount = 0;
     public static String DeviceURL = "devices.php";
+    public static final String _EMPTY_ = "";
 
     public static String Mon1;
     public static String Mon2;

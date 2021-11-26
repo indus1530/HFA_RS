@@ -1,5 +1,7 @@
 package edu.aku.hassannaqvi.hfa_rs.contracts;
 
+import static edu.aku.hassannaqvi.hfa_rs.core.MainApp._EMPTY_;
+
 import android.database.Cursor;
 import android.provider.BaseColumns;
 
@@ -37,51 +39,51 @@ public class FormsContract {
     private final String projectName = "UEN_HFA_ML2020";
     private final String synced_date02 = "";
     private final String synced03 = "";
-    private String _ID = "";
-    private String _UID = "";
-    private String userName = "";
-    private String sysdate = "";
-    private String istatus = ""; // Interview Status
-    private String istatus88x = ""; // Interview Status
-    private String endingdatetime = "";
-    private String gpsLat = ""; // gpsLat
-    private String gpsLng = ""; // gpsLng
-    private String gpsDT = "";
-    private String gpsAcc = "";
-    private String deviceID = "";
-    private String devicetagID = "";
-    private String synced = "";
-    private String synced_date = "";
-    private String synced02 = "";
-    private String synced_date03 = "";
-    private String appversion = "";
-    private String districtCode = "";
-    private String districtType = "";
-    private String tehsilCode = "";
-    private String ucCode = "";
-    private String hfCode = "";
-    private String hfName = "";
-    private String a01;
-    private String a03d;
-    private String a03m;
-    private String a03y;
-    private String a07;
-    private String a08;
-    private String a09;
-    private String a10;
-    private String a11;
-    private String a12;
-    private String a13;
-    private String sB;
-    private String sC;
-    private String sD;
-    private String sE;
-    private String sF;
-    private String sG;
-    private String sH;
-    private String sI;
-    private String sJ;
-    private String sK;
+    private String _ID = _EMPTY_;
+    private String _UID = _EMPTY_;
+    private String userName = _EMPTY_;
+    private String sysdate = _EMPTY_;
+    private String istatus = _EMPTY_;
+    private String istatus88x = _EMPTY_;
+    private String endingdatetime = _EMPTY_;
+    private String gpsLat = _EMPTY_;
+    private String gpsLng = _EMPTY_;
+    private String gpsDT = _EMPTY_;
+    private String gpsAcc = _EMPTY_;
+    private String deviceID = _EMPTY_;
+    private String devicetagID = _EMPTY_;
+    private String synced = _EMPTY_;
+    private String synced_date = _EMPTY_;
+    private String synced02 = _EMPTY_;
+    private String synced_date03 = _EMPTY_;
+    private String appversion = _EMPTY_;
+    private String districtCode = _EMPTY_;
+    private String districtType = _EMPTY_;
+    private String tehsilCode = _EMPTY_;
+    private String ucCode = _EMPTY_;
+    private String hfCode = _EMPTY_;
+    private String hfName = _EMPTY_;
+    private String a01 = _EMPTY_;
+    private String a03d = _EMPTY_;
+    private String a03m = _EMPTY_;
+    private String a03y = _EMPTY_;
+    private String a07 = _EMPTY_;
+    private String a08 = _EMPTY_;
+    private String a09 = _EMPTY_;
+    private String a10 = _EMPTY_;
+    private String a11 = _EMPTY_;
+    private String a12 = _EMPTY_;
+    private String a13 = _EMPTY_;
+    private String sB = _EMPTY_;
+    private String sC = _EMPTY_;
+    private String sD = _EMPTY_;
+    private String sE = _EMPTY_;
+    private String sF = _EMPTY_;
+    private String sG = _EMPTY_;
+    private String sH = _EMPTY_;
+    private String sI = _EMPTY_;
+    private String sJ = _EMPTY_;
+    private String sK = _EMPTY_;
 
 
     public FormsContract() {

@@ -1,5 +1,6 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <data>
 
@@ -10,472 +11,658 @@
             type="edu.aku.hassannaqvi.hfa_rs.ui.other.SectionMainActivity" />
     </data>
 
-    <ScrollView
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:fillViewport="true">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
 
-        <LinearLayout
+        <!-- CUSTOM TOOLBAR -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            style="@null"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/lblMainMenu"
-                android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"
-                android:layout_marginTop="16dp"
-                android:background="@drawable/mainmenu"
-                android:gravity="center"
-                android:padding="10dp"
-                android:text="Health Facility Modules"
-                android:textAlignment="center"
-                android:textAllCaps="true"
-                android:textColor="@color/white"
-                android:textSize="20sp"
-                android:layout_marginBottom="@dimen/_10sdp"
-                android:textStyle="bold" />
-
-
-            <!--B-->
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="22dp"
-                android:layout_marginTop="2dp"
-                android:layout_marginEnd="22dp"
-                android:layout_marginBottom="2dp"
-                android:elevation="1dp"
-                app:cardCornerRadius="2dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="56dp"
-                        android:layout_height="match_parent"
-                        android:background="@color/colorAccent"
-                        android:gravity="center"
-                        android:text="B"
-                        android:textColor="@color/colorPrimaryDark"
-                        android:textSize="30dp" />
-
-                    <Button
-                        android:id="@+id/form01"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@color/colorPrimary"
-                        android:gravity="start"
-                        android:onClick="openForm"
-                        android:text="@string/modbtitle"
-                        android:textSize="14sp" />
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-
-            <!--C-->
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="22dp"
-                android:layout_marginTop="2dp"
-                android:layout_marginEnd="22dp"
-                android:layout_marginBottom="2dp"
-                android:elevation="1dp"
-                app:cardCornerRadius="2dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="56dp"
-                        android:layout_height="match_parent"
-                        android:background="@color/colorAccent"
-                        android:gravity="center"
-                        android:text="C"
-                        android:textColor="@color/colorPrimaryDark"
-                        android:textSize="30dp" />
-
-                    <Button
-                        android:id="@+id/form02"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@color/colorPrimary"
-                        android:gravity="start"
-                        android:onClick="openForm"
-                        android:text="@string/modctitle"
-                        android:textSize="14sp" />
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-
-            <!--D-->
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="22dp"
-                android:layout_marginTop="2dp"
-                android:layout_marginEnd="22dp"
-                android:layout_marginBottom="2dp"
-                android:elevation="1dp"
-                app:cardCornerRadius="2dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="56dp"
-                        android:layout_height="match_parent"
-                        android:background="@color/colorAccent"
-                        android:gravity="center"
-                        android:text="D"
-                        android:textColor="@color/colorPrimaryDark"
-                        android:textSize="30dp" />
-
-                    <Button
-                        android:id="@+id/form03"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@color/colorPrimary"
-                        android:gravity="start"
-                        android:onClick="openForm"
-                        android:text="@string/moddtitle"
-                        android:textSize="14sp" />
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-
-            <!--E-->
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="22dp"
-                android:layout_marginTop="2dp"
-                android:layout_marginEnd="22dp"
-                android:layout_marginBottom="2dp"
-                android:elevation="1dp"
-                app:cardCornerRadius="2dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="56dp"
-                        android:layout_height="match_parent"
-                        android:background="@color/colorAccent"
-                        android:gravity="center"
-                        android:text="E"
-                        android:textColor="@color/colorPrimaryDark"
-                        android:textSize="30dp" />
-
-                    <Button
-                        android:id="@+id/form04"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@color/colorPrimary"
-                        android:gravity="start"
-                        android:onClick="openForm"
-                        android:text="@string/modetitle"
-                        android:textSize="14sp" />
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-
-            <!--F-->
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="22dp"
-                android:layout_marginTop="2dp"
-                android:layout_marginEnd="22dp"
-                android:layout_marginBottom="2dp"
-                android:elevation="1dp"
-                app:cardCornerRadius="2dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="56dp"
-                        android:layout_height="match_parent"
-                        android:background="@color/colorAccent"
-                        android:gravity="center"
-                        android:text="F"
-                        android:textColor="@color/colorPrimaryDark"
-                        android:textSize="30dp" />
-
-                    <Button
-                        android:id="@+id/form05"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@color/colorPrimary"
-                        android:gravity="start"
-                        android:onClick="openForm"
-                        android:text="@string/modftitle"
-                        android:textSize="14sp" />
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-
-            <!--G-->
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="22dp"
-                android:layout_marginTop="2dp"
-                android:layout_marginEnd="22dp"
-                android:layout_marginBottom="2dp"
-                android:elevation="1dp"
-                app:cardCornerRadius="2dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="56dp"
-                        android:layout_height="match_parent"
-                        android:background="@color/colorAccent"
-                        android:gravity="center"
-                        android:text="G"
-                        android:textColor="@color/colorPrimaryDark"
-                        android:textSize="30dp" />
-
-                    <Button
-                        android:id="@+id/form06"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@color/colorPrimary"
-                        android:gravity="start"
-                        android:onClick="openForm"
-                        android:text="@string/modgtitle"
-                        android:textSize="14sp" />
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-
-            <!--H-->
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="22dp"
-                android:layout_marginTop="2dp"
-                android:layout_marginEnd="22dp"
-                android:layout_marginBottom="2dp"
-                android:elevation="1dp"
-                app:cardCornerRadius="2dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="56dp"
-                        android:layout_height="match_parent"
-                        android:background="@color/colorAccent"
-                        android:gravity="center"
-                        android:text="H"
-                        android:textColor="@color/colorPrimaryDark"
-                        android:textSize="30dp" />
-
-                    <Button
-                        android:id="@+id/form07"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@color/colorPrimary"
-                        android:gravity="start"
-                        android:onClick="openForm"
-                        android:text="@string/modhtitle"
-                        android:textSize="14sp" />
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-
-            <!--I-->
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="22dp"
-                android:layout_marginTop="2dp"
-                android:layout_marginEnd="22dp"
-                android:layout_marginBottom="2dp"
-                android:elevation="1dp"
-                app:cardCornerRadius="2dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="56dp"
-                        android:layout_height="match_parent"
-                        android:background="@color/colorAccent"
-                        android:gravity="center"
-                        android:text="I"
-                        android:textColor="@color/colorPrimaryDark"
-                        android:textSize="30dp" />
-
-                    <Button
-                        android:id="@+id/form08"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@color/colorPrimary"
-                        android:gravity="start"
-                        android:onClick="openForm"
-                        android:text="@string/modititle"
-                        android:textSize="14sp" />
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-
-            <!--J-->
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="22dp"
-                android:layout_marginTop="2dp"
-                android:layout_marginEnd="22dp"
-                android:layout_marginBottom="2dp"
-                android:elevation="1dp"
-                app:cardCornerRadius="2dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="56dp"
-                        android:layout_height="match_parent"
-                        android:background="@color/colorAccent"
-                        android:gravity="center"
-                        android:text="J"
-                        android:textColor="@color/colorPrimaryDark"
-                        android:textSize="30dp" />
-
-                    <Button
-                        android:id="@+id/form09"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@color/colorPrimary"
-                        android:gravity="start"
-                        android:onClick="openForm"
-                        android:text="@string/modjtitle"
-                        android:textSize="14sp" />
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-
-            <!--K-->
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="22dp"
-                android:layout_marginTop="2dp"
-                android:layout_marginEnd="22dp"
-                android:layout_marginBottom="2dp"
-                android:elevation="1dp"
-                app:cardCornerRadius="2dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="56dp"
-                        android:layout_height="match_parent"
-                        android:background="@color/colorAccent"
-                        android:gravity="center"
-                        android:text="K"
-                        android:textColor="@color/colorPrimaryDark"
-                        android:textSize="30dp" />
-
-                    <Button
-                        android:id="@+id/form10"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@color/colorPrimary"
-                        android:gravity="start"
-                        android:onClick="openForm"
-                        android:text="@string/modktitle"
-                        android:textSize="14sp" />
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
+            android:layout_marginBottom="@dimen/_50sdp"
+            android:background="@color/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/CustomToolbarTheme"
+            app:popupTheme="@style/CustomPopupTheme"
+            app:subtitle="Health Facility Modules"
+            app:subtitleTextAppearance="@style/Toolbar.SubtitleText"
+            app:title="@string/app_name"
+            app:titleTextAppearance="@style/Toolbar.TitleText" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
 
 
             <LinearLayout
-                android:id="@+id/fldGrpbtn"
-                style="@style/hlinearlayout"
-                android:gravity="end"
-                android:paddingTop="@dimen/_20sdp">
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
-                <Button
-                    android:id="@+id/btn_End"
-                    style="@style/btnEnd"
-                    android:onClick="@{() -> callback.BtnEnd()}"
-                    android:text="Save Partially"
-                    android:textColor="@color/red700"
-                    android:visibility="visible" />
 
-                <Button
-                    style="@style/btnNext"
-                    android:layout_width="wrap_content"
+                <!--B-->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="4dp"
-                    android:layout_weight="1"
-                    android:background="@color/colorPrimary"
-                    android:onClick="@{() -> callback.BtnContinue()}"
-                    android:text="save"
-                    android:visibility="visible" />
+                    android:layout_marginStart="22dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="22dp"
+                    android:layout_marginBottom="2dp"
+                    android:elevation="1dp"
+                    app:cardCornerRadius="2dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="86dp"
+                            android:layout_height="56dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorAccent"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:padding="8dp"
+                                android:text="B"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="30dp" />
+
+                            <ImageView
+                                android:id="@+id/checkedB"
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerInParent="true"
+                                android:layout_marginEnd="12dp"
+                                android:src="@drawable/camera_checked"
+                                android:visibility="gone"
+                                tools:visibility="visible" />
+
+                        </RelativeLayout>
+
+                        <Button
+                            android:id="@+id/formB"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorPrimary"
+                            android:gravity="start"
+                            android:onClick="openForm"
+                            android:text="@string/modbtitle"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <!--C-->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="22dp"
+                    android:layout_marginBottom="2dp"
+                    android:elevation="1dp"
+                    app:cardCornerRadius="2dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="86dp"
+                            android:layout_height="56dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorAccent"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:padding="8dp"
+                                android:text="C"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="30dp" />
+
+                            <ImageView
+                                android:id="@+id/checkedC"
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerInParent="true"
+                                android:layout_marginEnd="12dp"
+                                android:src="@drawable/camera_checked"
+                                android:visibility="gone"
+                                tools:visibility="visible" />
+
+                        </RelativeLayout>
+
+                        <Button
+                            android:id="@+id/formC"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorPrimary"
+                            android:gravity="start"
+                            android:onClick="openForm"
+                            android:text="@string/modctitle"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <!--D-->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="22dp"
+                    android:layout_marginBottom="2dp"
+                    android:elevation="1dp"
+                    app:cardCornerRadius="2dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="86dp"
+                            android:layout_height="56dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorAccent"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:padding="8dp"
+                                android:text="D"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="30dp" />
+
+                            <ImageView
+                                android:id="@+id/checkedD"
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerInParent="true"
+                                android:layout_marginEnd="12dp"
+                                android:src="@drawable/camera_checked"
+                                android:visibility="gone"
+                                tools:visibility="visible" />
+
+                        </RelativeLayout>
+
+                        <Button
+                            android:id="@+id/formD"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorPrimary"
+                            android:gravity="start"
+                            android:onClick="openForm"
+                            android:text="@string/moddtitle"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <!--E-->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="22dp"
+                    android:layout_marginBottom="2dp"
+                    android:elevation="1dp"
+                    app:cardCornerRadius="2dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="86dp"
+                            android:layout_height="56dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorAccent"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:padding="8dp"
+                                android:text="E"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="30dp" />
+
+                            <ImageView
+                                android:id="@+id/checkedE"
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerInParent="true"
+                                android:layout_marginEnd="12dp"
+                                android:src="@drawable/camera_checked"
+                                android:visibility="gone"
+                                tools:visibility="visible" />
+
+                        </RelativeLayout>
+
+                        <Button
+                            android:id="@+id/formE"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorPrimary"
+                            android:gravity="start"
+                            android:onClick="openForm"
+                            android:text="@string/modetitle"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <!--F-->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="22dp"
+                    android:layout_marginBottom="2dp"
+                    android:elevation="1dp"
+                    app:cardCornerRadius="2dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="86dp"
+                            android:layout_height="56dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorAccent"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:padding="8dp"
+                                android:text="F"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="30dp" />
+
+                            <ImageView
+                                android:id="@+id/checkedF"
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerInParent="true"
+                                android:layout_marginEnd="12dp"
+                                android:src="@drawable/camera_checked"
+                                android:visibility="gone"
+                                tools:visibility="visible" />
+
+                        </RelativeLayout>
+
+                        <Button
+                            android:id="@+id/formF"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorPrimary"
+                            android:gravity="start"
+                            android:onClick="openForm"
+                            android:text="@string/modftitle"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <!--G-->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="22dp"
+                    android:layout_marginBottom="2dp"
+                    android:elevation="1dp"
+                    app:cardCornerRadius="2dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="86dp"
+                            android:layout_height="56dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorAccent"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:padding="8dp"
+                                android:text="G"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="30dp" />
+
+                            <ImageView
+                                android:id="@+id/checkedG"
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerInParent="true"
+                                android:layout_marginEnd="12dp"
+                                android:src="@drawable/camera_checked"
+                                android:visibility="gone"
+                                tools:visibility="visible" />
+
+                        </RelativeLayout>
+
+                        <Button
+                            android:id="@+id/formG"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorPrimary"
+                            android:gravity="start"
+                            android:onClick="openForm"
+                            android:text="@string/modgtitle"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <!--H-->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="22dp"
+                    android:layout_marginBottom="2dp"
+                    android:elevation="1dp"
+                    app:cardCornerRadius="2dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="86dp"
+                            android:layout_height="56dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorAccent"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:padding="8dp"
+                                android:text="H"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="30dp" />
+
+                            <ImageView
+                                android:id="@+id/checkedH"
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerInParent="true"
+                                android:layout_marginEnd="12dp"
+                                android:src="@drawable/camera_checked"
+                                android:visibility="gone"
+                                tools:visibility="visible" />
+
+                        </RelativeLayout>
+
+                        <Button
+                            android:id="@+id/formH"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorPrimary"
+                            android:gravity="start"
+                            android:onClick="openForm"
+                            android:text="@string/modhtitle"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <!--I-->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="22dp"
+                    android:layout_marginBottom="2dp"
+                    android:elevation="1dp"
+                    app:cardCornerRadius="2dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="86dp"
+                            android:layout_height="56dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorAccent"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:padding="8dp"
+                                android:text="I"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="30dp" />
+
+                            <ImageView
+                                android:id="@+id/checkedI"
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerInParent="true"
+                                android:layout_marginEnd="12dp"
+                                android:src="@drawable/camera_checked"
+                                android:visibility="gone"
+                                tools:visibility="visible" />
+
+                        </RelativeLayout>
+
+                        <Button
+                            android:id="@+id/formI"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorPrimary"
+                            android:gravity="start"
+                            android:onClick="openForm"
+                            android:text="@string/modititle"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <!--J-->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="22dp"
+                    android:layout_marginBottom="2dp"
+                    android:elevation="1dp"
+                    app:cardCornerRadius="2dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="86dp"
+                            android:layout_height="56dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorAccent"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:padding="8dp"
+                                android:text="J"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="30dp" />
+
+                            <ImageView
+                                android:id="@+id/checkedJ"
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerInParent="true"
+                                android:layout_marginEnd="12dp"
+                                android:src="@drawable/camera_checked"
+                                android:visibility="gone"
+                                tools:visibility="visible" />
+
+                        </RelativeLayout>
+
+                        <Button
+                            android:id="@+id/formJ"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorPrimary"
+                            android:gravity="start"
+                            android:onClick="openForm"
+                            android:text="@string/modjtitle"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <!--K-->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="22dp"
+                    android:layout_marginBottom="2dp"
+                    android:elevation="1dp"
+                    app:cardCornerRadius="2dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="86dp"
+                            android:layout_height="56dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorAccent"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:padding="8dp"
+                                android:text="K"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="30dp" />
+
+                            <ImageView
+                                android:id="@+id/checkedK"
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerInParent="true"
+                                android:layout_marginEnd="12dp"
+                                android:src="@drawable/camera_checked"
+                                android:visibility="gone"
+                                tools:visibility="visible" />
+
+                        </RelativeLayout>
+
+                        <Button
+                            android:id="@+id/formK"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorPrimary"
+                            android:gravity="start"
+                            android:onClick="openForm"
+                            android:text="@string/modktitle"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <LinearLayout
+                    android:id="@+id/fldGrpbtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="22dp"
+                    android:layout_marginBottom="2dp"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/_20sdp">
+
+                    <Button
+                        android:id="@+id/btn_End"
+                        style="@style/btnEnd"
+                        android:onClick="@{() -> callback.BtnEnd()}"
+                        android:text="Save Partially"
+                        android:textColor="@color/red700"
+                        android:visibility="visible" />
+
+                    <Button
+                        style="@style/btnNext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:layout_weight="1"
+                        android:background="@color/colorPrimary"
+                        android:onClick="@{() -> callback.BtnContinue()}"
+                        android:text="save"
+                        android:visibility="visible" />
+
+                </LinearLayout>
 
             </LinearLayout>
 
-        </LinearLayout>
+        </ScrollView>
 
-    </ScrollView>
+    </LinearLayout>
 
 </layout>
