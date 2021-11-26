@@ -84,7 +84,7 @@ public class SectionMainActivity extends AppCompatActivity {
                 flag = true;
             }
 
-            if (!new JSONObject(fc.getsD()).get("d0801j0fq").equals("")) {
+            if (!new JSONObject(fc.getsD()).get("d0810b").equals("")) {
                 bi.formD.setEnabled(false);
                 bi.checkedD.setVisibility(View.VISIBLE);
                 bi.formD.setBackgroundResource(R.color.dullWhite);

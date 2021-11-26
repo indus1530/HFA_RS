@@ -55,64 +55,55 @@ public class SectionD8Activity extends AppCompatActivity {
 
         JSONObject json = new JSONObject();
 
-        json.put("d0801a0a", bi.d0801a0ay.isChecked() ? "1"
-                : bi.d0801a0an.isChecked() ? "2"
+        json.put("d0801a", bi.d0801aa.isChecked() ? "1"
+                : bi.d0801ab.isChecked() ? "2"
                 : "-1");
-        json.put("d0801a0fq", bi.d0801a0fq.getText().toString().trim().isEmpty() ? "-1" : bi.d0801a0fq.getText().toString());
+        json.put("d0801b", bi.d0801b.getText().toString().trim().isEmpty() ? "-1" : bi.d0801b.getText().toString());
 
-
-        json.put("d0801b0a", bi.d0801b0ay.isChecked() ? "1"
-                : bi.d0801b0an.isChecked() ? "2"
+        json.put("d0802a", bi.d0802aa.isChecked() ? "1"
+                : bi.d0802ab.isChecked() ? "2"
                 : "-1");
-        json.put("d0801b0fq", bi.d0801b0fq.getText().toString().trim().isEmpty() ? "-1" : bi.d0801b0fq.getText().toString());
+        json.put("d0802b", bi.d0802b.getText().toString().trim().isEmpty() ? "-1" : bi.d0802b.getText().toString());
 
-
-        json.put("d0801c0a", bi.d0801c0ay.isChecked() ? "1"
-                : bi.d0801c0an.isChecked() ? "2"
+        json.put("d0803a", bi.d0803aa.isChecked() ? "1"
+                : bi.d0803ab.isChecked() ? "2"
                 : "-1");
-        json.put("d0801c0fq", bi.d0801c0fq.getText().toString().trim().isEmpty() ? "-1" : bi.d0801c0fq.getText().toString());
+        json.put("d0803b", bi.d0803b.getText().toString().trim().isEmpty() ? "-1" : bi.d0803b.getText().toString());
 
-
-        json.put("d0801d0a", bi.d0801d0ay.isChecked() ? "1"
-                : bi.d0801d0an.isChecked() ? "2"
+        json.put("d0804a", bi.d0804aa.isChecked() ? "1"
+                : bi.d0804ab.isChecked() ? "2"
                 : "-1");
-        json.put("d0801d0fq", bi.d0801d0fq.getText().toString().trim().isEmpty() ? "-1" : bi.d0801d0fq.getText().toString());
+        json.put("d0804b", bi.d0804b.getText().toString().trim().isEmpty() ? "-1" : bi.d0804b.getText().toString());
 
-
-        json.put("d0801e0a", bi.d0801e0ay.isChecked() ? "1"
-                : bi.d0801e0an.isChecked() ? "2"
+        json.put("d0805a", bi.d0805aa.isChecked() ? "1"
+                : bi.d0805ab.isChecked() ? "2"
                 : "-1");
-        json.put("d0801e0fq", bi.d0801e0fq.getText().toString().trim().isEmpty() ? "-1" : bi.d0801e0fq.getText().toString());
+        json.put("d0805b", bi.d0805b.getText().toString().trim().isEmpty() ? "-1" : bi.d0805b.getText().toString());
 
-
-        json.put("d0801f0a", bi.d0801f0ay.isChecked() ? "1"
-                : bi.d0801f0an.isChecked() ? "2"
+        json.put("d0806a", bi.d0806aa.isChecked() ? "1"
+                : bi.d0806ab.isChecked() ? "2"
                 : "-1");
-        json.put("d0801f0fq", bi.d0801f0fq.getText().toString().trim().isEmpty() ? "-1" : bi.d0801f0fq.getText().toString());
+        json.put("d0806b", bi.d0806b.getText().toString().trim().isEmpty() ? "-1" : bi.d0806b.getText().toString());
 
-
-        json.put("d0801g0a", bi.d0801g0ay.isChecked() ? "1"
-                : bi.d0801g0an.isChecked() ? "2"
+        json.put("d0807a", bi.d0807aa.isChecked() ? "1"
+                : bi.d0807ab.isChecked() ? "2"
                 : "-1");
-        json.put("d0801g0fq", bi.d0801g0fq.getText().toString().trim().isEmpty() ? "-1" : bi.d0801g0fq.getText().toString());
+        json.put("d0807b", bi.d0807b.getText().toString().trim().isEmpty() ? "-1" : bi.d0807b.getText().toString());
 
-
-        json.put("d0801h0a", bi.d0801h0ay.isChecked() ? "1"
-                : bi.d0801h0an.isChecked() ? "2"
+        json.put("d0808a", bi.d0808aa.isChecked() ? "1"
+                : bi.d0808ab.isChecked() ? "2"
                 : "-1");
-        json.put("d0801h0fq", bi.d0801h0fq.getText().toString().trim().isEmpty() ? "-1" : bi.d0801h0fq.getText().toString());
+        json.put("d0808b", bi.d0808b.getText().toString().trim().isEmpty() ? "-1" : bi.d0808b.getText().toString());
 
-
-        json.put("d0801i0a", bi.d0801i0ay.isChecked() ? "1"
-                : bi.d0801i0an.isChecked() ? "2"
+        json.put("d0809a", bi.d0809aa.isChecked() ? "1"
+                : bi.d0809ab.isChecked() ? "2"
                 : "-1");
-        json.put("d0801i0fq", bi.d0801i0fq.getText().toString().trim().isEmpty() ? "-1" : bi.d0801i0fq.getText().toString());
+        json.put("d0809b", bi.d0809b.getText().toString().trim().isEmpty() ? "-1" : bi.d0809b.getText().toString());
 
-
-        json.put("d0801j0a", bi.d0801j0ay.isChecked() ? "1"
-                : bi.d0801j0an.isChecked() ? "2"
+        json.put("d0810a", bi.d0810aa.isChecked() ? "1"
+                : bi.d0810ab.isChecked() ? "2"
                 : "-1");
-        json.put("d0801j0fq", bi.d0801j0fq.getText().toString().trim().isEmpty() ? "-1" : bi.d0801j0fq.getText().toString());
+        json.put("d0810b", bi.d0810b.getText().toString().trim().isEmpty() ? "-1" : bi.d0810b.getText().toString());
 
         try {
             JSONObject json_merge = JSONUtils.mergeJSONObjects(new JSONObject(fc.getsD()), json);

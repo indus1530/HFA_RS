@@ -101,6 +101,7 @@
 
     <style name="EditTextNum" parent="@style/textInput">
         <item name="android:inputType">number</item>
+        <item name="android:gravity">center</item>
     </style>
 
     <style name="EditTextNumS" parent="@style/textInput">

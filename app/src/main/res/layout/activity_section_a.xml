@@ -108,36 +108,39 @@
 
                             <com.edittextpicker.aliazaz.EditTextPicker
                                 android:id="@+id/a03d"
-                                style="@style/EditTextNum"
                                 android:layout_width="0dp"
+                                android:layout_height="match_parent"
                                 android:layout_weight="1"
+                                android:gravity="center"
+                                android:inputType="number"
                                 android:hint="##"
                                 android:maxLength="2"
-                                android:textAlignment="center"
                                 app:maxValue="31"
                                 app:minValue="1"
                                 app:type="range" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
                                 android:id="@+id/a03m"
-                                style="@style/EditTextNum"
                                 android:layout_width="0dp"
+                                android:layout_height="match_parent"
                                 android:layout_weight="1"
+                                android:gravity="center"
+                                android:inputType="number"
                                 android:hint="##"
                                 android:maxLength="2"
-                                android:textAlignment="center"
                                 app:maxValue="12"
                                 app:minValue="1"
                                 app:type="range" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
                                 android:id="@+id/a03y"
-                                style="@style/EditTextNum"
                                 android:layout_width="0dp"
+                                android:layout_height="match_parent"
                                 android:layout_weight="1"
+                                android:gravity="center"
+                                android:inputType="number"
                                 android:hint="####"
                                 android:maxLength="4"
-                                android:textAlignment="center"
                                 app:maxValue="2021"
                                 app:minValue="2019"
                                 app:type="range" />
