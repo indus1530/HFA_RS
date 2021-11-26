@@ -68,6 +68,12 @@ public class SectionMainActivity extends AppCompatActivity {
             Toast.makeText(this, "countC2: 0" + countC2, Toast.LENGTH_SHORT).show();
         }
 
+        updateSections();
+
+
+    }
+
+    private void updateSections() {
 
         try {
 
@@ -77,7 +83,7 @@ public class SectionMainActivity extends AppCompatActivity {
                 bi.formB.setBackgroundResource(R.color.dullWhite);
             }
 
-            if (!new JSONObject(fc.getsC()).get("c01le").equals("") || fc.getA10().equals("2")) {
+            if ((!new JSONObject(fc.getsC()).get("c01le").equals("")) || fc.getA10().equals("2")) {
                 bi.formC.setEnabled(false);
                 bi.checkedC.setVisibility(View.VISIBLE);
                 bi.formC.setBackgroundResource(R.color.dullWhite);
@@ -136,8 +142,6 @@ public class SectionMainActivity extends AppCompatActivity {
             e.printStackTrace();
             Toast.makeText(this, "Error: " + e.getMessage(), Toast.LENGTH_SHORT).show();
         }
-
-
     }
 
 
