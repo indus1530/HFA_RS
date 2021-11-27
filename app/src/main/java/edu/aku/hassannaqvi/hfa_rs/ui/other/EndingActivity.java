@@ -4,6 +4,7 @@ import static edu.aku.hassannaqvi.hfa_rs.CONSTANTS.SECTION_MAIN_CHECK_FOR_END;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
