@@ -12,11 +12,13 @@
             type="edu.aku.hassannaqvi.hfa_rs.ui.other.EndingActivity" />
     </data>
 
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <LinearLayout
+
+    <LinearLayout
             android:id="@+id/fldGrpEnd"
             style="@style/linearlayout_view">
 
@@ -111,6 +113,7 @@
 
 
         </LinearLayout>
+
 
     </ScrollView>
 

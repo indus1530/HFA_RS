@@ -12,26 +12,48 @@
     </data>
 
 
-    <ScrollView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
 
-        <LinearLayout
-            android:id="@+id/GrpName"
+        <!-- CUSTOM TOOLBAR -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            style="@null"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:background="@color/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/CustomToolbarTheme"
+            app:popupTheme="@style/CustomPopupTheme"
+            app:subtitle="@string/h01"
+            app:subtitleTextAppearance="@style/Toolbar.SubtitleText"
+            app:title="@string/modhtitle"
+            app:titleTextAppearance="@style/Toolbar.TitleText" />
 
 
-            <!-- g04  Section Title   -->
-            <androidx.cardview.widget.CardView
-                android:id="@+id/fldGrpCVg04"
-                style="@style/cardView">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+
+            <LinearLayout
+                android:id="@+id/GrpName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <!-- g04  Section Title   -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fldGrpCVg04"
+                    style="@style/cardView">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
                     android:orientation="vertical">
 
                     <TextView
@@ -2208,11 +2230,14 @@
                     android:textStyle="bold" />
 
             </LinearLayout>
-            <!--EndButton LinearLayout-->
+                <!--EndButton LinearLayout-->
 
 
-        </LinearLayout>
+            </LinearLayout>
 
-    </ScrollView>
+
+        </ScrollView>
+
+    </LinearLayout>
 
 </layout>
