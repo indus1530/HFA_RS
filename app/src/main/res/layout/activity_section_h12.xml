@@ -18,7 +18,9 @@
 
         <LinearLayout
             android:id="@+id/GrpNameSectionH12"
-            style="@style/vlinearlayout">
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
 
             <!-- h12  SectionTitle   -->

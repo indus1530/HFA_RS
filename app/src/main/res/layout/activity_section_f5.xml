@@ -19,7 +19,9 @@
 
         <LinearLayout
             android:id="@+id/GrpName"
-            style="@style/vlinearlayout">
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
 
             <!-- f05  Section Title   -->
@@ -82,15 +84,15 @@
 
                         <RadioButton
                             android:id="@+id/f0501a"
-                            style="@style/radiobutton"
                             android:layout_width="0dp"
+                            android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:text="@string/f0501a" />
 
                         <RadioButton
                             android:id="@+id/f0501b"
-                            style="@style/radiobutton"
                             android:layout_width="0dp"
+                            android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:text="@string/f0501b" />
 

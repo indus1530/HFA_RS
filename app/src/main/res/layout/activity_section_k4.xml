@@ -19,7 +19,9 @@
 
         <LinearLayout
             android:id="@+id/GrpNameSectionK4"
-            style="@style/vlinearlayout">
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
 
             <!-- k004  SectionTitle   -->

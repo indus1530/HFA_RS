@@ -19,7 +19,9 @@
 
         <LinearLayout
             android:id="@+id/GrpName"
-            style="@style/vlinearlayout">
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
 
             <!-- f06  Section Title   -->
@@ -82,15 +84,15 @@
 
                         <RadioButton
                             android:id="@+id/f0601a"
-                            style="@style/radiobutton"
                             android:layout_width="0dp"
+                            android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:text="@string/f0601a" />
 
                         <RadioButton
                             android:id="@+id/f0601b"
-                            style="@style/radiobutton"
                             android:layout_width="0dp"
+                            android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:text="@string/f0601b" />
 
@@ -142,15 +144,15 @@
 
                         <RadioButton
                             android:id="@+id/f0602a"
-                            style="@style/radiobutton"
                             android:layout_width="0dp"
+                            android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:text="@string/f0602a" />
 
                         <RadioButton
                             android:id="@+id/f0602b"
-                            style="@style/radiobutton"
                             android:layout_width="0dp"
+                            android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:text="@string/f0602b" />
 
@@ -202,15 +204,15 @@
 
                         <RadioButton
                             android:id="@+id/f0603a"
-                            style="@style/radiobutton"
                             android:layout_width="0dp"
+                            android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:text="@string/f0603a" />
 
                         <RadioButton
                             android:id="@+id/f0603b"
-                            style="@style/radiobutton"
                             android:layout_width="0dp"
+                            android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:text="@string/f0603b" />
 
@@ -262,15 +264,15 @@
 
                         <RadioButton
                             android:id="@+id/f0604a"
-                            style="@style/radiobutton"
                             android:layout_width="0dp"
+                            android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:text="@string/f0604a" />
 
                         <RadioButton
                             android:id="@+id/f0604b"
-                            style="@style/radiobutton"
                             android:layout_width="0dp"
+                            android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:text="@string/f0604b" />
 

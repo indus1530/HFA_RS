@@ -23,7 +23,9 @@
 
         <LinearLayout
             android:id="@+id/GrpNameSectionH15"
-            style="@style/vlinearlayout">
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
 
             <!-- h15  Title   -->
