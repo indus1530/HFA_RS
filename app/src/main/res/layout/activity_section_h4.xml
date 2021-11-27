@@ -1,4 +1,5 @@
-<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
 
@@ -20,16 +21,16 @@
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             style="@null"
-            app:popupTheme="@style/CustomPopupTheme"
-            app:subtitle="@string/h01"
-            app:subtitleTextAppearance="@style/Toolbar.SubtitleText"
-            app:title="@string/modhtitle"
-            app:titleTextAppearance="@style/Toolbar.TitleText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/colorPrimary"
             android:minHeight="?attr/actionBarSize"
-            android:theme="@style/CustomToolbarTheme" />
+            android:theme="@style/CustomToolbarTheme"
+            app:popupTheme="@style/CustomPopupTheme"
+            app:subtitle="@string/h01"
+            app:subtitleTextAppearance="@style/Toolbar.SubtitleText"
+            app:title="@string/modhtitle"
+            app:titleTextAppearance="@style/Toolbar.TitleText" />
 
 
         <ScrollView
@@ -52,139 +53,139 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <TextView
-                        style="@style/textView3Head"
-                        android:text="@string/h04" />
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-
-            <!-- h0401  Radio   -->
-            <androidx.cardview.widget.CardView
-                android:id="@+id/fldGrpCVh0401"
-                style="@style/cardView">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/bottom">
+                        android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/qtxt_h0401"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_toEndOf="@id/q_h0401"
-                            android:text="@string/h0401" />
-
-                        <TextView
-                            android:id="@+id/q_h0401"
-                            style="@style/quesNum"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignTop="@id/qtxt_h0401"
-                            android:layout_alignBottom="@id/qtxt_h0401"
-                            android:drawableStart="@drawable/ic_info_outline_black_24dp"
-                            android:drawablePadding="16dp"
-                            android:onClick="showTooltip"
-                            android:text="@string/Q_h0401" />
-
-                    </RelativeLayout>
-
-                    <LinearLayout
-                        android:id="@+id/llh0401check"
-                        style="@style/vlinearlayout"
-                        android:tag="0">
-
-                        <CheckBox
-                            android:id="@+id/h0401a"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/h0401a" />
-
-                        <CheckBox
-                            android:id="@+id/h0401b"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/h0401b" />
-
-                        <CheckBox
-                            android:id="@+id/h0401c"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/h0401c" />
-
-                        <CheckBox
-                            android:id="@+id/h0401d"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/h0401d" />
-
-                        <CheckBox
-                            android:id="@+id/h0401x"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/other" />
-
-                        <EditText
-                            android:id="@+id/h0401xx"
-                            style="@style/EditTextAlpha"
-                            android:hint="@string/specify"
-                            android:tag="h0401x"
-                            android:text='@{h0401x.checked ? h0401xx.getText().toString() : ""}'
-                            android:visibility='@{h0401x.checked ? View.VISIBLE : View.GONE}' />
+                            style="@style/textView3Head"
+                            android:text="@string/h04" />
 
                     </LinearLayout>
 
+                </androidx.cardview.widget.CardView>
+
+
+                <!-- h0401  Radio   -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fldGrpCVh0401"
+                    style="@style/cardView">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bottom">
+
+                            <TextView
+                                android:id="@+id/qtxt_h0401"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_toEndOf="@id/q_h0401"
+                                android:text="@string/h0401" />
+
+                            <TextView
+                                android:id="@+id/q_h0401"
+                                style="@style/quesNum"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignTop="@id/qtxt_h0401"
+                                android:layout_alignBottom="@id/qtxt_h0401"
+                                android:drawableStart="@drawable/ic_info_outline_black_24dp"
+                                android:drawablePadding="16dp"
+                                android:onClick="showTooltip"
+                                android:text="@string/Q_h0401" />
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:id="@+id/llh0401check"
+                            style="@style/vlinearlayout"
+                            android:tag="0">
+
+                            <CheckBox
+                                android:id="@+id/h0401a"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/h0401a" />
+
+                            <CheckBox
+                                android:id="@+id/h0401b"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/h0401b" />
+
+                            <CheckBox
+                                android:id="@+id/h0401c"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/h0401c" />
+
+                            <CheckBox
+                                android:id="@+id/h0401d"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/h0401d" />
+
+                            <CheckBox
+                                android:id="@+id/h0401x"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/other" />
+
+                            <EditText
+                                android:id="@+id/h0401xx"
+                                style="@style/EditTextAlpha"
+                                android:hint="@string/specify"
+                                android:tag="h0401x"
+                                android:text='@{h0401x.checked ? h0401xx.getText().toString() : ""}'
+                                android:visibility='@{h0401x.checked ? View.VISIBLE : View.GONE}' />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <!--EndButton LinearLayout-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="24dp"
+                    android:orientation="horizontal"
+                    android:padding="24dp">
+
+                    <Button
+                        android:id="@+id/btn_End"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:onClick="btnEnd"
+                        android:text="Cancel"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btn_Continue"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/capsule"
+                        android:backgroundTint="@color/colorAccent"
+                        android:backgroundTintMode="src_atop"
+                        android:onClick="btnContinue"
+                        android:text="Save"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
                 </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-
-            <!--EndButton LinearLayout-->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="end"
-                android:layout_marginTop="24dp"
-                android:orientation="horizontal"
-                android:padding="24dp">
-
-                <Button
-                    android:id="@+id/btn_End"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:background="@android:color/transparent"
-                    android:onClick="btnEnd"
-                    android:text="Cancel"
-                    android:textColor="@color/colorPrimary"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
-
-                <Button
-                    android:id="@+id/btn_Continue"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:background="@drawable/capsule"
-                    android:backgroundTint="@color/colorAccent"
-                    android:backgroundTintMode="src_atop"
-                    android:onClick="btnContinue"
-                    android:text="Save"
-                    android:textColor="@color/white"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
-
-            </LinearLayout>
                 <!--EndButton LinearLayout-->
 
 
