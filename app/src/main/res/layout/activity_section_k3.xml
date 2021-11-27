@@ -27,7 +27,10 @@
                 android:id="@+id/cvk003"
                 style="@style/cardView">
 
-                <LinearLayout style="@style/vlinearlayout">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
 
                     <TextView
                         style="@style/textView3Head"
@@ -43,7 +46,10 @@
                 android:id="@+id/cvk0031"
                 style="@style/cardView">
 
-                <LinearLayout style="@style/vlinearlayout">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
 
                     <RelativeLayout
                         android:layout_width="match_parent"
@@ -100,7 +106,9 @@
 
             <LinearLayout
                 android:id="@+id/llk0031"
-                style="@style/vlinearlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
                 android:visibility='@{!k0031c.checked ? View.VISIBLE : View.GONE}'>
 
 
@@ -109,7 +117,10 @@
                     android:id="@+id/cvk0032"
                     style="@style/cardView">
 
-                    <LinearLayout style="@style/vlinearlayout">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
 
                         <RelativeLayout
                             android:layout_width="match_parent"
@@ -169,7 +180,10 @@
                     android:id="@+id/cvk0033"
                     style="@style/cardView">
 
-                    <LinearLayout style="@style/vlinearlayout">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
 
                         <RelativeLayout
                             android:layout_width="match_parent"
@@ -226,7 +240,10 @@
                     android:id="@+id/cvk0034"
                     style="@style/cardView">
 
-                    <LinearLayout style="@style/vlinearlayout">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
 
                         <RelativeLayout
                             android:layout_width="match_parent"
@@ -283,7 +300,10 @@
                     android:id="@+id/cvk0035"
                     style="@style/cardView">
 
-                    <LinearLayout style="@style/vlinearlayout">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
 
                         <RelativeLayout
                             android:layout_width="match_parent"
@@ -308,7 +328,10 @@
 
                         </RelativeLayout>
 
-                        <LinearLayout style="@style/hlinearlayout">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
 
                             <TextView
                                 style="@style/textviewh"
@@ -340,7 +363,10 @@
                     android:id="@+id/cvk0036"
                     style="@style/cardView">
 
-                    <LinearLayout style="@style/vlinearlayout">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
 
                         <RelativeLayout
                             android:layout_width="match_parent"
@@ -365,7 +391,10 @@
 
                         </RelativeLayout>
 
-                        <LinearLayout style="@style/hlinearlayout">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
 
                             <TextView
                                 style="@style/textviewh"
@@ -397,7 +426,10 @@
                     android:id="@+id/cvk0037"
                     style="@style/cardView">
 
-                    <LinearLayout style="@style/vlinearlayout">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
 
                         <RelativeLayout
                             android:layout_width="match_parent"
@@ -422,7 +454,10 @@
 
                         </RelativeLayout>
 
-                        <LinearLayout style="@style/vlinearlayout">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
 
                             <RadioGroup
                                 android:id="@+id/k0037"
@@ -486,7 +521,10 @@
                     android:id="@+id/cvk0038"
                     style="@style/cardView">
 
-                    <LinearLayout style="@style/vlinearlayout">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
 
                         <RelativeLayout
                             android:layout_width="match_parent"

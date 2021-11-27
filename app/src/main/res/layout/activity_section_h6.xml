@@ -26,7 +26,10 @@
                 android:id="@+id/fldGrpCVh06"
                 style="@style/cardView">
 
-                <LinearLayout style="@style/vlinearlayout">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
 
                     <TextView
                         style="@style/textView3Head"
@@ -42,7 +45,10 @@
                 android:id="@+id/fldGrpCVh0601"
                 style="@style/cardView">
 
-                <LinearLayout style="@style/vlinearlayout">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
 
                     <RelativeLayout
                         android:layout_width="match_parent"
@@ -100,7 +106,10 @@
                 style="@style/cardView"
                 android:visibility='@{h0601a.checked? View.VISIBLE : View.GONE}'>
 
-                <LinearLayout style="@style/vlinearlayout">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
 
                     <RelativeLayout
                         android:layout_width="match_parent"
@@ -125,7 +134,10 @@
 
                     </RelativeLayout>
 
-                    <LinearLayout style="@style/hlinearlayout">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
 
                         <TextView
                             style="@style/textviewh"
@@ -159,7 +171,10 @@
                 android:id="@+id/fldGrpCVh0602"
                 style="@style/cardView">
 
-                <LinearLayout style="@style/vlinearlayout">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
 
                     <RelativeLayout
                         android:layout_width="match_parent"
@@ -213,7 +228,9 @@
 
             <LinearLayout
                 android:id="@+id/llh0603"
-                style="@style/vlinearlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
                 android:visibility='@{h0602a.checked ? View.VISIBLE : View.GONE}'>
 
                 <!-- h0603  SUB TextView   -->
@@ -221,7 +238,10 @@
                     android:id="@+id/fldGrpCVh0603"
                     style="@style/cardView">
 
-                    <LinearLayout style="@style/vlinearlayout">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
 
                         <TextView
                             style="@style/sub"
@@ -237,7 +257,10 @@
                     android:id="@+id/fldGrpCVh0603a"
                     style="@style/cardView">
 
-                    <LinearLayout style="@style/vlinearlayout">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
 
                         <RelativeLayout
                             android:layout_width="match_parent"
@@ -294,7 +317,10 @@
                     android:id="@+id/fldGrpCVh0603b"
                     style="@style/cardView">
 
-                    <LinearLayout style="@style/vlinearlayout">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
 
                         <RelativeLayout
                             android:layout_width="match_parent"
@@ -351,7 +377,10 @@
                     android:id="@+id/fldGrpCVh0603c"
                     style="@style/cardView">
 
-                    <LinearLayout style="@style/vlinearlayout">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
 
                         <RelativeLayout
                             android:layout_width="match_parent"

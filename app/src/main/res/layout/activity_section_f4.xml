@@ -27,7 +27,10 @@
                 android:id="@+id/fldGrpCVf04"
                 style="@style/cardView">
 
-                <LinearLayout style="@style/vlinearlayout">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
 
                     <TextView
                         style="@style/textView3Head"
@@ -43,7 +46,10 @@
                 android:id="@+id/fldGrpCVf0401"
                 style="@style/cardView">
 
-                <LinearLayout style="@style/vlinearlayout">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
 
                     <RelativeLayout
                         android:layout_width="match_parent"
@@ -97,7 +103,9 @@
 
             <LinearLayout
                 android:id="@+id/fldGrpSecf401"
-                style="@style/vlinearlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
                 android:visibility='@{f0401a.checked ? View.VISIBLE : View.GONE}'>
 
 
@@ -106,7 +114,10 @@
                     android:id="@+id/fldGrpCVf0401aa"
                     style="@style/cardView">
 
-                    <LinearLayout style="@style/vlinearlayout">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
 
                         <TextView
                             style="@style/sub"
@@ -122,7 +133,10 @@
                     android:id="@+id/fldGrpCVf0401aaa0a"
                     style="@style/cardView">
 
-                    <LinearLayout style="@style/vlinearlayout">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
 
                         <RelativeLayout
                             android:layout_width="match_parent"
@@ -191,7 +205,10 @@
                     style="@style/cardView"
                     android:visibility='@{f0401aaa0ay.checked ? View.VISIBLE : View.GONE}'>
 
-                    <LinearLayout style="@style/vlinearlayout">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
 
                         <RelativeLayout
                             android:layout_width="match_parent"
@@ -259,7 +276,10 @@
                     android:id="@+id/fldGrpCVf0401aab0a"
                     style="@style/cardView">
 
-                    <LinearLayout style="@style/vlinearlayout">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
 
                         <RelativeLayout
                             android:layout_width="match_parent"
@@ -328,7 +348,10 @@
                     style="@style/cardView"
                     android:visibility='@{f0401aab0ay.checked ? View.VISIBLE : View.GONE}'>
 
-                    <LinearLayout style="@style/vlinearlayout">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
 
                         <RelativeLayout
                             android:layout_width="match_parent"
@@ -396,7 +419,10 @@
                     android:id="@+id/fldGrpCVf0401aac0a"
                     style="@style/cardView">
 
-                    <LinearLayout style="@style/vlinearlayout">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
 
                         <RelativeLayout
                             android:layout_width="match_parent"
@@ -465,7 +491,10 @@
                     style="@style/cardView"
                     android:visibility='@{f0401aac0ay.checked ? View.VISIBLE : View.GONE}'>
 
-                    <LinearLayout style="@style/vlinearlayout">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
 
                         <RelativeLayout
                             android:layout_width="match_parent"
@@ -536,7 +565,10 @@
                 android:id="@+id/fldGrpCVf0402"
                 style="@style/cardView">
 
-                <LinearLayout style="@style/vlinearlayout">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
 
                     <RelativeLayout
                         android:layout_width="match_parent"
@@ -590,7 +622,9 @@
 
             <LinearLayout
                 android:id="@+id/fldGrpSecf402"
-                style="@style/vlinearlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
                 android:visibility='@{f0402a.checked? View.VISIBLE : View.GONE}'>
 
 
@@ -599,7 +633,10 @@
                     android:id="@+id/fldGrpCVf0402aa"
                     style="@style/cardView">
 
-                    <LinearLayout style="@style/vlinearlayout">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
 
                         <TextView
                             style="@style/sub"
@@ -615,7 +652,10 @@
                     android:id="@+id/fldGrpCVf0402aaa0a"
                     style="@style/cardView">
 
-                    <LinearLayout style="@style/vlinearlayout">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
 
                         <RelativeLayout
                             android:layout_width="match_parent"
@@ -684,7 +724,10 @@
                     style="@style/cardView"
                     android:visibility='@{f0402aaa0ay.checked ? View.VISIBLE : View.GONE}'>
 
-                    <LinearLayout style="@style/vlinearlayout">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
 
                         <RelativeLayout
                             android:layout_width="match_parent"
@@ -754,7 +797,10 @@
                 android:id="@+id/fldGrpCVf0403"
                 style="@style/cardView">
 
-                <LinearLayout style="@style/vlinearlayout">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
 
                     <RelativeLayout
                         android:layout_width="match_parent"
@@ -808,7 +854,9 @@
 
             <LinearLayout
                 android:id="@+id/fldGrpSecf403"
-                style="@style/vlinearlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
                 android:visibility='@{f0403a.checked? View.VISIBLE : View.GONE}'>
 
 
@@ -817,7 +865,10 @@
                     android:id="@+id/fldGrpCVf0403aa"
                     style="@style/cardView">
 
-                    <LinearLayout style="@style/vlinearlayout">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
 
                         <TextView
                             style="@style/sub"
@@ -833,7 +884,10 @@
                     android:id="@+id/fldGrpCVf0403aaa0a"
                     style="@style/cardView">
 
-                    <LinearLayout style="@style/vlinearlayout">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
 
                         <RelativeLayout
                             android:layout_width="match_parent"
@@ -902,7 +956,10 @@
                     style="@style/cardView"
                     android:visibility='@{f0403aaa0ay.checked ? View.VISIBLE : View.GONE}'>
 
-                    <LinearLayout style="@style/vlinearlayout">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
 
                         <RelativeLayout
                             android:layout_width="match_parent"
@@ -972,7 +1029,10 @@
                 android:id="@+id/fldGrpCVf0404"
                 style="@style/cardView">
 
-                <LinearLayout style="@style/vlinearlayout">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
 
                     <RelativeLayout
                         android:layout_width="match_parent"
@@ -1026,7 +1086,9 @@
 
             <LinearLayout
                 android:id="@+id/fldGrpSecf404"
-                style="@style/vlinearlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
                 android:visibility='@{f0404a.checked ? View.VISIBLE : View.GONE}'>
 
 
@@ -1035,7 +1097,10 @@
                     android:id="@+id/fldGrpCVf0404aa"
                     style="@style/cardView">
 
-                    <LinearLayout style="@style/vlinearlayout">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
 
                         <TextView
                             style="@style/sub"
@@ -1051,7 +1116,10 @@
                     android:id="@+id/fldGrpCVf0404aaa0a"
                     style="@style/cardView">
 
-                    <LinearLayout style="@style/vlinearlayout">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
 
                         <RelativeLayout
                             android:layout_width="match_parent"
@@ -1120,7 +1188,10 @@
                     style="@style/cardView"
                     android:visibility='@{f0404aaa0ay.checked ? View.VISIBLE : View.GONE}'>
 
-                    <LinearLayout style="@style/vlinearlayout">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
 
                         <RelativeLayout
                             android:layout_width="match_parent"

@@ -40,7 +40,8 @@
             android:theme="@style/AppTheme" />
         <activity
             android:name="edu.aku.hassannaqvi.hfa_rs.ui.other.SectionMainActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.HFA" />
         <activity
             android:name="edu.aku.hassannaqvi.hfa_rs.ui.sections.SectionAActivity"
             android:screenOrientation="portrait" />

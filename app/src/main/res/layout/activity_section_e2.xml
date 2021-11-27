@@ -51,7 +51,10 @@
                     android:id="@+id/fldGrpCVe0201"
                     style="@style/cardView">
 
-                    <LinearLayout style="@style/vlinearlayout">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
 
                         <RelativeLayout
                             android:layout_width="match_parent"
@@ -105,7 +108,9 @@
 
                 <LinearLayout
                     android:id="@+id/ll0204d"
-                    style="@style/vlinearlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
                     android:visibility='@{e0201a.checked ? View.VISIBLE : View.GONE}'>
 
 
@@ -114,7 +119,10 @@
                         android:id="@+id/fldGrpCVe0202"
                         style="@style/cardView">
 
-                        <LinearLayout style="@style/vlinearlayout">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
 
                             <TextView
                                 style="@style/sub"
@@ -130,7 +138,10 @@
                         android:id="@+id/fldGrpCVe0202a"
                         style="@style/cardView">
 
-                        <LinearLayout style="@style/vlinearlayout">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
 
                             <RelativeLayout
                                 android:layout_width="match_parent"
@@ -187,7 +198,10 @@
                         android:id="@+id/fldGrpCVe0202b"
                         style="@style/cardView">
 
-                        <LinearLayout style="@style/vlinearlayout">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
 
                             <RelativeLayout
                                 android:layout_width="match_parent"
@@ -244,7 +258,10 @@
                         android:id="@+id/fldGrpCVe0202c"
                         style="@style/cardView">
 
-                        <LinearLayout style="@style/vlinearlayout">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
 
                             <RelativeLayout
                                 android:layout_width="match_parent"
@@ -301,7 +318,10 @@
                         android:id="@+id/fldGrpCVe0202d"
                         style="@style/cardView">
 
-                        <LinearLayout style="@style/vlinearlayout">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
 
                             <RelativeLayout
                                 android:layout_width="match_parent"
@@ -358,7 +378,10 @@
                         android:id="@+id/fldGrpCVe0202e"
                         style="@style/cardView">
 
-                        <LinearLayout style="@style/vlinearlayout">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
 
                             <RelativeLayout
                                 android:layout_width="match_parent"
@@ -415,7 +438,10 @@
                         android:id="@+id/fldGrpCVe0202f"
                         style="@style/cardView">
 
-                        <LinearLayout style="@style/vlinearlayout">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
 
                             <RelativeLayout
                                 android:layout_width="match_parent"
@@ -472,7 +498,10 @@
                         android:id="@+id/fldGrpCVe0203efb"
                         style="@style/cardView">
 
-                        <LinearLayout style="@style/vlinearlayout">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
 
                             <TextView
                                 style="@style/sub"
@@ -488,7 +517,10 @@
                         android:id="@+id/fldGrpCVe0203a"
                         style="@style/cardView">
 
-                        <LinearLayout style="@style/vlinearlayout">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
 
                             <RelativeLayout
                                 android:layout_width="match_parent"
@@ -548,7 +580,10 @@
                         android:id="@+id/fldGrpCVe0203b"
                         style="@style/cardView">
 
-                        <LinearLayout style="@style/vlinearlayout">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
 
                             <RelativeLayout
                                 android:layout_width="match_parent"
@@ -608,7 +643,10 @@
                         android:id="@+id/fldGrpCVe0204"
                         style="@style/cardView">
 
-                        <LinearLayout style="@style/vlinearlayout">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
 
                             <TextView
                                 style="@style/sub"
@@ -624,7 +662,10 @@
                         android:id="@+id/fldGrpCVe0204a"
                         style="@style/cardView">
 
-                        <LinearLayout style="@style/vlinearlayout">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
 
                             <RelativeLayout
                                 android:layout_width="match_parent"
@@ -687,7 +728,10 @@
                             android:id="@+id/fldGrpCVe0204b"
                             style="@style/cardView">
 
-                            <LinearLayout style="@style/vlinearlayout">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
 
                                 <RelativeLayout
                                     android:layout_width="match_parent"
@@ -728,7 +772,10 @@
                             android:id="@+id/fldGrpCVe0204c"
                             style="@style/cardView">
 
-                            <LinearLayout style="@style/vlinearlayout">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
 
                                 <RelativeLayout
                                     android:layout_width="match_parent"
@@ -757,7 +804,10 @@
                                 </RelativeLayout>
 
 
-                                <LinearLayout style="@style/hlinearlayout">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
 
                                     <TextView
                                         style="@style/textviewh"
@@ -789,7 +839,10 @@
                             android:id="@+id/fldGrpCVe0204d"
                             style="@style/cardView">
 
-                            <LinearLayout style="@style/vlinearlayout">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
 
                                 <RelativeLayout
                                     android:layout_width="match_parent"
@@ -857,7 +910,9 @@
 
                 <!--EndButton LinearLayout-->
                 <LinearLayout
-                    style="@style/hlinearlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
                     android:layout_gravity="end"
                     android:layout_marginTop="18dp">
 

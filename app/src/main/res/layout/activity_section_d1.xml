@@ -39,7 +39,9 @@
 
             <LinearLayout
                 android:id="@+id/GrpName"
-                style="@style/vlinearlayout">
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
 
                 <!-- d0101  Radio   -->
@@ -47,7 +49,10 @@
                     android:id="@+id/fldGrpCVd0101"
                     style="@style/cardView">
 
-                    <LinearLayout style="@style/vlinearlayout">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
 
                         <RelativeLayout
                             android:layout_width="match_parent"
@@ -74,19 +79,21 @@
 
                         <RadioGroup
                             android:id="@+id/d0101"
-                            style="@style/hradiogroup">
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
 
                             <RadioButton
                                 android:id="@+id/d0101a"
-                                style="@style/radiobutton"
                                 android:layout_width="0dp"
+                                android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:text="@string/d0101a" />
 
                             <RadioButton
                                 android:id="@+id/d0101b"
-                                style="@style/radiobutton"
                                 android:layout_width="0dp"
+                                android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:text="@string/d0101b" />
 
@@ -102,7 +109,10 @@
                     android:id="@+id/fldGrpCVd0102"
                     style="@style/cardView">
 
-                    <LinearLayout style="@style/vlinearlayout">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
 
                         <RelativeLayout
                             android:layout_width="match_parent"
@@ -129,19 +139,21 @@
 
                         <RadioGroup
                             android:id="@+id/d0102"
-                            style="@style/hradiogroup">
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
 
                             <RadioButton
                                 android:id="@+id/d0102a"
-                                style="@style/radiobutton"
                                 android:layout_width="0dp"
+                                android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:text="@string/d0102a" />
 
                             <RadioButton
                                 android:id="@+id/d0102b"
-                                style="@style/radiobutton"
                                 android:layout_width="0dp"
+                                android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:text="@string/d0102b" />
 
@@ -154,9 +166,11 @@
 
                 <!--EndButton LinearLayout-->
                 <LinearLayout
-                    style="@style/hlinearlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_gravity="end"
-                    android:layout_marginTop="18dp">
+                    android:layout_marginTop="18dp"
+                    android:orientation="horizontal">
 
                     <Button
                         android:id="@+id/btn_Continue"
