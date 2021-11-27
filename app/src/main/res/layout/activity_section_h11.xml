@@ -1,4 +1,5 @@
-<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
 
     <data>
@@ -11,44 +12,47 @@
     </data>
 
 
-    <ScrollView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
 
-        <LinearLayout
-            android:id="@+id/GrpNameSectionH11"
+        <!-- CUSTOM TOOLBAR -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            style="@null"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:background="@color/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/CustomToolbarTheme"
+            app:popupTheme="@style/CustomPopupTheme"
+            app:subtitle="@string/h11"
+            app:subtitleTextAppearance="@style/Toolbar.SubtitleText"
+            app:title="@string/modhtitle"
+            app:titleTextAppearance="@style/Toolbar.TitleText" />
 
 
-            <!-- h11  SectionTitle   -->
-            <androidx.cardview.widget.CardView
-                android:id="@+id/fldGrpCVh11"
-                style="@style/cardView">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <TextView
-                        style="@style/textView3Head"
-                        android:text="@string/h11" />
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
 
-            <!-- h1101  Radio   -->
-            <androidx.cardview.widget.CardView
-                android:id="@+id/fldGrpCVh1101"
-                style="@style/cardView">
+            <LinearLayout
+                android:id="@+id/GrpName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
+
+                <!-- h1101  Radio   -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fldGrpCVh1101"
+                    style="@style/cardView">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
@@ -491,13 +495,15 @@
                     android:textStyle="bold" />
 
             </LinearLayout>
-            <!--EndButton LinearLayout-->
+                <!--EndButton LinearLayout-->
 
 
-        </LinearLayout>
+            </LinearLayout>
 
 
-    </ScrollView>
+        </ScrollView>
+
+    </LinearLayout>
 
 
 </layout>
