@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextUtils;
 import android.text.TextWatcher;
+import android.view.View;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -207,7 +208,7 @@ public class SectionC1Activity extends AppCompatActivity {
     }
 
 
-    public void BtnContinue() {
+    public void BtnContinue(View v) {
         if (!formValidation()) return;
         try {
             SaveDraft();
@@ -220,5 +221,9 @@ public class SectionC1Activity extends AppCompatActivity {
         } else {
             Toast.makeText(this, "Failed to Update Database!", Toast.LENGTH_SHORT).show();
         }
+    }
+
+    public void BtnEnd(View v) {
+        //openSectionMainActivity(this, "C");
     }
 }

@@ -125,7 +125,7 @@ public class SectionK61Activity extends AppCompatActivity {
     }
 
 
-    public void BtnContinue() {
+    public void BtnContinue(View v) {
         if (!formValidation()) return;
         try {
             SaveDraft();
@@ -283,7 +283,7 @@ public class SectionK61Activity extends AppCompatActivity {
     }
 
 
-    public void BtnEnd() {
+    public void BtnEnd(View v) {
         openSectionMainActivity(this, "K");
     }
 

@@ -48,7 +48,7 @@ public class SectionH16Activity extends AppCompatActivity {
     }
 
 
-    public void BtnContinue() {
+    public void BtnContinue(View v) {
         if (!formValidation()) return;
         try {
             SaveDraft();

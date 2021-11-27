@@ -1,12 +1,14 @@
 package edu.aku.hassannaqvi.hfa_rs.ui.sections;
 
 import static edu.aku.hassannaqvi.hfa_rs.core.MainApp.fc;
+import static edu.aku.hassannaqvi.hfa_rs.utils.UtilKt.openSectionMainActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextUtils;
 import android.text.TextWatcher;
+import android.view.View;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -369,7 +371,7 @@ public class SectionF1Activity extends AppCompatActivity {
     }
 
 
-    public void BtnContinue() {
+    public void BtnContinue(View v) {
         if (!formValidation()) return;
         try {
             SaveDraft();
@@ -382,6 +384,11 @@ public class SectionF1Activity extends AppCompatActivity {
         } else {
             Toast.makeText(this, "Failed to Update Database!", Toast.LENGTH_SHORT).show();
         }
+    }
+
+
+    public void BtnEnd(View v) {
+        openSectionMainActivity(this, "F");
     }
 
 

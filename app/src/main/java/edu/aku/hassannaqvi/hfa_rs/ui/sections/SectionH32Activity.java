@@ -39,7 +39,7 @@ public class SectionH32Activity extends AppCompatActivity {
     }
 
 
-    public void BtnContinue() {
+    public void BtnContinue(View v) {
         if (!formValidation()) return;
         try {
             SaveDraft();
@@ -257,7 +257,7 @@ public class SectionH32Activity extends AppCompatActivity {
     }
 
 
-    public void BtnEnd() {
+    public void BtnEnd(View v) {
         openSectionMainActivity(this, "H");
     }
 

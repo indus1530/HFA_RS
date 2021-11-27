@@ -41,7 +41,7 @@ public class SectionI4Activity extends AppCompatActivity {
     }
 
 
-    public void BtnContinue() {
+    public void BtnContinue(View v) {
         if (!formValidation()) return;
         try {
             SaveDraft();
@@ -127,7 +127,7 @@ public class SectionI4Activity extends AppCompatActivity {
     }
 
 
-    public void BtnEnd() {
+    public void BtnEnd(View v) {
         openSectionMainActivityI(this);
         /*openEndActivity(this, true);*/
     }

@@ -72,7 +72,7 @@ public class SectionBActivity extends AppCompatActivity {
     }
 
 
-    public void BtnContinue() {
+    public void BtnContinue(View v) {
         if (!formValidation()) return;
         try {
             SaveDraft();
@@ -181,6 +181,10 @@ public class SectionBActivity extends AppCompatActivity {
 
     private boolean formValidation() {
         return Validator.emptyCheckingContainer(this, bi.GrpName);
+    }
+
+    public void BtnEnd(View v) {
+        //openSectionMainActivity(this, "B");
     }
 
 }

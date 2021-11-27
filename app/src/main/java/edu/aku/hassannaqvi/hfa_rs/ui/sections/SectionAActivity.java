@@ -205,7 +205,7 @@ public class SectionAActivity extends AppCompatActivity {
 
     }
 
-    public void BtnContinue() {
+    public void BtnContinue(View v) {
         if (!formValidation()) return;
         SaveDraft();
         if (UpdateDB()) {
@@ -298,6 +298,11 @@ public class SectionAActivity extends AppCompatActivity {
             return true;
         }
         return true;
+    }
+
+
+    public void BtnEnd(View v) {
+        //openSectionMainActivity(this, "A");
     }
 
 }

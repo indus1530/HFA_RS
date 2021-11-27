@@ -146,7 +146,7 @@ public class SectionMainActivity extends AppCompatActivity {
     }
 
 
-    public void BtnContinue() {
+    public void BtnContinue(View v) {
         if (!bi.formB.isEnabled()
                 && !bi.formC.isEnabled()
                 && !bi.formD.isEnabled()
@@ -166,7 +166,7 @@ public class SectionMainActivity extends AppCompatActivity {
     }
 
 
-    public void BtnEnd() {
+    public void BtnEnd(View v) {
         if (bi.formB.isEnabled()
                 || bi.formC.isEnabled()
                 || bi.formD.isEnabled()

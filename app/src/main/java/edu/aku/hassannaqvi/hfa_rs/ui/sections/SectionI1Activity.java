@@ -7,6 +7,7 @@ import static edu.aku.hassannaqvi.hfa_rs.utils.UtilKt.openSectionMainActivityI;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -137,7 +138,7 @@ public class SectionI1Activity extends AppCompatActivity implements EndSectionAc
     }
 
 
-    public void BtnContinue() {
+    public void BtnContinue(View v) {
         if (!formValidation()) return;
         try {
             SaveDraft();
@@ -155,7 +156,7 @@ public class SectionI1Activity extends AppCompatActivity implements EndSectionAc
     }
 
 
-    public void BtnEnd() {
+    public void BtnEnd(View v) {
         /*if (!Validator.emptyCheckingContainer(this, bi.fldGrpEndForm)) return;
         contextEndActivity(this);*/
         openSectionMainActivityI(this);
