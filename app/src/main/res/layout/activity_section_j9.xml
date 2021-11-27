@@ -1,4 +1,5 @@
-<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
 
     <data>
@@ -8,46 +9,50 @@
         <variable
             name="callback"
             type="edu.aku.hassannaqvi.hfa_rs.ui.sections.SectionJ9Activity" />
+
     </data>
 
 
-    <ScrollView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
 
-        <LinearLayout
-            android:id="@+id/GrpNameSectionJ9"
+        <!-- CUSTOM TOOLBAR -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            style="@null"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:background="@color/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/CustomToolbarTheme"
+            app:popupTheme="@style/CustomPopupTheme"
+            app:subtitle="@string/j09"
+            app:subtitleTextAppearance="@style/Toolbar.SubtitleText"
+            app:title="@string/modjtitle"
+            app:titleTextAppearance="@style/Toolbar.TitleText" />
 
 
-            <!-- j09  SectionTitle   -->
-            <androidx.cardview.widget.CardView
-                android:id="@+id/fldGrpCVj09"
-                style="@style/cardView">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <TextView
-                        style="@style/textView3Head"
-                        android:text="@string/j09" />
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
 
-            <!-- j0900 Name&Designation EditText -->
-            <androidx.cardview.widget.CardView
-                android:id="@+id/fldGrpCVj0900"
-                style="@style/cardView">
+            <LinearLayout
+                android:id="@+id/GrpName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
-                <LinearLayout
+
+                <!-- j0900 Name&Designation EditText -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fldGrpCVj0900"
+                    style="@style/cardView">
+
+                    <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">

@@ -1,4 +1,5 @@
-<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
 
     <data>
@@ -22,19 +23,19 @@
 
 
     <!-- CUSTOM TOOLBAR -->
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        style="@null"
-        app:popupTheme="@style/CustomPopupTheme"
-        app:subtitle="@string/h01"
-        app:subtitleTextAppearance="@style/Toolbar.SubtitleText"
-        app:title="@string/modhtitle"
-        app:titleTextAppearance="@style/Toolbar.TitleText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/colorPrimary"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="@style/CustomToolbarTheme" />
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            style="@null"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/CustomToolbarTheme"
+            app:popupTheme="@style/CustomPopupTheme"
+            app:subtitle="@string/h08"
+            app:subtitleTextAppearance="@style/Toolbar.SubtitleText"
+            app:title="@string/modhtitle"
+            app:titleTextAppearance="@style/Toolbar.TitleText" />
 
 
     <ScrollView
@@ -47,25 +48,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-
-
-            <!-- h08  SectionTitle   -->
-            <androidx.cardview.widget.CardView
-                android:id="@+id/fldGrpCVh08"
-                style="@style/cardView">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <TextView
-                        style="@style/textView3Head"
-                        android:text="@string/h08" />
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
 
 
             <!-- h0801  Radio   -->
@@ -230,6 +212,9 @@
         </LinearLayout>
 
     </ScrollView>
+
+
+    </LinearLayout>
 
 
 </layout>
