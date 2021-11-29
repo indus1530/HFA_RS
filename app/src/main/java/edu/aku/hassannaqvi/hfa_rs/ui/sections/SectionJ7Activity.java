@@ -3,9 +3,11 @@ package edu.aku.hassannaqvi.hfa_rs.ui.sections;
 import static edu.aku.hassannaqvi.hfa_rs.core.MainApp.fc;
 import static edu.aku.hassannaqvi.hfa_rs.utils.UtilKt.openSectionMainActivity;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
@@ -51,6 +53,12 @@ public class SectionJ7Activity extends AppCompatActivity {
         radioGroup(bi.j0701d);
         radioGroup(bi.j0701e);
         radioGroup(bi.j0701f);
+    }
+
+
+    public void hideKeyboard(View v) {
+        InputMethodManager im = (InputMethodManager) getSystemService(Activity.INPUT_METHOD_SERVICE);
+        im.hideSoftInputFromWindow(v.getWindowToken(), 0);
     }
 
 
@@ -161,7 +169,7 @@ public class SectionJ7Activity extends AppCompatActivity {
 
 
     private boolean formValidation() {
-        return Validator.emptyCheckingContainer(this, bi.GrpNameSectionJ7);
+        return Validator.emptyCheckingContainer(this, bi.GrpName);
     }
 
 
