@@ -47,6 +47,7 @@ public class SectionAActivity extends AppCompatActivity {
     private List<String> hfNamesPrv, hfNamesPub;
     private Map<String, String> hfMap;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -57,12 +58,14 @@ public class SectionAActivity extends AppCompatActivity {
         initializeHF();
     }
 
+
     private void initializingComponents() {
         // Databinding Edit Mode (only in first activity for every contract)
         fc = new FormsContract();
         db = MainApp.appInfo.getDbHelper();
         populateSpinner(this);
     }
+
 
     private void initializeHF() {
         //For HF
@@ -78,6 +81,7 @@ public class SectionAActivity extends AppCompatActivity {
         };
         hfMap = new HashMap<>();
     }
+
 
     public void populateSpinner(final Context context) {
         // Spinner Drop down elements
@@ -205,7 +209,8 @@ public class SectionAActivity extends AppCompatActivity {
 
     }
 
-    public void BtnContinue(View v) {
+
+    public void btnContinue(View v) {
         if (!formValidation()) return;
         SaveDraft();
         if (UpdateDB()) {
@@ -215,6 +220,7 @@ public class SectionAActivity extends AppCompatActivity {
             Toast.makeText(this, "Failed to Update Database!", Toast.LENGTH_SHORT).show();
         }
     }
+
 
     private boolean UpdateDB() {
 
@@ -232,6 +238,7 @@ public class SectionAActivity extends AppCompatActivity {
         }
 
     }
+
 
     private void SaveDraft() {
 
@@ -301,7 +308,7 @@ public class SectionAActivity extends AppCompatActivity {
     }
 
 
-    public void BtnEnd(View v) {
+    public void btnEnd(View v) {
         //openSectionMainActivity(this, "A");
     }
 

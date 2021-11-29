@@ -53,15 +53,14 @@ public class EndingActivity extends AppCompatActivity {
     }
 
 
-    public void BtnEnd(View v) {
-        if (formValidation()) {
-            SaveDraft();
-            if (UpdateDB()) {
-                finish();
-                startActivity(new Intent(this, sectionMainCheck ? routingSelectionForChildEnding() : MainActivity.class));
-            } else {
-                Toast.makeText(this, "Error in updating db!!", Toast.LENGTH_SHORT).show();
-            }
+    public void btnEnd(View v) {
+        if (!formValidation()) return;
+        SaveDraft();
+        if (UpdateDB()) {
+            finish();
+            startActivity(new Intent(this, sectionMainCheck ? routingSelectionForChildEnding() : MainActivity.class));
+        } else {
+            Toast.makeText(this, "Error in updating db!!", Toast.LENGTH_SHORT).show();
         }
     }
 

@@ -138,7 +138,7 @@ public class SectionI1Activity extends AppCompatActivity implements EndSectionAc
     }
 
 
-    public void BtnContinue(View v) {
+    public void btnContinue(View v) {
         if (!formValidation()) return;
         try {
             SaveDraft();
@@ -156,7 +156,7 @@ public class SectionI1Activity extends AppCompatActivity implements EndSectionAc
     }
 
 
-    public void BtnEnd(View v) {
+    public void btnEnd(View v) {
         /*if (!Validator.emptyCheckingContainer(this, bi.fldGrpEndForm)) return;
         contextEndActivity(this);*/
         openSectionMainActivityI(this);

@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextUtils;
 import android.text.TextWatcher;
+import android.view.View;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -190,7 +191,7 @@ public class SectionF7Activity extends AppCompatActivity {
     }
 
 
-    public void BtnContinue(View v) {
+    public void btnContinue(View v) {
         if (!formValidation()) return;
         try {
             SaveDraft();
@@ -206,7 +207,7 @@ public class SectionF7Activity extends AppCompatActivity {
     }
 
 
-    public void BtnEnd(View v) {
+    public void btnEnd(View v) {
         openSectionMainActivity(this, "F");
     }
 

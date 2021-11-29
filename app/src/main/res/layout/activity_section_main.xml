@@ -640,9 +640,9 @@
                     android:paddingTop="@dimen/_20sdp">
 
                     <Button
-                        android:id="@+id/btn_End"
+                        android:id="@+id/btnEnd"
                         style="@style/btnEnd"
-                        android:onClick="@{() -> callback.BtnEnd()}"
+                        android:onClick="btnEnd"
                         android:text="Save Partially"
                         android:textColor="@color/red700"
                         android:visibility="visible" />
@@ -654,7 +654,7 @@
                         android:layout_margin="4dp"
                         android:layout_weight="1"
                         android:background="@color/colorPrimary"
-                        android:onClick="@{() -> callback.BtnContinue()}"
+                        android:onClick="btnContinue"
                         android:text="save"
                         android:visibility="visible" />
 

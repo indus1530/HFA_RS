@@ -18,9 +18,11 @@
         android:layout_height="wrap_content">
 
 
-    <LinearLayout
+        <LinearLayout
             android:id="@+id/fldGrpEnd"
-            style="@style/linearlayout_view">
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
 
             <!-- status Radio   -->
@@ -33,28 +35,24 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
-                    <RelativeLayout
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:orientation="horizontal"
                         android:background="@drawable/bottom">
 
                         <TextView
-                            android:id="@+id/qtxt_status"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_toEndOf="@id/q_status"
-                            android:text="@string/istatus" />
-
-                        <TextView
-                            android:id="@+id/q_status"
                             style="@style/quesNum"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_alignTop="@id/qtxt_status"
-                            android:layout_alignBottom="@id/qtxt_status"
                             android:text="@string/Q_istatus" />
 
-                    </RelativeLayout>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/istatus" />
+
+                    </LinearLayout>
 
                     <RadioGroup
                         android:id="@+id/istatus"
@@ -77,17 +75,18 @@
                             android:id="@+id/istatus96"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginBottom="1dp"
                             android:text="@string/other" />
 
                         <EditText
                             android:id="@+id/istatus96x"
-                            style="@style/EditTextAlpha"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789,. "
                             android:hint="@string/specify"
                             android:maxLength="40"
                             android:tag="istatus96"
-                            android:text='@{istatus96.checked? istatus96x.getText().toString(): ""}'
-                            android:visibility='@{istatus96.checked? View.VISIBLE : View.GONE}' />
+                            android:text='@{istatus96.checked ? istatus96x.getText().toString(): ""}'
+                            android:visibility='@{istatus96.checked ? View.VISIBLE : View.GONE}' />
 
                     </RadioGroup>
 
@@ -96,17 +95,41 @@
             </androidx.cardview.widget.CardView>
 
 
+
             <!--EndButton LinearLayout-->
             <LinearLayout
-                style="@style/hlinearlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_gravity="end"
-                android:layout_marginTop="18dp">
+                android:layout_marginTop="24dp"
+                android:orientation="horizontal"
+                android:padding="24dp">
 
                 <Button
                     android:id="@+id/btn_End"
-                    style="@style/btnNext"
-                    android:onClick="@{() -> callback.BtnEnd()}"
-                    android:text="Save" />
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:text="Cancel"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:visibility="invisible" />
+
+                <Button
+                    android:id="@+id/btn_Continue"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/capsule"
+                    android:backgroundTint="@color/colorAccent"
+                    android:backgroundTintMode="src_atop"
+                    android:onClick="btnEnd"
+                    android:text="Save"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
 
             </LinearLayout>
             <!--EndButton LinearLayout-->

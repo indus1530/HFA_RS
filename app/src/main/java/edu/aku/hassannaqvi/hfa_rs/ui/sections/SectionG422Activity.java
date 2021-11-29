@@ -5,6 +5,7 @@ import static edu.aku.hassannaqvi.hfa_rs.utils.UtilKt.openSectionMainActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -238,7 +239,7 @@ public class SectionG422Activity extends AppCompatActivity {
     }
 
 
-    public void BtnContinue(View v) {
+    public void btnContinue(View v) {
         if (!formValidation()) return;
         try {
             SaveDraft();
@@ -254,7 +255,7 @@ public class SectionG422Activity extends AppCompatActivity {
     }
 
 
-    public void BtnEnd(View v) {
+    public void btnEnd(View v) {
         openSectionMainActivity(this, "G");
     }
 

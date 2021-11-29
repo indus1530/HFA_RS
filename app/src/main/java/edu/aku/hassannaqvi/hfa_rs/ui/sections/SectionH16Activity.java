@@ -48,7 +48,7 @@ public class SectionH16Activity extends AppCompatActivity {
     }
 
 
-    public void BtnContinue(View v) {
+    public void btnContinue(View v) {
         if (!formValidation()) return;
         try {
             SaveDraft();
@@ -117,7 +117,7 @@ public class SectionH16Activity extends AppCompatActivity {
 
 
     private boolean formValidation() {
-        return Validator.emptyCheckingContainer(this, bi.GrpNameSectionH16);
+        return Validator.emptyCheckingContainer(this, bi.GrpName);
     }
 
 
