@@ -28,9 +28,9 @@
             android:minHeight="?attr/actionBarSize"
             android:theme="@style/CustomToolbarTheme"
             app:popupTheme="@style/CustomPopupTheme"
-            app:subtitle="@string/h01"
+            app:subtitle="@string/g0403"
             app:subtitleTextAppearance="@style/Toolbar.SubtitleText"
-            app:title="@string/modhtitle"
+            app:title="@string/g4"
             app:titleTextAppearance="@style/Toolbar.TitleText" />
 
 
@@ -44,44 +44,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
-
-
-                <!-- g04  Section Title   -->
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVg04"
-                    style="@style/cardView">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <TextView
-                        style="@style/textView3Head"
-                        android:text="@string/g04" />
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-
-            <!-- g0403  SUB TextView   -->
-            <androidx.cardview.widget.CardView
-                android:id="@+id/fldGrpCVg0403"
-                style="@style/cardView">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <TextView
-                        style="@style/sub"
-                        android:text="@string/g0403" />
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
 
 
             <!-- g0403200a  Radio   -->

@@ -2093,11 +2093,9 @@
     <string name="g0302c70d"> Discarded </string>
     <string name="g0302c70b"> Balance </string>
 
-    <string name="g04"> SECTION 04: \nMedicine, Vaccine and Commodities </string>
-    <string name="g0401">MNCH Very Essential Medicines List</string>
-    <string name="g040110a">Misoprostol tablets 200 mcg-Availability of M/C/V at facility</string>
-    <string name="g040110ay">Yes</string>
-    <string name="g040110an">No</string>
+    <string name="g4"> SECTION 04: Medicine, Vaccine and Commodities </string>
+    <string name="g41">MNCH Very Essential Medicines List</string>
+
     <string name="g040110s">Misoprostol tablets 200 mcg-Stock Out in Past 03 Months</string>
     <string name="g040110sy">Yes</string>
     <string name="g040110sn">No</string>
@@ -2107,6 +2105,21 @@
     <string name="g040110p">Misoprostol tablets 200 mcg-Provider Prescribe the Same</string>
     <string name="g040110py">Yes</string>
     <string name="g040110pn">No</string>
+
+    <string name="g401"> Misoprostol Tablets 200 mcg </string>
+    <string name="g401a"> Availability of M/C/V at Facility </string>
+    <string name="g401aa"> Yes </string>
+    <string name="g401ab"> No </string>
+    <string name="g401b"> Stock Out in Past 03 Months </string>
+    <string name="g401ba">Yes</string>
+    <string name="g401bb">No</string>
+    <string name="g401c"> Stock Out Days </string>
+    <string name="g401cd"> Day(s) </string>
+    <string name="g401cm"> Month(s) </string>
+    <string name="g401d"> Provider Prescribe the Same </string>
+    <string name="g401da"> Yes </string>
+    <string name="g401db"> No </string>
+
     <string name="g040120a">Oxytocin injection10 IU in 1‐ml-Availability of M/C/V at facility</string>
     <string name="g040120ay">Yes</string>
     <string name="g040120an">No</string>
@@ -2119,9 +2132,26 @@
     <string name="g040120p">Oxytocin injection10 IU in 1‐ml-Provider Prescribe the Same</string>
     <string name="g040120py">Yes</string>
     <string name="g040120pn">No</string>
+
+    <string name="g402"> Oxytocin injection10 IU in 1‐ml </string>
+    <string name="g402a"> Availability of M/C/V at Facility </string>
+    <string name="g402aa"> Yes </string>
+    <string name="g402ab"> No </string>
+    <string name="g402b"> Stock Out in Past 03 Months </string>
+    <string name="g402ba">Yes</string>
+    <string name="g402bb">No</string>
+    <string name="g402c"> Stock Out Days </string>
+    <string name="g402cd"> Day(s) </string>
+    <string name="g402cm"> Month(s) </string>
+    <string name="g402d"> Provider Prescribe the Same </string>
+    <string name="g402da"> Yes </string>
+    <string name="g402db"> No </string>
+
     <string name="g04013">Cold Chain for Injection Oxytocin (Syntocinon) is maintaining?</string>
     <string name="g04013a">Yes</string>
     <string name="g04013b">No</string>
+
+
     <string name="g04010a">Sodium chloride infusion0.9 %-Availability of M/C/V at facility</string>
     <string name="g04010ay">Yes</string>
     <string name="g04010an">No</string>
@@ -2134,6 +2164,22 @@
     <string name="g04010p">Sodium chloride infusion0.9 %-Provider Prescribe the Same</string>
     <string name="g04010py">Yes</string>
     <string name="g04010pn">No</string>
+
+    <string name="Q_g403"> g403 </string>
+    <string name="g403"> Sodium chloride infusion 0.9% </string>
+    <string name="g403a"> Availability of M/C/V at Facility </string>
+    <string name="g403aa"> Yes </string>
+    <string name="g403ab"> No </string>
+    <string name="g403b"> Stock Out in Past 03 Months </string>
+    <string name="g403ba">Yes</string>
+    <string name="g403bb">No</string>
+    <string name="g403c"> Stock Out Days </string>
+    <string name="g403cd"> Day(s) </string>
+    <string name="g403cm"> Month(s) </string>
+    <string name="g403d"> Provider Prescribe the Same </string>
+    <string name="g403da"> Yes </string>
+    <string name="g403db"> No </string>
+
     <string name="g040150a">Sodium lactate ringer\'s lactate infusion1000ml-Availability of M/C/V at facility</string>
     <string name="g040150ay">Yes</string>
     <string name="g040150an">No</string>
@@ -2146,6 +2192,23 @@
     <string name="g040150p">Sodium lactate ringer\'s lactate infusion1000ml-Provider Prescribe the Same</string>
     <string name="g040150py">Yes</string>
     <string name="g040150pn">No</string>
+
+    <string name="Q_g404"> g404 </string>
+    <string name="g404"> Sodium Lactate Ringer\'s Lactate Infusion 1000ml </string>
+    <string name="g404a"> Availability of M/C/V at Facility </string>
+    <string name="g404aa"> Yes </string>
+    <string name="g404ab"> No </string>
+    <string name="g404b"> Stock Out in Past 03 Months </string>
+    <string name="g404ba">Yes</string>
+    <string name="g404bb">No</string>
+    <string name="g404c"> Stock Out Days </string>
+    <string name="g404cd"> Day(s) </string>
+    <string name="g404cm"> Month(s) </string>
+    <string name="g404d"> Provider Prescribe the Same </string>
+    <string name="g404da"> Yes </string>
+    <string name="g404db"> No </string>
+
+
     <string name="g040160a">Dextrose infusion5 &amp; 10%-Availability of M/C/V at facility</string>
     <string name="g040160ay">Yes</string>
     <string name="g040160an">No</string>
@@ -2158,6 +2221,22 @@
     <string name="g040160p">Dextrose infusion5 &amp; 10%-Provider Prescribe the Same</string>
     <string name="g040160py">Yes</string>
     <string name="g040160pn">No</string>
+
+    <string name="Q_g405"> g405 </string>
+    <string name="g405"> Dextrose infusion 5 &amp; 10% </string>
+    <string name="g405a"> Availability of M/C/V at Facility </string>
+    <string name="g405aa"> Yes </string>
+    <string name="g405ab"> No </string>
+    <string name="g405b"> Stock Out in Past 03 Months </string>
+    <string name="g405ba">Yes</string>
+    <string name="g405bb">No</string>
+    <string name="g405c"> Stock Out Days </string>
+    <string name="g405cd"> Day(s) </string>
+    <string name="g405cm"> Month(s) </string>
+    <string name="g405d"> Provider Prescribe the Same </string>
+    <string name="g405da"> Yes </string>
+    <string name="g405db"> No </string>
+
     <string name="g040170a">Magnesium Sulphate injection500mg/ml (Eclampsia only)-Availability of M/C/V at facility</string>
     <string name="g040170ay">Yes</string>
     <string name="g040170an">No</string>
@@ -2170,6 +2249,22 @@
     <string name="g040170p">Magnesium Sulphate injection500mg/ml (Eclampsia only)-Provider Prescribe the Same</string>
     <string name="g040170py">Yes</string>
     <string name="g040170pn">No</string>
+
+    <string name="Q_g406"> g406 </string>
+    <string name="g406"> Magnesium Sulphate Injection 500mg/ml (Eclampsia only) </string>
+    <string name="g406a"> Availability of M/C/V at Facility </string>
+    <string name="g406aa"> Yes </string>
+    <string name="g406ab"> No </string>
+    <string name="g406b"> Stock Out in Past 03 Months </string>
+    <string name="g406ba">Yes</string>
+    <string name="g406bb">No</string>
+    <string name="g406c"> Stock Out Days </string>
+    <string name="g406cd"> Day(s) </string>
+    <string name="g406cm"> Month(s) </string>
+    <string name="g406d"> Provider Prescribe the Same </string>
+    <string name="g406da"> Yes </string>
+    <string name="g406db"> No </string>
+
     <string name="g040180a">Diazepam* (Injection 10mg)-Availability of M/C/V at facility</string>
     <string name="g040180ay">Yes</string>
     <string name="g040180an">No</string>
@@ -2182,6 +2277,22 @@
     <string name="g040180p">Diazepam* (Injection 10mg)-Provider Prescribe the Same</string>
     <string name="g040180py">Yes</string>
     <string name="g040180pn">No</string>
+
+    <string name="Q_g407"> g407 </string>
+    <string name="g407"> Diazepam* (Injection 10mg) </string>
+    <string name="g407a"> Availability of M/C/V at Facility </string>
+    <string name="g407aa"> Yes </string>
+    <string name="g407ab"> No </string>
+    <string name="g407b"> Stock Out in Past 03 Months </string>
+    <string name="g407ba">Yes</string>
+    <string name="g407bb">No</string>
+    <string name="g407c"> Stock Out Days </string>
+    <string name="g407cd"> Day(s) </string>
+    <string name="g407cm"> Month(s) </string>
+    <string name="g407d"> Provider Prescribe the Same </string>
+    <string name="g407da"> Yes </string>
+    <string name="g407db"> No </string>
+
     <string name="g040190a">Diazepam* (rectal gel/solution5 mg/ml in 0.5 ml,2 ml, 4 ml tubes)-Availability of M/C/V at facility</string>
     <string name="g040190ay">Yes</string>
     <string name="g040190an">No</string>
@@ -2194,6 +2305,22 @@
     <string name="g040190p">Diazepam* (rectal gel/solution5 mg/ml in 0.5 ml,2 ml, 4 ml tubes)-Provider Prescribe the Same</string>
     <string name="g040190py">Yes</string>
     <string name="g040190pn">No</string>
+
+    <string name="Q_g408"> g408 </string>
+    <string name="g408"> Diazepam* ( Rectal Gel / Solution 5mg/ml in 0.5ml, 2ml, 4ml tubes ) </string>
+    <string name="g408a"> Availability of M/C/V at Facility </string>
+    <string name="g408aa"> Yes </string>
+    <string name="g408ab"> No </string>
+    <string name="g408b"> Stock Out in Past 03 Months </string>
+    <string name="g408ba">Yes</string>
+    <string name="g408bb">No</string>
+    <string name="g408c"> Stock Out Days </string>
+    <string name="g408cd"> Day(s) </string>
+    <string name="g408cm"> Month(s) </string>
+    <string name="g408d"> Provider Prescribe the Same </string>
+    <string name="g408da"> Yes </string>
+    <string name="g408db"> No </string>
+
     <string name="g0401100a">Hydralazine* (hydrochloride) Tablet 25 and 50 mg-Availability of M/C/V at facility</string>
     <string name="g0401100ay">Yes</string>
     <string name="g0401100an">No</string>
@@ -2206,6 +2333,22 @@
     <string name="g0401100p">Hydralazine* (hydrochloride) Tablet 25 and 50 mg-Provider Prescribe the Same</string>
     <string name="g0401100py">Yes</string>
     <string name="g0401100pn">No</string>
+
+    <string name="Q_g409"> g409 </string>
+    <string name="g409"> Hydralazine* (Hydrochloride) Tablet 25$amp;50mg </string>
+    <string name="g409a"> Availability of M/C/V at Facility </string>
+    <string name="g409aa"> Yes </string>
+    <string name="g409ab"> No </string>
+    <string name="g409b"> Stock Out in Past 03 Months </string>
+    <string name="g409ba">Yes</string>
+    <string name="g409bb">No</string>
+    <string name="g409c"> Stock Out Days </string>
+    <string name="g409cd"> Day(s) </string>
+    <string name="g409cm"> Month(s) </string>
+    <string name="g409d"> Provider Prescribe the Same </string>
+    <string name="g409da"> Yes </string>
+    <string name="g409db"> No </string>
+
     <string name="g0401110a">Hydralazine* (hydrochloride) injection powder for injection 20 mg-Availability of M/C/V at facility</string>
     <string name="g0401110ay">Yes</string>
     <string name="g0401110an">No</string>
@@ -2218,6 +2361,22 @@
     <string name="g0401110p">Hydralazine* (hydrochloride) injection powder for injection 20 mg-Provider Prescribe the Same</string>
     <string name="g0401110py">Yes</string>
     <string name="g0401110pn">No</string>
+
+    <string name="Q_g410"> g410 </string>
+    <string name="g410"> Hydralazine* (Hydrochloride) Injection Powder for Injection 20mg </string>
+    <string name="g410a"> Availability of M/C/V at Facility </string>
+    <string name="g410aa"> Yes </string>
+    <string name="g410ab"> No </string>
+    <string name="g410b"> Stock Out in Past 03 Months </string>
+    <string name="g410ba">Yes</string>
+    <string name="g410bb">No</string>
+    <string name="g410c"> Stock Out Days </string>
+    <string name="g410cd"> Day(s) </string>
+    <string name="g410cm"> Month(s) </string>
+    <string name="g410d"> Provider Prescribe the Same </string>
+    <string name="g410da"> Yes </string>
+    <string name="g410db"> No </string>
+
     <string name="g0401120a">Methyldopa tablet 250 mg; 500 mg-Availability of M/C/V at facility</string>
     <string name="g0401120ay">Yes</string>
     <string name="g0401120an">No</string>
@@ -2230,6 +2389,22 @@
     <string name="g0401120p">Methyldopa tablet 250 mg; 500 mg-Provider Prescribe the Same</string>
     <string name="g0401120py">Yes</string>
     <string name="g0401120pn">No</string>
+
+    <string name="Q_g411"> g411 </string>
+    <string name="g411"> Methyldopa tablet 250mg / 500mg </string>
+    <string name="g411a"> Availability of M/C/V at Facility </string>
+    <string name="g411aa"> Yes </string>
+    <string name="g411ab"> No </string>
+    <string name="g411b"> Stock Out in Past 03 Months </string>
+    <string name="g411ba">Yes</string>
+    <string name="g411bb">No</string>
+    <string name="g411c"> Stock Out Days </string>
+    <string name="g411cd"> Day(s) </string>
+    <string name="g411cm"> Month(s) </string>
+    <string name="g411d"> Provider Prescribe the Same </string>
+    <string name="g411da"> Yes </string>
+    <string name="g411db"> No </string>
+
     <string name="g0401130a">Low osmolality oral rehydration salts dry mixture (low osmolality formula) in sachet -Availability of M/C/V at facility</string>
     <string name="g0401130ay">Yes</string>
     <string name="g0401130an">No</string>
@@ -2242,6 +2417,22 @@
     <string name="g0401130p">Low osmolality oral rehydration salts dry mixture (low osmolality formula) in sachet -Provider Prescribe the Same</string>
     <string name="g0401130py">Yes</string>
     <string name="g0401130pn">No</string>
+
+    <string name="Q_g412"> g412 </string>
+    <string name="g412"> Low Osmolality Oral Rehydration Salts Dry Mixture ( Low Osmolality Formula ) in Sachet </string>
+    <string name="g412a"> Availability of M/C/V at Facility </string>
+    <string name="g412aa"> Yes </string>
+    <string name="g412ab"> No </string>
+    <string name="g412b"> Stock Out in Past 03 Months </string>
+    <string name="g412ba">Yes</string>
+    <string name="g412bb">No</string>
+    <string name="g412c"> Stock Out Days </string>
+    <string name="g412cd"> Day(s) </string>
+    <string name="g412cm"> Month(s) </string>
+    <string name="g412d"> Provider Prescribe the Same </string>
+    <string name="g412da"> Yes </string>
+    <string name="g412db"> No </string>
+
     <string name="g0401140a">Zinc sulphate scored dispersible tablets/syrup 20 mg-Availability of M/C/V at facility</string>
     <string name="g0401140ay">Yes</string>
     <string name="g0401140an">No</string>
@@ -2254,6 +2445,22 @@
     <string name="g0401140p">Zinc sulphate scored dispersible tablets/syrup 20 mg-Provider Prescribe the Same</string>
     <string name="g0401140py">Yes</string>
     <string name="g0401140pn">No</string>
+
+    <string name="Q_g413"> g413 </string>
+    <string name="g413"> Zinc Sulphate Scored Dispersible Tablets / Syrup 20mg </string>
+    <string name="g413a"> Availability of M/C/V at Facility </string>
+    <string name="g413aa"> Yes </string>
+    <string name="g413ab"> No </string>
+    <string name="g413b"> Stock Out in Past 03 Months </string>
+    <string name="g413ba">Yes</string>
+    <string name="g413bb">No</string>
+    <string name="g413c"> Stock Out Days </string>
+    <string name="g413cd"> Day(s) </string>
+    <string name="g413cm"> Month(s) </string>
+    <string name="g413d"> Provider Prescribe the Same </string>
+    <string name="g413da"> Yes </string>
+    <string name="g413db"> No </string>
+
     <string name="g0401150a">Vitamin A capsules 500,000; 100,000IU; 200,000IU-Availability of M/C/V at facility</string>
     <string name="g0401150ay">Yes</string>
     <string name="g0401150an">No</string>
@@ -2266,6 +2473,22 @@
     <string name="g0401150p">Vitamin A capsules 500,000; 100,000IU; 200,000IU-Provider Prescribe the Same</string>
     <string name="g0401150py">Yes</string>
     <string name="g0401150pn">No</string>
+
+    <string name="Q_g414"> g414 </string>
+    <string name="g414"> Vitamin A Capsules 500,000; 100,000IU; 200,000IU </string>
+    <string name="g414a"> Availability of M/C/V at Facility </string>
+    <string name="g414aa"> Yes </string>
+    <string name="g414ab"> No </string>
+    <string name="g414b"> Stock Out in Past 03 Months </string>
+    <string name="g414ba">Yes</string>
+    <string name="g414bb">No</string>
+    <string name="g414c"> Stock Out Days </string>
+    <string name="g414cd"> Day(s) </string>
+    <string name="g414cm"> Month(s) </string>
+    <string name="g414d"> Provider Prescribe the Same </string>
+    <string name="g414da"> Yes </string>
+    <string name="g414db"> No </string>
+
     <string name="g0401160a">Vitamin K1* (phytonadione) injection 10 mg-Availability of M/C/V at facility</string>
     <string name="g0401160ay">Yes</string>
     <string name="g0401160an">No</string>
@@ -2278,6 +2501,22 @@
     <string name="g0401160p">Vitamin K1* (phytonadione) injection 10 mg-Provider Prescribe the Same</string>
     <string name="g0401160py">Yes</string>
     <string name="g0401160pn">No</string>
+
+    <string name="Q_g415"> g415 </string>
+    <string name="g415"> Vitamin K1* ( Phytonadione ) Injection 10mg </string>
+    <string name="g415a"> Availability of M/C/V at Facility </string>
+    <string name="g415aa"> Yes </string>
+    <string name="g415ab"> No </string>
+    <string name="g415b"> Stock Out in Past 03 Months </string>
+    <string name="g415ba">Yes</string>
+    <string name="g415bb">No</string>
+    <string name="g415c"> Stock Out Days </string>
+    <string name="g415cd"> Day(s) </string>
+    <string name="g415cm"> Month(s) </string>
+    <string name="g415d"> Provider Prescribe the Same </string>
+    <string name="g415da"> Yes </string>
+    <string name="g415db"> No </string>
+
     <string name="g0401170a">Paracetamol  (syrup 120 mg / 5 ml)-Availability of M/C/V at facility</string>
     <string name="g0401170ay">Yes</string>
     <string name="g0401170an">No</string>
@@ -2290,6 +2529,22 @@
     <string name="g0401170p">Paracetamol  (syrup 120 mg / 5 ml)-Provider Prescribe the Same</string>
     <string name="g0401170py">Yes</string>
     <string name="g0401170pn">No</string>
+
+    <string name="Q_g416"> g416 </string>
+    <string name="g416"> Paracetamol Syrup 120mg / 5ml </string>
+    <string name="g416a"> Availability of M/C/V at Facility </string>
+    <string name="g416aa"> Yes </string>
+    <string name="g416ab"> No </string>
+    <string name="g416b"> Stock Out in Past 03 Months </string>
+    <string name="g416ba">Yes</string>
+    <string name="g416bb">No</string>
+    <string name="g416c"> Stock Out Days </string>
+    <string name="g416cd"> Day(s) </string>
+    <string name="g416cm"> Month(s) </string>
+    <string name="g416d"> Provider Prescribe the Same </string>
+    <string name="g416da"> Yes </string>
+    <string name="g416db"> No </string>
+
     <string name="g0401180a">Paracetamol  tablets 500 mg-Availability of M/C/V at facility</string>
     <string name="g0401180ay">Yes</string>
     <string name="g0401180an">No</string>
@@ -2302,6 +2557,22 @@
     <string name="g0401180p">Paracetamol  tablets 500 mg-Provider Prescribe the Same</string>
     <string name="g0401180py">Yes</string>
     <string name="g0401180pn">No</string>
+
+    <string name="Q_g417"> g417 </string>
+    <string name="g417"> Paracetamol Tablets 500mg </string>
+    <string name="g417a"> Availability of M/C/V at Facility </string>
+    <string name="g417aa"> Yes </string>
+    <string name="g417ab"> No </string>
+    <string name="g417b"> Stock Out in Past 03 Months </string>
+    <string name="g417ba">Yes</string>
+    <string name="g417bb">No</string>
+    <string name="g417c"> Stock Out Days </string>
+    <string name="g417cd"> Day(s) </string>
+    <string name="g417cm"> Month(s) </string>
+    <string name="g417d"> Provider Prescribe the Same </string>
+    <string name="g417da"> Yes </string>
+    <string name="g417db"> No </string>
+
     <string name="g0401190a">Paracetamol  Injection 150 mg / ml-Availability of M/C/V at facility</string>
     <string name="g0401190ay">Yes</string>
     <string name="g0401190an">No</string>
@@ -2314,6 +2585,22 @@
     <string name="g0401190p">Paracetamol  Injection 150 mg / ml-Provider Prescribe the Same</string>
     <string name="g0401190py">Yes</string>
     <string name="g0401190pn">No</string>
+
+    <string name="Q_g419"> g419 </string>
+    <string name="g419"> Paracetamol Injection 150mg / ml </string>
+    <string name="g419a"> Availability of M/C/V at Facility </string>
+    <string name="g419aa"> Yes </string>
+    <string name="g419ab"> No </string>
+    <string name="g419b"> Stock Out in Past 03 Months </string>
+    <string name="g419ba">Yes</string>
+    <string name="g419bb">No</string>
+    <string name="g419c"> Stock Out Days </string>
+    <string name="g419cd"> Day(s) </string>
+    <string name="g419cm"> Month(s) </string>
+    <string name="g419d"> Provider Prescribe the Same </string>
+    <string name="g419da"> Yes </string>
+    <string name="g419db"> No </string>
+
     <string name="g0401200a">Paracetamol  suppository 100 mg-Availability of M/C/V at facility</string>
     <string name="g0401200ay">Yes</string>
     <string name="g0401200an">No</string>
@@ -2326,6 +2613,22 @@
     <string name="g0401200p">Paracetamol  suppository 100 mg-Provider Prescribe the Same</string>
     <string name="g0401200py">Yes</string>
     <string name="g0401200pn">No</string>
+
+    <string name="Q_g420"> g420 </string>
+    <string name="g420"> Paracetamol Suppository 100mg </string>
+    <string name="g420a"> Availability of M/C/V at Facility </string>
+    <string name="g420aa"> Yes </string>
+    <string name="g420ab"> No </string>
+    <string name="g420b"> Stock Out in Past 03 Months </string>
+    <string name="g420ba">Yes</string>
+    <string name="g420bb">No</string>
+    <string name="g420c"> Stock Out Days </string>
+    <string name="g420cd"> Day(s) </string>
+    <string name="g420cm"> Month(s) </string>
+    <string name="g420d"> Provider Prescribe the Same </string>
+    <string name="g420da"> Yes </string>
+    <string name="g420db"> No </string>
+
     <string name="g0401210a">Chlorhexidine gluconate (7.1%) gel equivalent to 4 % chlorhexidine-Availability of M/C/V at facility</string>
     <string name="g0401210ay">Yes</string>
     <string name="g0401210an">No</string>
@@ -2338,6 +2641,22 @@
     <string name="g0401210p">Chlorhexidine gluconate (7.1%) gel equivalent to 4 % chlorhexidine-Provider Prescribe the Same</string>
     <string name="g0401210py">Yes</string>
     <string name="g0401210pn">No</string>
+
+    <string name="Q_g421"> g421 </string>
+    <string name="g421"> Chlorhexidine Gluconate (7.1%) Gel Equivalent to 4% Chlorhexidine </string>
+    <string name="g421a"> Availability of M/C/V at Facility </string>
+    <string name="g421aa"> Yes </string>
+    <string name="g421ab"> No </string>
+    <string name="g421b"> Stock Out in Past 03 Months </string>
+    <string name="g421ba">Yes</string>
+    <string name="g421bb">No</string>
+    <string name="g421c"> Stock Out Days </string>
+    <string name="g421cd"> Day(s) </string>
+    <string name="g421cm"> Month(s) </string>
+    <string name="g421d"> Provider Prescribe the Same </string>
+    <string name="g421da"> Yes </string>
+    <string name="g421db"> No </string>
+
     <string name="g0401220a">Ferrous salt + folic acid tablets (equivalent to 60 mg iron + 400 mcg folic acid)-Availability of M/C/V at facility</string>
     <string name="g0401220ay">Yes</string>
     <string name="g0401220an">No</string>
@@ -2350,6 +2669,22 @@
     <string name="g0401220p">Ferrous salt + folic acid tablets (equivalent to 60 mg iron + 400 mcg folic acid)-Provider Prescribe the Same</string>
     <string name="g0401220py">Yes</string>
     <string name="g0401220pn">No</string>
+
+    <string name="Q_g422"> g422 </string>
+    <string name="g422"> Ferrous Salt + Folic Acid Tablets (Equivalent to 60mg iron + 400mcg Folic Acid) </string>
+    <string name="g422a"> Availability of M/C/V at Facility </string>
+    <string name="g422aa"> Yes </string>
+    <string name="g422ab"> No </string>
+    <string name="g422b"> Stock Out in Past 03 Months </string>
+    <string name="g422ba">Yes</string>
+    <string name="g422bb">No</string>
+    <string name="g422c"> Stock Out Days </string>
+    <string name="g422cd"> Day(s) </string>
+    <string name="g422cm"> Month(s) </string>
+    <string name="g422d"> Provider Prescribe the Same </string>
+    <string name="g422da"> Yes </string>
+    <string name="g422db"> No </string>
+
     <string name="g0401230a">Mebendazole tablets chewable100 mg (Adults only-Availability of M/C/V at facility</string>
     <string name="g0401230ay">Yes</string>
     <string name="g0401230an">No</string>
@@ -2362,6 +2697,22 @@
     <string name="g0401230p">Mebendazole tablets chewable100 mg (Adults only-Provider Prescribe the Same</string>
     <string name="g0401230py">Yes</string>
     <string name="g0401230pn">No</string>
+
+    <string name="Q_g423"> g423 </string>
+    <string name="g423"> Mebendazole Tablets Chewable 100mg - Adults Only </string>
+    <string name="g423a"> Availability of M/C/V at Facility </string>
+    <string name="g423aa"> Yes </string>
+    <string name="g423ab"> No </string>
+    <string name="g423b"> Stock Out in Past 03 Months </string>
+    <string name="g423ba">Yes</string>
+    <string name="g423bb">No</string>
+    <string name="g423c"> Stock Out Days </string>
+    <string name="g423cd"> Day(s) </string>
+    <string name="g423cm"> Month(s) </string>
+    <string name="g423d"> Provider Prescribe the Same </string>
+    <string name="g423da"> Yes </string>
+    <string name="g423db"> No </string>
+
     <string name="g0401240a">Mebendazole  syrup100 mg per 5 ml-Availability of M/C/V at facility</string>
     <string name="g0401240ay">Yes</string>
     <string name="g0401240an">No</string>
@@ -2374,6 +2725,22 @@
     <string name="g0401240p">Mebendazole  syrup100 mg per 5 ml-Provider Prescribe the Same</string>
     <string name="g0401240py">Yes</string>
     <string name="g0401240pn">No</string>
+
+    <string name="Q_g424"> g424 </string>
+    <string name="g424"> Mebendazole Syrup 100mg per 5ml </string>
+    <string name="g424a"> Availability of M/C/V at Facility </string>
+    <string name="g424aa"> Yes </string>
+    <string name="g424ab"> No </string>
+    <string name="g424b"> Stock Out in Past 03 Months </string>
+    <string name="g424ba">Yes</string>
+    <string name="g424bb">No</string>
+    <string name="g424c"> Stock Out Days </string>
+    <string name="g424cd"> Day(s) </string>
+    <string name="g424cm"> Month(s) </string>
+    <string name="g424d"> Provider Prescribe the Same </string>
+    <string name="g424da"> Yes </string>
+    <string name="g424db"> No </string>
+
     <string name="g0401250a">Salbutamol tablets2 &amp; 4 mg-Availability of M/C/V at facility</string>
     <string name="g0401250ay">Yes</string>
     <string name="g0401250an">No</string>
@@ -2386,6 +2753,22 @@
     <string name="g0401250p">Salbutamol tablets2 &amp; 4 mg-Provider Prescribe the Same</string>
     <string name="g0401250py">Yes</string>
     <string name="g0401250pn">No</string>
+
+    <string name="Q_g425"> g425 </string>
+    <string name="g425"> Salbutamol Tablets 2mg &amp; 4mg </string>
+    <string name="g425a"> Availability of M/C/V at Facility </string>
+    <string name="g425aa"> Yes </string>
+    <string name="g425ab"> No </string>
+    <string name="g425b"> Stock Out in Past 03 Months </string>
+    <string name="g425ba">Yes</string>
+    <string name="g425bb">No</string>
+    <string name="g425c"> Stock Out Days </string>
+    <string name="g425cd"> Day(s) </string>
+    <string name="g425cm"> Month(s) </string>
+    <string name="g425d"> Provider Prescribe the Same </string>
+    <string name="g425da"> Yes </string>
+    <string name="g425db"> No </string>
+
     <string name="g0401260a">Salbutamol syrup2 mg per 5 ml-Availability of M/C/V at facility</string>
     <string name="g0401260ay">Yes</string>
     <string name="g0401260an">No</string>
@@ -2398,6 +2781,22 @@
     <string name="g0401260p">Salbutamol syrup2 mg per 5 ml-Provider Prescribe the Same</string>
     <string name="g0401260py">Yes</string>
     <string name="g0401260pn">No</string>
+
+    <string name="Q_g426"> g426 </string>
+    <string name="g426"> Salbutamol Syrup 2mg per 5ml </string>
+    <string name="g426a"> Availability of M/C/V at Facility </string>
+    <string name="g426aa"> Yes </string>
+    <string name="g426ab"> No </string>
+    <string name="g426b"> Stock Out in Past 03 Months </string>
+    <string name="g426ba">Yes</string>
+    <string name="g426bb">No</string>
+    <string name="g426c"> Stock Out Days </string>
+    <string name="g426cd"> Day(s) </string>
+    <string name="g426cm"> Month(s) </string>
+    <string name="g426d"> Provider Prescribe the Same </string>
+    <string name="g426da"> Yes </string>
+    <string name="g426db"> No </string>
+
     <string name="g0401270a">Salbutamol solution 5 mg / ml-Availability of M/C/V at facility</string>
     <string name="g0401270ay">Yes</string>
     <string name="g0401270an">No</string>
@@ -2410,6 +2809,22 @@
     <string name="g0401270p">Salbutamol solution 5 mg / ml-Provider Prescribe the Same</string>
     <string name="g0401270py">Yes</string>
     <string name="g0401270pn">No</string>
+
+    <string name="Q_g427"> g427 </string>
+    <string name="g427"> Salbutamol Syrup 2mg per 5ml </string>
+    <string name="g427a"> Availability of M/C/V at Facility </string>
+    <string name="g427aa"> Yes </string>
+    <string name="g427ab"> No </string>
+    <string name="g427b"> Stock Out in Past 03 Months </string>
+    <string name="g427ba">Yes</string>
+    <string name="g427bb">No</string>
+    <string name="g427c"> Stock Out Days </string>
+    <string name="g427cd"> Day(s) </string>
+    <string name="g427cm"> Month(s) </string>
+    <string name="g427d"> Provider Prescribe the Same </string>
+    <string name="g427da"> Yes </string>
+    <string name="g427db"> No </string>
+
     <string name="g0401280a">Chlorpheniramine maleate  tablets 4 mg-Availability of M/C/V at facility</string>
     <string name="g0401280ay">Yes</string>
     <string name="g0401280an">No</string>
@@ -2422,6 +2837,22 @@
     <string name="g0401280p">Chlorpheniramine maleate  tablets 4 mg-Provider Prescribe the Same</string>
     <string name="g0401280py">Yes</string>
     <string name="g0401280pn">No</string>
+
+    <string name="Q_g428"> g428 </string>
+    <string name="g428"> Chlorpheniramine Maleate Tablets 4mg </string>
+    <string name="g428a"> Availability of M/C/V at Facility </string>
+    <string name="g428aa"> Yes </string>
+    <string name="g428ab"> No </string>
+    <string name="g428b"> Stock Out in Past 03 Months </string>
+    <string name="g428ba">Yes</string>
+    <string name="g428bb">No</string>
+    <string name="g428c"> Stock Out Days </string>
+    <string name="g428cd"> Day(s) </string>
+    <string name="g428cm"> Month(s) </string>
+    <string name="g428d"> Provider Prescribe the Same </string>
+    <string name="g428da"> Yes </string>
+    <string name="g428db"> No </string>
+
     <string name="g0401290a">Chlorpheniramine maleate  syrup 2 mg per 5 ml-Availability of M/C/V at facility</string>
     <string name="g0401290ay">Yes</string>
     <string name="g0401290an">No</string>
@@ -2434,6 +2865,22 @@
     <string name="g0401290p">Chlorpheniramine maleate  syrup 2 mg per 5 ml-Provider Prescribe the Same</string>
     <string name="g0401290py">Yes</string>
     <string name="g0401290pn">No</string>
+
+    <string name="Q_g429"> g429 </string>
+    <string name="g429"> Chlorpheniramine Maleate Syrup 2mg per 5ml </string>
+    <string name="g429a"> Availability of M/C/V at Facility </string>
+    <string name="g429aa"> Yes </string>
+    <string name="g429ab"> No </string>
+    <string name="g429b"> Stock Out in Past 03 Months </string>
+    <string name="g429ba">Yes</string>
+    <string name="g429bb">No</string>
+    <string name="g429c"> Stock Out Days </string>
+    <string name="g429cd"> Day(s) </string>
+    <string name="g429cm"> Month(s) </string>
+    <string name="g429d"> Provider Prescribe the Same </string>
+    <string name="g429da"> Yes </string>
+    <string name="g429db"> No </string>
+
     <string name="g0401300a">Chlorpheniramine maleate  injection4 mg (as disodium salt) in 1‐ml-Availability of M/C/V at facility</string>
     <string name="g0401300ay">Yes</string>
     <string name="g0401300an">No</string>
@@ -2446,6 +2893,22 @@
     <string name="g0401300p">Chlorpheniramine maleate  injection4 mg (as disodium salt) in 1‐ml-Provider Prescribe the Same</string>
     <string name="g0401300py">Yes</string>
     <string name="g0401300pn">No</string>
+
+    <string name="Q_g430"> g430 </string>
+    <string name="g430"> Chlorpheniramine Maleate Injection 4mg (as disodium salt) in 1‐ml </string>
+    <string name="g430a"> Availability of M/C/V at Facility </string>
+    <string name="g430aa"> Yes </string>
+    <string name="g430ab"> No </string>
+    <string name="g430b"> Stock Out in Past 03 Months </string>
+    <string name="g430ba">Yes</string>
+    <string name="g430bb">No</string>
+    <string name="g430c"> Stock Out Days </string>
+    <string name="g430cd"> Day(s) </string>
+    <string name="g430cm"> Month(s) </string>
+    <string name="g430d"> Provider Prescribe the Same </string>
+    <string name="g430da"> Yes </string>
+    <string name="g430db"> No </string>
+
     <string name="g0401310a">Chlorpheniramine maleate   tablet 0.5 mg-Availability of M/C/V at facility</string>
     <string name="g0401310ay">Yes</string>
     <string name="g0401310an">No</string>
@@ -2458,6 +2921,22 @@
     <string name="g0401310p">Chlorpheniramine maleate   tablet 0.5 mg-Provider Prescribe the Same</string>
     <string name="g0401310py">Yes</string>
     <string name="g0401310pn">No</string>
+
+    <string name="Q_g431"> g431 </string>
+    <string name="g431"> Chlorpheniramine Maleate Tablet 0.5mg </string>
+    <string name="g431a"> Availability of M/C/V at Facility </string>
+    <string name="g431aa"> Yes </string>
+    <string name="g431ab"> No </string>
+    <string name="g431b"> Stock Out in Past 03 Months </string>
+    <string name="g431ba">Yes</string>
+    <string name="g431bb">No</string>
+    <string name="g431c"> Stock Out Days </string>
+    <string name="g431cd"> Day(s) </string>
+    <string name="g431cm"> Month(s) </string>
+    <string name="g431d"> Provider Prescribe the Same </string>
+    <string name="g431da"> Yes </string>
+    <string name="g431db"> No </string>
+
     <string name="g0401320a">Dexamethasone (disodium phosphate)  injection 10 mg /ml-Availability of M/C/V at facility</string>
     <string name="g0401320ay">Yes</string>
     <string name="g0401320an">No</string>
@@ -2470,6 +2949,22 @@
     <string name="g0401320p">Dexamethasone (disodium phosphate)  injection 10 mg /ml-Provider Prescribe the Same</string>
     <string name="g0401320py">Yes</string>
     <string name="g0401320pn">No</string>
+
+    <string name="Q_g432"> g432 </string>
+    <string name="g432"> Dexamethasone (Disodium Phosphate) Injection 10mg / ml </string>
+    <string name="g432a"> Availability of M/C/V at Facility </string>
+    <string name="g432aa"> Yes </string>
+    <string name="g432ab"> No </string>
+    <string name="g432b"> Stock Out in Past 03 Months </string>
+    <string name="g432ba">Yes</string>
+    <string name="g432bb">No</string>
+    <string name="g432c"> Stock Out Days </string>
+    <string name="g432cd"> Day(s) </string>
+    <string name="g432cm"> Month(s) </string>
+    <string name="g432d"> Provider Prescribe the Same </string>
+    <string name="g432da"> Yes </string>
+    <string name="g432db"> No </string>
+
     <string name="g0401330a">Dexamethasone (disodium phosphate)  tablet 0.5 mg-Availability of M/C/V at facility</string>
     <string name="g0401330ay">Yes</string>
     <string name="g0401330an">No</string>
@@ -2482,6 +2977,22 @@
     <string name="g0401330p">Dexamethasone (disodium phosphate)  tablet 0.5 mg-Provider Prescribe the Same</string>
     <string name="g0401330py">Yes</string>
     <string name="g0401330pn">No</string>
+
+    <string name="Q_g433"> g433 </string>
+    <string name="g433"> Dexamethasone (Disodium Phosphate) Tablet 0.5mg </string>
+    <string name="g433a"> Availability of M/C/V at Facility </string>
+    <string name="g433aa"> Yes </string>
+    <string name="g433ab"> No </string>
+    <string name="g433b"> Stock Out in Past 03 Months </string>
+    <string name="g433ba">Yes</string>
+    <string name="g433bb">No</string>
+    <string name="g433c"> Stock Out Days </string>
+    <string name="g433cd"> Day(s) </string>
+    <string name="g433cm"> Month(s) </string>
+    <string name="g433d"> Provider Prescribe the Same </string>
+    <string name="g433da"> Yes </string>
+    <string name="g433db"> No </string>
+
     <string name="g0401340a">Ampicillin (as sodium salt) Injection  250 mg-Availability of M/C/V at facility</string>
     <string name="g0401340ay">Yes</string>
     <string name="g0401340an">No</string>
@@ -2494,6 +3005,22 @@
     <string name="g0401340p">Ampicillin (as sodium salt) Injection  250 mg-Provider Prescribe the Same</string>
     <string name="g0401340py">Yes</string>
     <string name="g0401340pn">No</string>
+
+    <string name="Q_g434"> g434 </string>
+    <string name="g434"> Ampicillin (as sodium salt) Injection  250mg </string>
+    <string name="g434a"> Availability of M/C/V at Facility </string>
+    <string name="g434aa"> Yes </string>
+    <string name="g434ab"> No </string>
+    <string name="g434b"> Stock Out in Past 03 Months </string>
+    <string name="g434ba">Yes</string>
+    <string name="g434bb">No</string>
+    <string name="g434c"> Stock Out Days </string>
+    <string name="g434cd"> Day(s) </string>
+    <string name="g434cm"> Month(s) </string>
+    <string name="g434d"> Provider Prescribe the Same </string>
+    <string name="g434da"> Yes </string>
+    <string name="g434db"> No </string>
+
     <string name="g0401350a">Ampicillin (as sodium salt) Syrup 125 &amp; 250 mg / 5 ml-Availability of M/C/V at facility</string>
     <string name="g0401350ay">Yes</string>
     <string name="g0401350an">No</string>
@@ -2506,6 +3033,22 @@
     <string name="g0401350p">Ampicillin (as sodium salt) Syrup 125 &amp; 250 mg / 5 ml-Provider Prescribe the Same</string>
     <string name="g0401350py">Yes</string>
     <string name="g0401350pn">No</string>
+
+    <string name="Q_g435"> g435 </string>
+    <string name="g435"> Ampicillin (as sodium salt) Syrup 125 &amp; 250mg / 5ml </string>
+    <string name="g435a"> Availability of M/C/V at Facility </string>
+    <string name="g435aa"> Yes </string>
+    <string name="g435ab"> No </string>
+    <string name="g435b"> Stock Out in Past 03 Months </string>
+    <string name="g435ba">Yes</string>
+    <string name="g435bb">No</string>
+    <string name="g435c"> Stock Out Days </string>
+    <string name="g435cd"> Day(s) </string>
+    <string name="g435cm"> Month(s) </string>
+    <string name="g435d"> Provider Prescribe the Same </string>
+    <string name="g435da"> Yes </string>
+    <string name="g435db"> No </string>
+
     <string name="g0401360a">Ampicillin (as sodium salt) Capsules 250 &amp; 500 mg-Availability of M/C/V at facility</string>
     <string name="g0401360ay">Yes</string>
     <string name="g0401360an">No</string>
@@ -2518,6 +3061,22 @@
     <string name="g0401360p">Ampicillin (as sodium salt) Capsules 250 &amp; 500 mg-Provider Prescribe the Same</string>
     <string name="g0401360py">Yes</string>
     <string name="g0401360pn">No</string>
+
+    <string name="Q_g436"> g436 </string>
+    <string name="g436"> Ampicillin (as sodium salt) Capsules 250mg &amp; 500mg </string>
+    <string name="g436a"> Availability of M/C/V at Facility </string>
+    <string name="g436aa"> Yes </string>
+    <string name="g436ab"> No </string>
+    <string name="g436b"> Stock Out in Past 03 Months </string>
+    <string name="g436ba">Yes</string>
+    <string name="g436bb">No</string>
+    <string name="g436c"> Stock Out Days </string>
+    <string name="g436cd"> Day(s) </string>
+    <string name="g436cm"> Month(s) </string>
+    <string name="g436d"> Provider Prescribe the Same </string>
+    <string name="g436da"> Yes </string>
+    <string name="g436db"> No </string>
+
     <string name="g0401370a">Ceftriaxone injection 250 mg; 500; 1 gm-Availability of M/C/V at facility</string>
     <string name="g0401370ay">Yes</string>
     <string name="g0401370an">No</string>
@@ -2530,6 +3089,22 @@
     <string name="g0401370p">Ceftriaxone injection 250 mg; 500; 1 gm-Provider Prescribe the Same</string>
     <string name="g0401370py">Yes</string>
     <string name="g0401370pn">No</string>
+
+    <string name="Q_g437"> g437 </string>
+    <string name="g437"> Ceftriaxone Injection 250mg, 500mg &amp; 1gm </string>
+    <string name="g437a"> Availability of M/C/V at Facility </string>
+    <string name="g437aa"> Yes </string>
+    <string name="g437ab"> No </string>
+    <string name="g437b"> Stock Out in Past 03 Months </string>
+    <string name="g437ba">Yes</string>
+    <string name="g437bb">No</string>
+    <string name="g437c"> Stock Out Days </string>
+    <string name="g437cd"> Day(s) </string>
+    <string name="g437cm"> Month(s) </string>
+    <string name="g437d"> Provider Prescribe the Same </string>
+    <string name="g437da"> Yes </string>
+    <string name="g437db"> No </string>
+
     <string name="g0401380a">Metronidazole Infusion 5 mg / ml in 100‐ml-Availability of M/C/V at facility</string>
     <string name="g0401380ay">Yes</string>
     <string name="g0401380an">No</string>
@@ -2542,6 +3117,22 @@
     <string name="g0401380p">Metronidazole Infusion 5 mg / ml in 100‐ml-Provider Prescribe the Same</string>
     <string name="g0401380py">Yes</string>
     <string name="g0401380pn">No</string>
+
+    <string name="Q_g438"> g438 </string>
+    <string name="g438"> Metronidazole Infusion 5mg/ml in 100ml </string>
+    <string name="g438a"> Availability of M/C/V at Facility </string>
+    <string name="g438aa"> Yes </string>
+    <string name="g438ab"> No </string>
+    <string name="g438b"> Stock Out in Past 03 Months </string>
+    <string name="g438ba">Yes</string>
+    <string name="g438bb">No</string>
+    <string name="g438c"> Stock Out Days </string>
+    <string name="g438cd"> Day(s) </string>
+    <string name="g438cm"> Month(s) </string>
+    <string name="g438d"> Provider Prescribe the Same </string>
+    <string name="g438da"> Yes </string>
+    <string name="g438db"> No </string>
+
     <string name="g0401390a">Metronidazole Tablet 200; 400 mg-Availability of M/C/V at facility</string>
     <string name="g0401390ay">Yes</string>
     <string name="g0401390an">No</string>
@@ -2554,6 +3145,22 @@
     <string name="g0401390p">Metronidazole Tablet 200; 400 mg-Provider Prescribe the Same</string>
     <string name="g0401390py">Yes</string>
     <string name="g0401390pn">No</string>
+
+    <string name="Q_g439"> g439 </string>
+    <string name="g439"> Metronidazole Tablet 200mg &amp; 400mg </string>
+    <string name="g439a"> Availability of M/C/V at Facility </string>
+    <string name="g439aa"> Yes </string>
+    <string name="g439ab"> No </string>
+    <string name="g439b"> Stock Out in Past 03 Months </string>
+    <string name="g439ba">Yes</string>
+    <string name="g439bb">No</string>
+    <string name="g439c"> Stock Out Days </string>
+    <string name="g439cd"> Day(s) </string>
+    <string name="g439cm"> Month(s) </string>
+    <string name="g439d"> Provider Prescribe the Same </string>
+    <string name="g439da"> Yes </string>
+    <string name="g439db"> No </string>
+
     <string name="g0401400a">Metronidazole Syrup 200 mg / 5 ml-Availability of M/C/V at facility</string>
     <string name="g0401400ay">Yes</string>
     <string name="g0401400an">No</string>
@@ -2566,6 +3173,22 @@
     <string name="g0401400p">Metronidazole Syrup 200 mg / 5 ml-Provider Prescribe the Same</string>
     <string name="g0401400py">Yes</string>
     <string name="g0401400pn">No</string>
+
+    <string name="Q_g440"> g440 </string>
+    <string name="g440"> Metronidazole Syrup 200mg / 5ml </string>
+    <string name="g440a"> Availability of M/C/V at Facility </string>
+    <string name="g440aa"> Yes </string>
+    <string name="g440ab"> No </string>
+    <string name="g440b"> Stock Out in Past 03 Months </string>
+    <string name="g440ba">Yes</string>
+    <string name="g440bb">No</string>
+    <string name="g440c"> Stock Out Days </string>
+    <string name="g440cd"> Day(s) </string>
+    <string name="g440cm"> Month(s) </string>
+    <string name="g440d"> Provider Prescribe the Same </string>
+    <string name="g440da"> Yes </string>
+    <string name="g440db"> No </string>
+
     <string name="g0401410a">Gentamycin injection 40 mg; 80 mg-Availability of M/C/V at facility</string>
     <string name="g0401410ay">Yes</string>
     <string name="g0401410an">No</string>
@@ -2578,6 +3201,22 @@
     <string name="g0401410p">Gentamycin injection 40 mg; 80 mg-Provider Prescribe the Same</string>
     <string name="g0401410py">Yes</string>
     <string name="g0401410pn">No</string>
+
+    <string name="Q_g441"> g441 </string>
+    <string name="g441"> Gentamycin Injection 40mg &amp; 80mg </string>
+    <string name="g441a"> Availability of M/C/V at Facility </string>
+    <string name="g441aa"> Yes </string>
+    <string name="g441ab"> No </string>
+    <string name="g441b"> Stock Out in Past 03 Months </string>
+    <string name="g441ba">Yes</string>
+    <string name="g441bb">No</string>
+    <string name="g441c"> Stock Out Days </string>
+    <string name="g441cd"> Day(s) </string>
+    <string name="g441cm"> Month(s) </string>
+    <string name="g441d"> Provider Prescribe the Same </string>
+    <string name="g441da"> Yes </string>
+    <string name="g441db"> No </string>
+
     <string name="g0401420a">Amoxicillin Injection 250 mg; 500 mg-Availability of M/C/V at facility</string>
     <string name="g0401420ay">Yes</string>
     <string name="g0401420an">No</string>
@@ -2590,6 +3229,22 @@
     <string name="g0401420p">Amoxicillin Injection 250 mg; 500 mg-Provider Prescribe the Same</string>
     <string name="g0401420py">Yes</string>
     <string name="g0401420pn">No</string>
+
+    <string name="Q_g442"> g442 </string>
+    <string name="g442"> Amoxicillin Injection 250mg &amp; 500mg </string>
+    <string name="g442a"> Availability of M/C/V at Facility </string>
+    <string name="g442aa"> Yes </string>
+    <string name="g442ab"> No </string>
+    <string name="g442b"> Stock Out in Past 03 Months </string>
+    <string name="g442ba">Yes</string>
+    <string name="g442bb">No</string>
+    <string name="g442c"> Stock Out Days </string>
+    <string name="g442cd"> Day(s) </string>
+    <string name="g442cm"> Month(s) </string>
+    <string name="g442d"> Provider Prescribe the Same </string>
+    <string name="g442da"> Yes </string>
+    <string name="g442db"> No </string>
+
     <string name="g0401430a">Amoxicillin Dispersible tablet / capsule 500 mg; 250 mg-Availability of M/C/V at facility</string>
     <string name="g0401430ay">Yes</string>
     <string name="g0401430an">No</string>
@@ -2602,6 +3257,22 @@
     <string name="g0401430p">Amoxicillin Dispersible tablet / capsule 500 mg; 250 mg-Provider Prescribe the Same</string>
     <string name="g0401430py">Yes</string>
     <string name="g0401430pn">No</string>
+
+    <string name="Q_g443"> g443 </string>
+    <string name="g443"> Amoxicillin Dispersible Tablet / Capsule 500mg &amp; 250mg </string>
+    <string name="g443a"> Availability of M/C/V at Facility </string>
+    <string name="g443aa"> Yes </string>
+    <string name="g443ab"> No </string>
+    <string name="g443b"> Stock Out in Past 03 Months </string>
+    <string name="g443ba">Yes</string>
+    <string name="g443bb">No</string>
+    <string name="g443c"> Stock Out Days </string>
+    <string name="g443cd"> Day(s) </string>
+    <string name="g443cm"> Month(s) </string>
+    <string name="g443d"> Provider Prescribe the Same </string>
+    <string name="g443da"> Yes </string>
+    <string name="g443db"> No </string>
+
     <string name="g0401440a">Amoxicillin Syrup 125 mg; 250 mg / 5 ml-Availability of M/C/V at facility</string>
     <string name="g0401440ay">Yes</string>
     <string name="g0401440an">No</string>
@@ -2614,7 +3285,24 @@
     <string name="g0401440p">Amoxicillin Syrup 125 mg; 250 mg / 5 ml-Provider Prescribe the Same</string>
     <string name="g0401440py">Yes</string>
     <string name="g0401440pn">No</string>
-    <string name="g0402">VACCINES</string>
+
+    <string name="Q_g444"> g444 </string>
+    <string name="g444"> Amoxicillin Syrup 125mg &amp; 250mg / 5ml </string>
+    <string name="g444a"> Availability of M/C/V at Facility </string>
+    <string name="g444aa"> Yes </string>
+    <string name="g444ab"> No </string>
+    <string name="g444b"> Stock Out in Past 03 Months </string>
+    <string name="g444ba">Yes</string>
+    <string name="g444bb">No</string>
+    <string name="g444c"> Stock Out Days </string>
+    <string name="g444cd"> Day(s) </string>
+    <string name="g444cm"> Month(s) </string>
+    <string name="g444d"> Provider Prescribe the Same </string>
+    <string name="g444da"> Yes </string>
+    <string name="g444db"> No </string>
+
+    <string name="g42"> VACCINES </string>
+    <string name="g0402"> VACCINES </string>
     <string name="g040210a">BCG Vaccine-Availability of M/C/V at facility</string>
     <string name="g040210ay">Yes</string>
     <string name="g040210an">No</string>
@@ -2627,6 +3315,22 @@
     <string name="g040210p">BCG Vaccine-Provider Prescribe the Same</string>
     <string name="g040210py">Yes</string>
     <string name="g040210pn">No</string>
+
+    <string name="Q_g445"> g445 </string>
+    <string name="g445"> BCG Vaccine </string>
+    <string name="g445a"> Availability of M/C/V at Facility </string>
+    <string name="g445aa"> Yes </string>
+    <string name="g445ab"> No </string>
+    <string name="g445b"> Stock Out in Past 03 Months </string>
+    <string name="g445ba">Yes</string>
+    <string name="g445bb">No</string>
+    <string name="g445c"> Stock Out Days </string>
+    <string name="g445cd"> Day(s) </string>
+    <string name="g445cm"> Month(s) </string>
+    <string name="g445d"> Provider Prescribe the Same </string>
+    <string name="g445da"> Yes </string>
+    <string name="g445db"> No </string>
+
     <string name="g040220a">Pentavalent Vaccine (DPT+HBV+HIB)-Availability of M/C/V at facility</string>
     <string name="g040220ay">Yes</string>
     <string name="g040220an">No</string>
@@ -2639,6 +3343,22 @@
     <string name="g040220p">Pentavalent Vaccine (DPT+HBV+HIB)-Provider Prescribe the Same</string>
     <string name="g040220py">Yes</string>
     <string name="g040220pn">No</string>
+
+    <string name="Q_g446"> g446</string>
+    <string name="g446"> Pentavalent Vaccine ( DPT + HBV + HIB ) </string>
+    <string name="g446a"> Availability of M/C/V at Facility </string>
+    <string name="g446aa"> Yes </string>
+    <string name="g446ab"> No </string>
+    <string name="g446b"> Stock Out in Past 03 Months </string>
+    <string name="g446ba">Yes</string>
+    <string name="g446bb">No</string>
+    <string name="g446c"> Stock Out Days </string>
+    <string name="g446cd"> Day(s) </string>
+    <string name="g446cm"> Month(s) </string>
+    <string name="g446d"> Provider Prescribe the Same </string>
+    <string name="g446da"> Yes </string>
+    <string name="g446db"> No </string>
+
     <string name="g040230a">Measles Vaccine-Availability of M/C/V at facility</string>
     <string name="g040230ay">Yes</string>
     <string name="g040230an">No</string>
@@ -2651,6 +3371,22 @@
     <string name="g040230p">Measles Vaccine-Provider Prescribe the Same</string>
     <string name="g040230py">Yes</string>
     <string name="g040230pn">No</string>
+
+    <string name="Q_g447"> g447 </string>
+    <string name="g447"> Measles Vaccine </string>
+    <string name="g447a"> Availability of M/C/V at Facility </string>
+    <string name="g447aa"> Yes </string>
+    <string name="g447ab"> No </string>
+    <string name="g447b"> Stock Out in Past 03 Months </string>
+    <string name="g447ba">Yes</string>
+    <string name="g447bb">No</string>
+    <string name="g447c"> Stock Out Days </string>
+    <string name="g447cd"> Day(s) </string>
+    <string name="g447cm"> Month(s) </string>
+    <string name="g447d"> Provider Prescribe the Same </string>
+    <string name="g447da"> Yes </string>
+    <string name="g447db"> No </string>
+
     <string name="g040240a">Polio Vaccine (OPV/IPV)-Availability of M/C/V at facility</string>
     <string name="g040240ay">Yes</string>
     <string name="g040240an">No</string>
@@ -2663,6 +3399,22 @@
     <string name="g040240p">Polio Vaccine (OPV/IPV)-Provider Prescribe the Same</string>
     <string name="g040240py">Yes</string>
     <string name="g040240pn">No</string>
+
+    <string name="Q_g448"> g448 </string>
+    <string name="g448"> Polio Vaccine ( OPV / IPV ) </string>
+    <string name="g448a"> Availability of M/C/V at Facility </string>
+    <string name="g448aa"> Yes </string>
+    <string name="g448ab"> No </string>
+    <string name="g448b"> Stock Out in Past 03 Months </string>
+    <string name="g448ba">Yes</string>
+    <string name="g448bb">No</string>
+    <string name="g448c"> Stock Out Days </string>
+    <string name="g448cd"> Day(s) </string>
+    <string name="g448cm"> Month(s) </string>
+    <string name="g448d"> Provider Prescribe the Same </string>
+    <string name="g448da"> Yes </string>
+    <string name="g448db"> No </string>
+
     <string name="g040250a">Pneumococcal Vaccine-Availability of M/C/V at facility</string>
     <string name="g040250ay">Yes</string>
     <string name="g040250an">No</string>
@@ -2675,6 +3427,22 @@
     <string name="g040250p">Pneumococcal Vaccine-Provider Prescribe the Same</string>
     <string name="g040250py">Yes</string>
     <string name="g040250pn">No</string>
+
+    <string name="Q_g449"> g449 </string>
+    <string name="g449"> Pneumococcal Vaccine </string>
+    <string name="g449a"> Availability of M/C/V at Facility </string>
+    <string name="g449aa"> Yes </string>
+    <string name="g449ab"> No </string>
+    <string name="g449b"> Stock Out in Past 03 Months </string>
+    <string name="g449ba">Yes</string>
+    <string name="g449bb">No</string>
+    <string name="g449c"> Stock Out Days </string>
+    <string name="g449cd"> Day(s) </string>
+    <string name="g449cm"> Month(s) </string>
+    <string name="g449d"> Provider Prescribe the Same </string>
+    <string name="g449da"> Yes </string>
+    <string name="g449db"> No </string>
+
     <string name="g040260a">Tetanus Toxoid-Availability of M/C/V at facility</string>
     <string name="g040260ay">Yes</string>
     <string name="g040260an">No</string>
@@ -2687,6 +3455,22 @@
     <string name="g040260p">Tetanus Toxoid-Provider Prescribe the Same</string>
     <string name="g040260py">Yes</string>
     <string name="g040260pn">No</string>
+
+    <string name="Q_g450"> g450 </string>
+    <string name="g450"> Tetanus Toxoid </string>
+    <string name="g450a"> Availability of M/C/V at Facility </string>
+    <string name="g450aa"> Yes </string>
+    <string name="g450ab"> No </string>
+    <string name="g450b"> Stock Out in Past 03 Months </string>
+    <string name="g450ba">Yes</string>
+    <string name="g450bb">No</string>
+    <string name="g450c"> Stock Out Days </string>
+    <string name="g450cd"> Day(s) </string>
+    <string name="g450cm"> Month(s) </string>
+    <string name="g450d"> Provider Prescribe the Same </string>
+    <string name="g450da"> Yes </string>
+    <string name="g450db"> No </string>
+
     <string name="g040270a">Rota Virus Vaccine-Availability of M/C/V at facility</string>
     <string name="g040270ay">Yes</string>
     <string name="g040270an">No</string>
@@ -2699,6 +3483,22 @@
     <string name="g040270p">Rota Virus Vaccine-Provider Prescribe the Same</string>
     <string name="g040270py">Yes</string>
     <string name="g040270pn">No</string>
+
+    <string name="Q_g451"> g451 </string>
+    <string name="g451"> Rota Virus Vaccine </string>
+    <string name="g451a"> Availability of M/C/V at Facility </string>
+    <string name="g451aa"> Yes </string>
+    <string name="g451ab"> No </string>
+    <string name="g451b"> Stock Out in Past 03 Months </string>
+    <string name="g451ba">Yes</string>
+    <string name="g451bb">No</string>
+    <string name="g451c"> Stock Out Days </string>
+    <string name="g451cd"> Day(s) </string>
+    <string name="g451cm"> Month(s) </string>
+    <string name="g451d"> Provider Prescribe the Same </string>
+    <string name="g451da"> Yes </string>
+    <string name="g451db"> No </string>
+
     <string name="g040280a">Anti-Rabies Vaccine (PVRV) Single Dose Vial-Availability of M/C/V at facility</string>
     <string name="g040280ay">Yes</string>
     <string name="g040280an">No</string>
@@ -2711,6 +3511,22 @@
     <string name="g040280p">Anti-Rabies Vaccine (PVRV) Single Dose Vial-Provider Prescribe the Same</string>
     <string name="g040280py">Yes</string>
     <string name="g040280pn">No</string>
+
+    <string name="Q_g452"> g452 </string>
+    <string name="g452"> Anti - Rabies Vaccine ( P V R V ) Single Dose Vial </string>
+    <string name="g452a"> Availability of M/C/V at Facility </string>
+    <string name="g452aa"> Yes </string>
+    <string name="g452ab"> No </string>
+    <string name="g452b"> Stock Out in Past 03 Months </string>
+    <string name="g452ba">Yes</string>
+    <string name="g452bb">No</string>
+    <string name="g452c"> Stock Out Days </string>
+    <string name="g452cd"> Day(s) </string>
+    <string name="g452cm"> Month(s) </string>
+    <string name="g452d"> Provider Prescribe the Same </string>
+    <string name="g452da"> Yes </string>
+    <string name="g452db"> No </string>
+
     <string name="g040290a">Anti-Snake Venum Serum-Availability of M/C/V at facility</string>
     <string name="g040290ay">Yes</string>
     <string name="g040290an">No</string>
@@ -2723,6 +3539,22 @@
     <string name="g040290p">Anti-Snake Venum Serum-Provider Prescribe the Same</string>
     <string name="g040290py">Yes</string>
     <string name="g040290pn">No</string>
+
+    <string name="Q_g453"> g453 </string>
+    <string name="g453"> Anti - Snake Venum Serum </string>
+    <string name="g453a"> Availability of M/C/V at Facility </string>
+    <string name="g453aa"> Yes </string>
+    <string name="g453ab"> No </string>
+    <string name="g453b"> Stock Out in Past 03 Months </string>
+    <string name="g453ba">Yes</string>
+    <string name="g453bb">No</string>
+    <string name="g453c"> Stock Out Days </string>
+    <string name="g453cd"> Day(s) </string>
+    <string name="g453cm"> Month(s) </string>
+    <string name="g453d"> Provider Prescribe the Same </string>
+    <string name="g453da"> Yes </string>
+    <string name="g453db"> No </string>
+
     <string name="g0402100a">Typhoid Conjugate Vaccine-Availability of M/C/V at facility</string>
     <string name="g0402100ay">Yes</string>
     <string name="g0402100an">No</string>
@@ -2735,6 +3567,21 @@
     <string name="g0402100p">Typhoid Conjugate Vaccine-Provider Prescribe the Same</string>
     <string name="g0402100py">Yes</string>
     <string name="g0402100pn">No</string>
+
+    <string name="Q_g454"> g454 </string>
+    <string name="g454"> Typhoid Conjugate Vaccine </string>
+    <string name="g454a"> Availability of M/C/V at Facility </string>
+    <string name="g454aa"> Yes </string>
+    <string name="g454ab"> No </string>
+    <string name="g454b"> Stock Out in Past 03 Months </string>
+    <string name="g454ba">Yes</string>
+    <string name="g454bb">No</string>
+    <string name="g454c"> Stock Out Days </string>
+    <string name="g454cd"> Day(s) </string>
+    <string name="g454cm"> Month(s) </string>
+    <string name="g454d"> Provider Prescribe the Same </string>
+    <string name="g454da"> Yes </string>
+    <string name="g454db"> No </string>
 
 
     <string name="g0403"> EMERGENCY TRAY </string>
@@ -2750,6 +3597,22 @@
     <string name="g040310p">Injection Tranexamic Acid 250MG/5ML (10)-Provider Prescribe the Same</string>
     <string name="g040310py">Yes</string>
     <string name="g040310pn">No</string>
+
+    <string name="Q_g455"> g455 </string>
+    <string name="g455"> Injection Tranexamic Acid 250MG/5ML (10) </string>
+    <string name="g455a"> Availability of M/C/V at Facility </string>
+    <string name="g455aa"> Yes </string>
+    <string name="g455ab"> No </string>
+    <string name="g455b"> Stock Out in Past 03 Months </string>
+    <string name="g455ba">Yes</string>
+    <string name="g455bb">No</string>
+    <string name="g455c"> Stock Out Days </string>
+    <string name="g455cd"> Day(s) </string>
+    <string name="g455cm"> Month(s) </string>
+    <string name="g455d"> Provider Prescribe the Same </string>
+    <string name="g455da"> Yes </string>
+    <string name="g455db"> No </string>
+
     <string name="g040320a">Injection Atropine 1MG/IML (10)-Availability of M/C/V at facility</string>
     <string name="g040320ay">Yes</string>
     <string name="g040320an">No</string>
@@ -2762,6 +3625,22 @@
     <string name="g040320p">Injection Atropine 1MG/IML (10)-Provider Prescribe the Same</string>
     <string name="g040320py">Yes</string>
     <string name="g040320pn">No</string>
+
+    <string name="Q_g456"> g456 </string>
+    <string name="g456"> Injection Atropine 1mg / Iml (10) </string>
+    <string name="g456a"> Availability of M/C/V at Facility </string>
+    <string name="g456aa"> Yes </string>
+    <string name="g456ab"> No </string>
+    <string name="g456b"> Stock Out in Past 03 Months </string>
+    <string name="g456ba">Yes</string>
+    <string name="g456bb">No</string>
+    <string name="g456c"> Stock Out Days </string>
+    <string name="g456cd"> Day(s) </string>
+    <string name="g456cm"> Month(s) </string>
+    <string name="g456d"> Provider Prescribe the Same </string>
+    <string name="g456da"> Yes </string>
+    <string name="g456db"> No </string>
+
     <string name="g040330a">Injection Adrenaline 0.1MG/1ML (10)-Availability of M/C/V at facility</string>
     <string name="g040330ay">Yes</string>
     <string name="g040330an">No</string>
@@ -2774,6 +3653,22 @@
     <string name="g040330p">Injection Adrenaline 0.1MG/1ML (10)-Provider Prescribe the Same</string>
     <string name="g040330py">Yes</string>
     <string name="g040330pn">No</string>
+
+    <string name="Q_g457"> g457 </string>
+    <string name="g457"> Injection Adrenaline 0.1mg / 1ml (10) </string>
+    <string name="g457a"> Availability of M/C/V at Facility </string>
+    <string name="g457aa"> Yes </string>
+    <string name="g457ab"> No </string>
+    <string name="g457b"> Stock Out in Past 03 Months </string>
+    <string name="g457ba">Yes</string>
+    <string name="g457bb">No</string>
+    <string name="g457c"> Stock Out Days </string>
+    <string name="g457cd"> Day(s) </string>
+    <string name="g457cm"> Month(s) </string>
+    <string name="g457d"> Provider Prescribe the Same </string>
+    <string name="g457da"> Yes </string>
+    <string name="g457db"> No </string>
+
     <string name="g040340a">Injection Diazepam 5 MG/ML (10)-Availability of M/C/V at facility</string>
     <string name="g040340ay">Yes</string>
     <string name="g040340an">No</string>
@@ -2786,6 +3681,22 @@
     <string name="g040340p">Injection Diazepam 5 MG/ML (10)-Provider Prescribe the Same</string>
     <string name="g040340py">Yes</string>
     <string name="g040340pn">No</string>
+
+    <string name="Q_g458"> g458 </string>
+    <string name="g458"> Injection Diazepam 5ml / ml (10) </string>
+    <string name="g458a"> Availability of M/C/V at Facility </string>
+    <string name="g458aa"> Yes </string>
+    <string name="g458ab"> No </string>
+    <string name="g458b"> Stock Out in Past 03 Months </string>
+    <string name="g458ba">Yes</string>
+    <string name="g458bb">No</string>
+    <string name="g458c"> Stock Out Days </string>
+    <string name="g458cd"> Day(s) </string>
+    <string name="g458cm"> Month(s) </string>
+    <string name="g458d"> Provider Prescribe the Same </string>
+    <string name="g458da"> Yes </string>
+    <string name="g458db"> No </string>
+
     <string name="g040350a">Injection Diclofenac Sodium 25MG/ML (10)-Availability of M/C/V at facility</string>
     <string name="g040350ay">Yes</string>
     <string name="g040350an">No</string>
@@ -2798,6 +3709,22 @@
     <string name="g040350p">Injection Diclofenac Sodium 25MG/ML (10)-Provider Prescribe the Same</string>
     <string name="g040350py">Yes</string>
     <string name="g040350pn">No</string>
+
+    <string name="Q_g459"> g459 </string>
+    <string name="g459"> Injection Diclofenac Sodium 25mg / ml (10) </string>
+    <string name="g459a"> Availability of M/C/V at Facility </string>
+    <string name="g459aa"> Yes </string>
+    <string name="g459ab"> No </string>
+    <string name="g459b"> Stock Out in Past 03 Months </string>
+    <string name="g459ba">Yes</string>
+    <string name="g459bb">No</string>
+    <string name="g459c"> Stock Out Days </string>
+    <string name="g459cd"> Day(s) </string>
+    <string name="g459cm"> Month(s) </string>
+    <string name="g459d"> Provider Prescribe the Same </string>
+    <string name="g459da"> Yes </string>
+    <string name="g459db"> No </string>
+
     <string name="g040360a">Injection Hydrocortisone sodium 100 MG (10)-Availability of M/C/V at facility</string>
     <string name="g040360ay">Yes</string>
     <string name="g040360an">No</string>
@@ -2810,6 +3737,22 @@
     <string name="g040360p">Injection Hydrocortisone sodium 100 MG (10)-Provider Prescribe the Same</string>
     <string name="g040360py">Yes</string>
     <string name="g040360pn">No</string>
+
+    <string name="Q_g460"> g460 </string>
+    <string name="g460"> Injection Hydrocortisone Sodium 100mg (10) </string>
+    <string name="g460a"> Availability of M/C/V at Facility </string>
+    <string name="g460aa"> Yes </string>
+    <string name="g460ab"> No </string>
+    <string name="g460b"> Stock Out in Past 03 Months </string>
+    <string name="g460ba">Yes</string>
+    <string name="g460bb">No</string>
+    <string name="g460c"> Stock Out Days </string>
+    <string name="g460cd"> Day(s) </string>
+    <string name="g460cm"> Month(s) </string>
+    <string name="g460d"> Provider Prescribe the Same </string>
+    <string name="g460da"> Yes </string>
+    <string name="g460db"> No </string>
+
     <string name="g040370a">Injection Lidocaine 2% W/V (5)-Availability of M/C/V at facility</string>
     <string name="g040370ay">Yes</string>
     <string name="g040370an">No</string>
@@ -2822,6 +3765,22 @@
     <string name="g040370p">Injection Lidocaine 2% W/V (5)-Provider Prescribe the Same</string>
     <string name="g040370py">Yes</string>
     <string name="g040370pn">No</string>
+
+    <string name="Q_g461"> g461 </string>
+    <string name="g461"> Injection Lidocaine 2% W/V (5) </string>
+    <string name="g461a"> Availability of M/C/V at Facility </string>
+    <string name="g461aa"> Yes </string>
+    <string name="g461ab"> No </string>
+    <string name="g461b"> Stock Out in Past 03 Months </string>
+    <string name="g461ba">Yes</string>
+    <string name="g461bb">No</string>
+    <string name="g461c"> Stock Out Days </string>
+    <string name="g461cd"> Day(s) </string>
+    <string name="g461cm"> Month(s) </string>
+    <string name="g461d"> Provider Prescribe the Same </string>
+    <string name="g461da"> Yes </string>
+    <string name="g461db"> No </string>
+
     <string name="g040380a">Water for injection 5 ML (5)-Availability of M/C/V at facility</string>
     <string name="g040380ay">Yes</string>
     <string name="g040380an">No</string>
@@ -2834,6 +3793,22 @@
     <string name="g040380p">Water for injection 5 ML (5)-Provider Prescribe the Same</string>
     <string name="g040380py">Yes</string>
     <string name="g040380pn">No</string>
+
+    <string name="Q_g462"> g462 </string>
+    <string name="g462"> Water for Injection 5ml (5) </string>
+    <string name="g462a"> Availability of M/C/V at Facility </string>
+    <string name="g462aa"> Yes </string>
+    <string name="g462ab"> No </string>
+    <string name="g462b"> Stock Out in Past 03 Months </string>
+    <string name="g462ba">Yes</string>
+    <string name="g462bb">No</string>
+    <string name="g462c"> Stock Out Days </string>
+    <string name="g462cd"> Day(s) </string>
+    <string name="g462cm"> Month(s) </string>
+    <string name="g462d"> Provider Prescribe the Same </string>
+    <string name="g462da"> Yes </string>
+    <string name="g462db"> No </string>
+
     <string name="g040390a">Injection ringer lactate 1000 ML (10)-Availability of M/C/V at facility</string>
     <string name="g040390ay">Yes</string>
     <string name="g040390an">No</string>
@@ -2846,6 +3821,22 @@
     <string name="g040390p">Injection ringer lactate 1000 ML (10)-Provider Prescribe the Same</string>
     <string name="g040390py">Yes</string>
     <string name="g040390pn">No</string>
+
+    <string name="Q_g463"> g463 </string>
+    <string name="g463"> Injection Ringer Lactate 1000ml (10) </string>
+    <string name="g463a"> Availability of M/C/V at Facility </string>
+    <string name="g463aa"> Yes </string>
+    <string name="g463ab"> No </string>
+    <string name="g463b"> Stock Out in Past 03 Months </string>
+    <string name="g463ba">Yes</string>
+    <string name="g463bb">No</string>
+    <string name="g463c"> Stock Out Days </string>
+    <string name="g463cd"> Day(s) </string>
+    <string name="g463cm"> Month(s) </string>
+    <string name="g463d"> Provider Prescribe the Same </string>
+    <string name="g463da"> Yes </string>
+    <string name="g463db"> No </string>
+
     <string name="g0403100a">Injection Normal Saline 500 ML (10)-Availability of M/C/V at facility</string>
     <string name="g0403100ay">Yes</string>
     <string name="g0403100an">No</string>
@@ -2858,6 +3849,22 @@
     <string name="g0403100p">Injection Normal Saline 500 ML (10)-Provider Prescribe the Same</string>
     <string name="g0403100py">Yes</string>
     <string name="g0403100pn">No</string>
+
+    <string name="Q_g464"> g464 </string>
+    <string name="g464"> Injection Normal Saline 500ml (10) </string>
+    <string name="g464a"> Availability of M/C/V at Facility </string>
+    <string name="g464aa"> Yes </string>
+    <string name="g464ab"> No </string>
+    <string name="g464b"> Stock Out in Past 03 Months </string>
+    <string name="g464ba">Yes</string>
+    <string name="g464bb">No</string>
+    <string name="g464c"> Stock Out Days </string>
+    <string name="g464cd"> Day(s) </string>
+    <string name="g464cm"> Month(s) </string>
+    <string name="g464d"> Provider Prescribe the Same </string>
+    <string name="g464da"> Yes </string>
+    <string name="g464db"> No </string>
+
     <string name="g0403110a">Injection Glucose / Dextrose 25% 25ml ampoule (2)-Availability of M/C/V at facility</string>
     <string name="g0403110ay">Yes</string>
     <string name="g0403110an">No</string>
@@ -2870,6 +3877,22 @@
     <string name="g0403110p">Injection Glucose / Dextrose 25% 25ml ampoule (2)-Provider Prescribe the Same</string>
     <string name="g0403110py">Yes</string>
     <string name="g0403110pn">No</string>
+
+    <string name="Q_g465"> g465 </string>
+    <string name="g465"> Injection Glucose / Dextrose 25% 25ml Ampoule (2) </string>
+    <string name="g465a"> Availability of M/C/V at Facility </string>
+    <string name="g465aa"> Yes </string>
+    <string name="g465ab"> No </string>
+    <string name="g465b"> Stock Out in Past 03 Months </string>
+    <string name="g465ba">Yes</string>
+    <string name="g465bb">No</string>
+    <string name="g465c"> Stock Out Days </string>
+    <string name="g465cd"> Day(s) </string>
+    <string name="g465cm"> Month(s) </string>
+    <string name="g465d"> Provider Prescribe the Same </string>
+    <string name="g465da"> Yes </string>
+    <string name="g465db"> No </string>
+
     <string name="g0403120a">Glyceryl Trinitrate Sublingual 500 MCG (50)-Availability of M/C/V at facility</string>
     <string name="g0403120ay">Yes</string>
     <string name="g0403120an">No</string>
@@ -2882,6 +3905,22 @@
     <string name="g0403120p">Glyceryl Trinitrate Sublingual 500 MCG (50)-Provider Prescribe the Same</string>
     <string name="g0403120py">Yes</string>
     <string name="g0403120pn">No</string>
+
+    <string name="Q_g466"> g466 </string>
+    <string name="g466"> Glyceryl Trinitrate Sublingual 500mcg (50) </string>
+    <string name="g466a"> Availability of M/C/V at Facility </string>
+    <string name="g466aa"> Yes </string>
+    <string name="g466ab"> No </string>
+    <string name="g466b"> Stock Out in Past 03 Months </string>
+    <string name="g466ba">Yes</string>
+    <string name="g466bb">No</string>
+    <string name="g466c"> Stock Out Days </string>
+    <string name="g466cd"> Day(s) </string>
+    <string name="g466cm"> Month(s) </string>
+    <string name="g466d"> Provider Prescribe the Same </string>
+    <string name="g466da"> Yes </string>
+    <string name="g466db"> No </string>
+
     <string name="g0403130a">Isosorbide dinitrate Sublingual 5 MG (10)-Availability of M/C/V at facility</string>
     <string name="g0403130ay">Yes</string>
     <string name="g0403130an">No</string>
@@ -2894,6 +3933,23 @@
     <string name="g0403130p">Isosorbide dinitrate Sublingual 5 MG (10)-Provider Prescribe the Same</string>
     <string name="g0403130py">Yes</string>
     <string name="g0403130pn">No</string>
+
+    <string name="Q_g467"> g467 </string>
+    <string name="g467"> Isosorbide Dinitrate Sublingual 5mg (10) </string>
+    <string name="g467a"> Availability of M/C/V at Facility </string>
+    <string name="g467aa"> Yes </string>
+    <string name="g467ab"> No </string>
+    <string name="g467b"> Stock Out in Past 03 Months </string>
+    <string name="g467ba">Yes</string>
+    <string name="g467bb">No</string>
+    <string name="g467c"> Stock Out Days </string>
+    <string name="g467cd"> Day(s) </string>
+    <string name="g467cm"> Month(s) </string>
+    <string name="g467d"> Provider Prescribe the Same </string>
+    <string name="g467da"> Yes </string>
+    <string name="g467db"> No </string>
+
+
     <string name="g0403140a">Lidocaine GEL (1)-Availability of M/C/V at facility</string>
     <string name="g0403140ay">Yes</string>
     <string name="g0403140an">No</string>
@@ -2906,6 +3962,23 @@
     <string name="g0403140p">Lidocaine GEL (1)-Provider Prescribe the Same</string>
     <string name="g0403140py">Yes</string>
     <string name="g0403140pn">No</string>
+
+    <string name="Q_g468"> g468 </string>
+    <string name="g468"> Lidocaine GEL (1) </string>
+    <string name="g468a"> Availability of M/C/V at Facility </string>
+    <string name="g468aa"> Yes </string>
+    <string name="g468ab"> No </string>
+    <string name="g468b"> Stock Out in Past 03 Months </string>
+    <string name="g468ba">Yes</string>
+    <string name="g468bb">No</string>
+    <string name="g468c"> Stock Out Days </string>
+    <string name="g468cd"> Day(s) </string>
+    <string name="g468cm"> Month(s) </string>
+    <string name="g468d"> Provider Prescribe the Same </string>
+    <string name="g468da"> Yes </string>
+    <string name="g468db"> No </string>
+
+
     <string name="g0403150a">Cotton Roll 500 GMS (1)-Availability of M/C/V at facility</string>
     <string name="g0403150ay">Yes</string>
     <string name="g0403150an">No</string>
@@ -2918,6 +3991,23 @@
     <string name="g0403150p">Cotton Roll 500 GMS (1)-Provider Prescribe the Same</string>
     <string name="g0403150py">Yes</string>
     <string name="g0403150pn">No</string>
+
+    <string name="Q_g469"> g469 </string>
+    <string name="g469"> Cotton Roll 500gms (1) </string>
+    <string name="g469a"> Availability of M/C/V at Facility </string>
+    <string name="g469aa"> Yes </string>
+    <string name="g469ab"> No </string>
+    <string name="g469b"> Stock Out in Past 03 Months </string>
+    <string name="g469ba">Yes</string>
+    <string name="g469bb">No</string>
+    <string name="g469c"> Stock Out Days </string>
+    <string name="g469cd"> Day(s) </string>
+    <string name="g469cm"> Month(s) </string>
+    <string name="g469d"> Provider Prescribe the Same </string>
+    <string name="g469da"> Yes </string>
+    <string name="g469db"> No </string>
+
+
     <string name="g0403160a">Compression bandage  (5)-Availability of M/C/V at facility</string>
     <string name="g0403160ay">Yes</string>
     <string name="g0403160an">No</string>
@@ -2930,6 +4020,22 @@
     <string name="g0403160p">Compression bandage  (5)-Provider Prescribe the Same</string>
     <string name="g0403160py">Yes</string>
     <string name="g0403160pn">No</string>
+
+    <string name="Q_g470"> g470 </string>
+    <string name="g470"> Compression Bandage (5) </string>
+    <string name="g470a"> Availability of M/C/V at Facility </string>
+    <string name="g470aa"> Yes </string>
+    <string name="g470ab"> No </string>
+    <string name="g470b"> Stock Out in Past 03 Months </string>
+    <string name="g470ba">Yes</string>
+    <string name="g470bb">No</string>
+    <string name="g470c"> Stock Out Days </string>
+    <string name="g470cd"> Day(s) </string>
+    <string name="g470cm"> Month(s) </string>
+    <string name="g470d"> Provider Prescribe the Same </string>
+    <string name="g470da"> Yes </string>
+    <string name="g470db"> No </string>
+
     <string name="g0403170a">D/S 1 CC, 5 CC, 10 CC  (10 each)-Availability of M/C/V at facility</string>
     <string name="g0403170ay">Yes</string>
     <string name="g0403170an">No</string>
@@ -2942,6 +4048,22 @@
     <string name="g0403170p">D/S 1 CC, 5 CC, 10 CC  (10 each)-Provider Prescribe the Same</string>
     <string name="g0403170py">Yes</string>
     <string name="g0403170pn">No</string>
+
+    <string name="Q_g471"> g471 </string>
+    <string name="g471"> D/S 1cc, 5cc, 10cc  (10 each) </string>
+    <string name="g471a"> Availability of M/C/V at Facility </string>
+    <string name="g471aa"> Yes </string>
+    <string name="g471ab"> No </string>
+    <string name="g471b"> Stock Out in Past 03 Months </string>
+    <string name="g471ba">Yes</string>
+    <string name="g471bb">No</string>
+    <string name="g471c"> Stock Out Days </string>
+    <string name="g471cd"> Day(s) </string>
+    <string name="g471cm"> Month(s) </string>
+    <string name="g471d"> Provider Prescribe the Same </string>
+    <string name="g471da"> Yes </string>
+    <string name="g471db"> No </string>
+
     <string name="g0403180a">IV set (20)-Availability of M/C/V at facility</string>
     <string name="g0403180ay">Yes</string>
     <string name="g0403180an">No</string>
@@ -2954,6 +4076,23 @@
     <string name="g0403180p">IV set (20)-Provider Prescribe the Same</string>
     <string name="g0403180py">Yes</string>
     <string name="g0403180pn">No</string>
+
+    <string name="Q_g472"> g472 </string>
+    <string name="g472"> IV Set (20) </string>
+    <string name="g472a"> Availability of M/C/V at Facility </string>
+    <string name="g472aa"> Yes </string>
+    <string name="g472ab"> No </string>
+    <string name="g472b"> Stock Out in Past 03 Months </string>
+    <string name="g472ba">Yes</string>
+    <string name="g472bb">No</string>
+    <string name="g472c"> Stock Out Days </string>
+    <string name="g472cd"> Day(s) </string>
+    <string name="g472cm"> Month(s) </string>
+    <string name="g472d"> Provider Prescribe the Same </string>
+    <string name="g472da"> Yes </string>
+    <string name="g472db"> No </string>
+
+
     <string name="g0403190a">IV Cannula18G, 20G, 22G, 24G (20)-Availability of M/C/V at facility</string>
     <string name="g0403190ay">Yes</string>
     <string name="g0403190an">No</string>
@@ -2966,6 +4105,22 @@
     <string name="g0403190p">IV Cannula18G, 20G, 22G, 24G (20)-Provider Prescribe the Same</string>
     <string name="g0403190py">Yes</string>
     <string name="g0403190pn">No</string>
+
+    <string name="Q_g473"> g473 </string>
+    <string name="g473"> IV Cannula 18G, 20G, 22G, 24G (20) </string>
+    <string name="g473a"> Availability of M/C/V at Facility </string>
+    <string name="g473aa"> Yes </string>
+    <string name="g473ab"> No </string>
+    <string name="g473b"> Stock Out in Past 03 Months </string>
+    <string name="g473ba">Yes</string>
+    <string name="g473bb">No</string>
+    <string name="g473c"> Stock Out Days </string>
+    <string name="g473cd"> Day(s) </string>
+    <string name="g473cm"> Month(s) </string>
+    <string name="g473d"> Provider Prescribe the Same </string>
+    <string name="g473da"> Yes </string>
+    <string name="g473db"> No </string>
+
     <string name="g0403200a">Silk Sutures Sterile Packs0, 1/0, 2/0 (10)-Availability of M/C/V at facility</string>
     <string name="g0403200ay">Yes</string>
     <string name="g0403200an">No</string>
@@ -2978,6 +4133,22 @@
     <string name="g0403200p">Silk Sutures Sterile Packs0, 1/0, 2/0 (10)-Provider Prescribe the Same</string>
     <string name="g0403200py">Yes</string>
     <string name="g0403200pn">No</string>
+
+    <string name="Q_g474"> g474 </string>
+    <string name="g474"> Silk Sutures Sterile Packs0, 1/0, 2/0 (10) </string>
+    <string name="g474a"> Availability of M/C/V at Facility </string>
+    <string name="g474aa"> Yes </string>
+    <string name="g474ab"> No </string>
+    <string name="g474b"> Stock Out in Past 03 Months </string>
+    <string name="g474ba">Yes</string>
+    <string name="g474bb">No</string>
+    <string name="g474c"> Stock Out Days </string>
+    <string name="g474cd"> Day(s) </string>
+    <string name="g474cm"> Month(s) </string>
+    <string name="g474d"> Provider Prescribe the Same </string>
+    <string name="g474da"> Yes </string>
+    <string name="g474db"> No </string>
+
     <string name="g0403210a">ETT 3 mm, 3.5 mm, 4 mm, 7.5 mm, 8mm (10)-Availability of M/C/V at facility</string>
     <string name="g0403210ay">Yes</string>
     <string name="g0403210an">No</string>
@@ -2990,6 +4161,22 @@
     <string name="g0403210p">ETT 3 mm, 3.5 mm, 4 mm, 7.5 mm, 8mm (10)-Provider Prescribe the Same</string>
     <string name="g0403210py">Yes</string>
     <string name="g0403210pn">No</string>
+
+    <string name="Q_g475"> g475 </string>
+    <string name="g475"> ETT 3mm, 3.5mm, 4mm, 7.5mm, 8mm (10) </string>
+    <string name="g475a"> Availability of M/C/V at Facility </string>
+    <string name="g475aa"> Yes </string>
+    <string name="g475ab"> No </string>
+    <string name="g475b"> Stock Out in Past 03 Months </string>
+    <string name="g475ba">Yes</string>
+    <string name="g475bb">No</string>
+    <string name="g475c"> Stock Out Days </string>
+    <string name="g475cd"> Day(s) </string>
+    <string name="g475cm"> Month(s) </string>
+    <string name="g475d"> Provider Prescribe the Same </string>
+    <string name="g475da"> Yes </string>
+    <string name="g475db"> No </string>
+
     <string name="g0403220a">Foleys catheter all sizes 10 F to 28 F (12)-Availability of M/C/V at facility</string>
     <string name="g0403220ay">Yes</string>
     <string name="g0403220an">No</string>
@@ -3002,18 +4189,50 @@
     <string name="g0403220p">Foleys catheter all sizes 10 F to 28 F (12)-Provider Prescribe the Same</string>
     <string name="g0403220py">Yes</string>
     <string name="g0403220pn">No</string>
-    <string name="g0403230a">NG Tube 14-18 For, infant/child: 10-14 Fr (10)-Availability of M/C/V at facility</string>
+
+    <string name="Q_g476"> g476 </string>
+    <string name="g476"> Foleys Catheter all sizes 10F to 28F (12) </string>
+    <string name="g476a"> Availability of M/C/V at Facility </string>
+    <string name="g476aa"> Yes </string>
+    <string name="g476ab"> No </string>
+    <string name="g476b"> Stock Out in Past 03 Months </string>
+    <string name="g476ba">Yes</string>
+    <string name="g476bb">No</string>
+    <string name="g476c"> Stock Out Days </string>
+    <string name="g476cd"> Day(s) </string>
+    <string name="g476cm"> Month(s) </string>
+    <string name="g476d"> Provider Prescribe the Same </string>
+    <string name="g476da"> Yes </string>
+    <string name="g476db"> No </string>
+
+    <string name="g0403230a">NG Tube 14–18 For, infant/child: 10–14 Fr (10)-Availability of M/C/V at facility</string>
     <string name="g0403230ay">Yes</string>
     <string name="g0403230an">No</string>
-    <string name="g0403230s">NG Tube 14-18 For, infant/child: 10-14 Fr (10)-Stock Out in Past 03 Months</string>
+    <string name="g0403230s">NG Tube 14–18 For, infant/child: 10–14 Fr (10)-Stock Out in Past 03 Months</string>
     <string name="g0403230sy">Yes</string>
     <string name="g0403230sn">No</string>
-    <string name="g0403230so">NG Tube 14-18 For, infant/child: 10-14 Fr (10)-Stock Out Days</string>
+    <string name="g0403230so">NG Tube 14–18 For, infant/child: 10–14 Fr (10)-Stock Out Days</string>
     <string name="g0403230sd">DAYS</string>
     <string name="g0403230sm">MONTHS</string>
-    <string name="g0403230p">NG Tube 14-18 For, infant/child: 10-14 Fr (10)-Provider Prescribe the Same</string>
+    <string name="g0403230p">NG Tube 14–18 For, infant/child: 10–14 Fr (10)-Provider Prescribe the Same</string>
     <string name="g0403230py">Yes</string>
     <string name="g0403230pn">No</string>
+
+    <string name="Q_g477"> g477 </string>
+    <string name="g477"> NG Tube 14–18 For, infant/child: 10–14 Fr (10) </string>
+    <string name="g477a"> Availability of M/C/V at Facility </string>
+    <string name="g477aa"> Yes </string>
+    <string name="g477ab"> No </string>
+    <string name="g477b"> Stock Out in Past 03 Months </string>
+    <string name="g477ba">Yes</string>
+    <string name="g477bb">No</string>
+    <string name="g477c"> Stock Out Days </string>
+    <string name="g477cd"> Day(s) </string>
+    <string name="g477cm"> Month(s) </string>
+    <string name="g477d"> Provider Prescribe the Same </string>
+    <string name="g477da"> Yes </string>
+    <string name="g477db"> No </string>
+
     <string name="g0403240a">Injection MgSO4 2ml ampules  (20)-Availability of M/C/V at facility</string>
     <string name="g0403240ay">Yes</string>
     <string name="g0403240an">No</string>
@@ -3026,6 +4245,22 @@
     <string name="g0403240p">Injection MgSO4 2ml ampules  (20)-Provider Prescribe the Same</string>
     <string name="g0403240py">Yes</string>
     <string name="g0403240pn">No</string>
+
+    <string name="Q_g478"> g478 </string>
+    <string name="g478"> Injection MgSO4 2ml Ampules (20) </string>
+    <string name="g478a"> Availability of M/C/V at Facility </string>
+    <string name="g478aa"> Yes </string>
+    <string name="g478ab"> No </string>
+    <string name="g478b"> Stock Out in Past 03 Months </string>
+    <string name="g478ba">Yes</string>
+    <string name="g478bb">No</string>
+    <string name="g478c"> Stock Out Days </string>
+    <string name="g478cd"> Day(s) </string>
+    <string name="g478cm"> Month(s) </string>
+    <string name="g478d"> Provider Prescribe the Same </string>
+    <string name="g478da"> Yes </string>
+    <string name="g478db"> No </string>
+
     <string name="g0403250a">Injection Dobutamine 50mg/ml (5)-Availability of M/C/V at facility</string>
     <string name="g0403250ay">Yes</string>
     <string name="g0403250an">No</string>
@@ -3038,6 +4273,22 @@
     <string name="g0403250p">Injection Dobutamine 50mg/ml (5)-Provider Prescribe the Same</string>
     <string name="g0403250py">Yes</string>
     <string name="g0403250pn">No</string>
+
+    <string name="Q_g479"> g479 </string>
+    <string name="g479"> Injection Dobutamine 50mg/ml (5) </string>
+    <string name="g479a"> Availability of M/C/V at Facility </string>
+    <string name="g479aa"> Yes </string>
+    <string name="g479ab"> No </string>
+    <string name="g479b"> Stock Out in Past 03 Months </string>
+    <string name="g479ba">Yes</string>
+    <string name="g479bb">No</string>
+    <string name="g479c"> Stock Out Days </string>
+    <string name="g479cd"> Day(s) </string>
+    <string name="g479cm"> Month(s) </string>
+    <string name="g479d"> Provider Prescribe the Same </string>
+    <string name="g479da"> Yes </string>
+    <string name="g479db"> No </string>
+
     <string name="g0403260a">Injection Furosemide 10mg/ml (10)-Availability of M/C/V at facility</string>
     <string name="g0403260ay">Yes</string>
     <string name="g0403260an">No</string>
@@ -3050,6 +4301,22 @@
     <string name="g0403260p">Injection Furosemide 10mg/ml (10)-Provider Prescribe the Same</string>
     <string name="g0403260py">Yes</string>
     <string name="g0403260pn">No</string>
+
+    <string name="Q_g480"> g480 </string>
+    <string name="g480"> Injection Furosemide 10mg/ml (10) </string>
+    <string name="g480a"> Availability of M/C/V at Facility </string>
+    <string name="g480aa"> Yes </string>
+    <string name="g480ab"> No </string>
+    <string name="g480b"> Stock Out in Past 03 Months </string>
+    <string name="g480ba">Yes</string>
+    <string name="g480bb">No</string>
+    <string name="g480c"> Stock Out Days </string>
+    <string name="g480cd"> Day(s) </string>
+    <string name="g480cm"> Month(s) </string>
+    <string name="g480d"> Provider Prescribe the Same </string>
+    <string name="g480da"> Yes </string>
+    <string name="g480db"> No </string>
+
     <string name="g0403270a">Injection Calcium Gluconate 100mg/ml in 10ml (10)-Availability of M/C/V at facility</string>
     <string name="g0403270ay">Yes</string>
     <string name="g0403270an">No</string>
@@ -3062,6 +4329,21 @@
     <string name="g0403270p">Injection Calcium Gluconate 100mg/ml in 10ml (10)-Provider Prescribe the Same</string>
     <string name="g0403270py">Yes</string>
     <string name="g0403270pn">No</string>
+
+    <string name="Q_g481"> g481 </string>
+    <string name="g481"> Injection Calcium Gluconate 100mg/ml in 10ml (10) </string>
+    <string name="g481a"> Availability of M/C/V at Facility </string>
+    <string name="g481aa"> Yes </string>
+    <string name="g481ab"> No </string>
+    <string name="g481b"> Stock Out in Past 03 Months </string>
+    <string name="g481ba">Yes</string>
+    <string name="g481bb">No</string>
+    <string name="g481c"> Stock Out Days </string>
+    <string name="g481cd"> Day(s) </string>
+    <string name="g481cm"> Month(s) </string>
+    <string name="g481d"> Provider Prescribe the Same </string>
+    <string name="g481da"> Yes </string>
+    <string name="g481db"> No </string>
 
 
     <string name="g0404"> CONTRACEPTIVE COMMODITIES </string>
@@ -3077,6 +4359,22 @@
     <string name="g040410p">Condoms-Provider Prescribe the Same</string>
     <string name="g040410py">Yes</string>
     <string name="g040410pn">No</string>
+
+    <string name="Q_g482"> g482 </string>
+    <string name="g482"> Condoms </string>
+    <string name="g482a"> Availability of M/C/V at Facility </string>
+    <string name="g482aa"> Yes </string>
+    <string name="g482ab"> No </string>
+    <string name="g482b"> Stock Out in Past 03 Months </string>
+    <string name="g482ba">Yes</string>
+    <string name="g482bb">No</string>
+    <string name="g482c"> Stock Out Days </string>
+    <string name="g482cd"> Day(s) </string>
+    <string name="g482cm"> Month(s) </string>
+    <string name="g482d"> Provider Prescribe the Same </string>
+    <string name="g482da"> Yes </string>
+    <string name="g482db"> No </string>
+
     <string name="g040420a">COCs-Availability of M/C/V at facility</string>
     <string name="g040420ay">Yes</string>
     <string name="g040420an">No</string>
@@ -3089,6 +4387,22 @@
     <string name="g040420p">COCs-Provider Prescribe the Same</string>
     <string name="g040420py">Yes</string>
     <string name="g040420pn">No</string>
+
+    <string name="Q_g483"> g483 </string>
+    <string name="g483"> COCs </string>
+    <string name="g483a"> Availability of M/C/V at Facility </string>
+    <string name="g483aa"> Yes </string>
+    <string name="g483ab"> No </string>
+    <string name="g483b"> Stock Out in Past 03 Months </string>
+    <string name="g483ba">Yes</string>
+    <string name="g483bb">No</string>
+    <string name="g483c"> Stock Out Days </string>
+    <string name="g483cd"> Day(s) </string>
+    <string name="g483cm"> Month(s) </string>
+    <string name="g483d"> Provider Prescribe the Same </string>
+    <string name="g483da"> Yes </string>
+    <string name="g483db"> No </string>
+
     <string name="g040430a">POPs-Availability of M/C/V at facility</string>
     <string name="g040430ay">Yes</string>
     <string name="g040430an">No</string>
@@ -3101,6 +4415,22 @@
     <string name="g040430p">POPs-Provider Prescribe the Same</string>
     <string name="g040430py">Yes</string>
     <string name="g040430pn">No</string>
+
+    <string name="Q_g484"> g484 </string>
+    <string name="g484"> POPs </string>
+    <string name="g484a"> Availability of M/C/V at Facility </string>
+    <string name="g484aa"> Yes </string>
+    <string name="g484ab"> No </string>
+    <string name="g484b"> Stock Out in Past 03 Months </string>
+    <string name="g484ba">Yes</string>
+    <string name="g484bb">No</string>
+    <string name="g484c"> Stock Out Days </string>
+    <string name="g484cd"> Day(s) </string>
+    <string name="g484cm"> Month(s) </string>
+    <string name="g484d"> Provider Prescribe the Same </string>
+    <string name="g484da"> Yes </string>
+    <string name="g484db"> No </string>
+
     <string name="g040440a">Injectable-Availability of M/C/V at facility</string>
     <string name="g040440ay">Yes</string>
     <string name="g040440an">No</string>
@@ -3113,6 +4443,22 @@
     <string name="g040440p">Injectable-Provider Prescribe the Same</string>
     <string name="g040440py">Yes</string>
     <string name="g040440pn">No</string>
+
+    <string name="Q_g485"> g485 </string>
+    <string name="g485"> Injectable </string>
+    <string name="g485a"> Availability of M/C/V at Facility </string>
+    <string name="g485aa"> Yes </string>
+    <string name="g485ab"> No </string>
+    <string name="g485b"> Stock Out in Past 03 Months </string>
+    <string name="g485ba">Yes</string>
+    <string name="g485bb">No</string>
+    <string name="g485c"> Stock Out Days </string>
+    <string name="g485cd"> Day(s) </string>
+    <string name="g485cm"> Month(s) </string>
+    <string name="g485d"> Provider Prescribe the Same </string>
+    <string name="g485da"> Yes </string>
+    <string name="g485db"> No </string>
+
     <string name="g040450a">IUCDs -Availability of M/C/V at facility</string>
     <string name="g040450ay">Yes</string>
     <string name="g040450an">No</string>
@@ -3125,6 +4471,22 @@
     <string name="g040450p">IUCDs -Provider Prescribe the Same</string>
     <string name="g040450py">Yes</string>
     <string name="g040450pn">No</string>
+
+    <string name="Q_g486"> g486 </string>
+    <string name="g486"> IUCDs </string>
+    <string name="g486a"> Availability of M/C/V at Facility </string>
+    <string name="g486aa"> Yes </string>
+    <string name="g486ab"> No </string>
+    <string name="g486b"> Stock Out in Past 03 Months </string>
+    <string name="g486ba">Yes</string>
+    <string name="g486bb">No</string>
+    <string name="g486c"> Stock Out Days </string>
+    <string name="g486cd"> Day(s) </string>
+    <string name="g486cm"> Month(s) </string>
+    <string name="g486d"> Provider Prescribe the Same </string>
+    <string name="g486da"> Yes </string>
+    <string name="g486db"> No </string>
+
     <string name="g040460a">Implants-Availability of M/C/V at facility</string>
     <string name="g040460ay">Yes</string>
     <string name="g040460an">No</string>
@@ -3137,6 +4499,21 @@
     <string name="g040460p">Implants-Provider Prescribe the Same</string>
     <string name="g040460py">Yes</string>
     <string name="g040460pn">No</string>
+
+    <string name="Q_g487"> g487 </string>
+    <string name="g487"> Implants </string>
+    <string name="g487a"> Availability of M/C/V at Facility </string>
+    <string name="g487aa"> Yes </string>
+    <string name="g487ab"> No </string>
+    <string name="g487b"> Stock Out in Past 03 Months </string>
+    <string name="g487ba">Yes</string>
+    <string name="g487bb">No</string>
+    <string name="g487c"> Stock Out Days </string>
+    <string name="g487cd"> Day(s) </string>
+    <string name="g487cm"> Month(s) </string>
+    <string name="g487d"> Provider Prescribe the Same </string>
+    <string name="g487da"> Yes </string>
+    <string name="g487db"> No </string>
 
 
     <string name="modhtitle"> RECORDING AND REPORTING OF DATA </string>
@@ -6014,8 +7391,9 @@
     <string name='Q_g0302c50'>g0302c50</string>
     <string name='Q_g0302c60'>g0302c60</string>
     <string name='Q_g0302c70'>g0302c70</string>
-    <string name='Q_g04'>g04</string>
-    <string name='Q_g0401'>g0401</string>
+    <string name='Q_g4'>g4</string>
+    <string name='Q_g401'>g401</string>
+    <string name='Q_g402'>g402</string>
     <string name='Q_g04010a'>g04010a</string>
     <string name='Q_g04010p'>g04010p</string>
     <string name='Q_g04010s'>g04010s</string>

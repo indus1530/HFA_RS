@@ -11,7 +11,6 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
-import com.validatorcrawler.aliazaz.Clear;
 import com.validatorcrawler.aliazaz.Validator;
 
 import org.json.JSONException;
@@ -39,69 +38,6 @@ public class SectionG411Activity extends AppCompatActivity {
 
 
     private void setupSkips() {
-
-        bi.g040110s.setOnCheckedChangeListener(((radioGroup, i) -> {
-            if (i == bi.g040110sn.getId()) {
-                Clear.clearAllFields(bi.fldGrpCVg040110so);
-            }
-        }));
-
-
-        bi.g040120s.setOnCheckedChangeListener(((radioGroup, i) -> {
-            if (i == bi.g040120sn.getId()) {
-                Clear.clearAllFields(bi.fldGrpCVg040120so);
-            }
-        }));
-
-        bi.g04010s.setOnCheckedChangeListener(((radioGroup, i) -> {
-            if (i == bi.g04010sn.getId()) {
-                Clear.clearAllFields(bi.fldGrpCVg04010so);
-            }
-        }));
-
-        bi.g040150s.setOnCheckedChangeListener(((radioGroup, i) -> {
-            if (i == bi.g040150sn.getId()) {
-                Clear.clearAllFields(bi.fldGrpCVg040150so);
-            }
-        }));
-
-        bi.g040160s.setOnCheckedChangeListener(((radioGroup, i) -> {
-            if (i == bi.g040160sn.getId()) {
-                Clear.clearAllFields(bi.fldGrpCVg040160so);
-            }
-        }));
-
-        bi.g040170s.setOnCheckedChangeListener(((radioGroup, i) -> {
-            if (i == bi.g040170sn.getId()) {
-                Clear.clearAllFields(bi.fldGrpCVg040170so);
-            }
-        }));
-
-        bi.g040180s.setOnCheckedChangeListener(((radioGroup, i) -> {
-            if (i == bi.g040180sn.getId()) {
-                Clear.clearAllFields(bi.fldGrpCVg040180so);
-            }
-        }));
-
-        bi.g040190s.setOnCheckedChangeListener(((radioGroup, i) -> {
-            if (i == bi.g040190sn.getId()) {
-                Clear.clearAllFields(bi.fldGrpCVg040190so);
-            }
-        }));
-
-        bi.g0401100s.setOnCheckedChangeListener(((radioGroup, i) -> {
-            if (i == bi.g0401100sn.getId()) {
-                Clear.clearAllFields(bi.fldGrpCVg0401100so);
-            }
-        }));
-
-        bi.g0401110s.setOnCheckedChangeListener(((radioGroup, i) -> {
-            if (i == bi.g0401110sn.getId()) {
-                Clear.clearAllFields(bi.fldGrpCVg0401110so);
-            }
-        }));
-
-
     }
 
 
@@ -122,28 +58,28 @@ public class SectionG411Activity extends AppCompatActivity {
         JSONObject json = new JSONObject();
 
 
-        json.put("g040110a", bi.g040110ay.isChecked() ? "1"
-                : bi.g040110an.isChecked() ? "2"
+        json.put("g401a", bi.g401aa.isChecked() ? "1"
+                : bi.g401ab.isChecked() ? "2"
                 : "-1");
 
-        json.put("g040110s", bi.g040110sy.isChecked() ? "1"
-                : bi.g040110sn.isChecked() ? "2"
+        json.put("g401b", bi.g401ba.isChecked() ? "1"
+                : bi.g401bb.isChecked() ? "2"
                 : "-1");
 
-        json.put("g040110sd", bi.g040110sd.getText().toString().trim().length() > 0 ? bi.g040110sd.getText().toString() : "-1");
-        json.put("g040110sm", bi.g040110sm.getText().toString().trim().length() > 0 ? bi.g040110sm.getText().toString() : "-1");
+        json.put("g401cd", bi.g401cd.getText().toString().trim().length() > 0 ? bi.g401cd.getText().toString() : "-1");
+        json.put("g401cm", bi.g401cm.getText().toString().trim().length() > 0 ? bi.g401cm.getText().toString() : "-1");
 
 
-        json.put("g040120a", bi.g040120ay.isChecked() ? "1"
-                : bi.g040120an.isChecked() ? "2"
+        json.put("g402a", bi.g402aa.isChecked() ? "1"
+                : bi.g402ab.isChecked() ? "2"
                 : "-1");
 
-        json.put("g040120s", bi.g040120sy.isChecked() ? "1"
-                : bi.g040120sn.isChecked() ? "2"
+        json.put("g402b", bi.g402ba.isChecked() ? "1"
+                : bi.g402bb.isChecked() ? "2"
                 : "-1");
 
-        json.put("g040120sd", bi.g040120sd.getText().toString().trim().length() > 0 ? bi.g040120sd.getText().toString() : "-1");
-        json.put("g040120sm", bi.g040120sm.getText().toString().trim().length() > 0 ? bi.g040120sm.getText().toString() : "-1");
+        json.put("g402cd", bi.g402cd.getText().toString().trim().length() > 0 ? bi.g402cd.getText().toString() : "-1");
+        json.put("g402cm", bi.g402cm.getText().toString().trim().length() > 0 ? bi.g402cm.getText().toString() : "-1");
 
 
         json.put("g04013", bi.g04013a.isChecked() ? "1"
@@ -151,100 +87,100 @@ public class SectionG411Activity extends AppCompatActivity {
                 : "-1");
 
 
-        json.put("g04010a", bi.g04010ay.isChecked() ? "1"
-                : bi.g04010an.isChecked() ? "2"
+        json.put("g403a", bi.g403aa.isChecked() ? "1"
+                : bi.g403ab.isChecked() ? "2"
                 : "-1");
 
-        json.put("g04010s", bi.g04010sy.isChecked() ? "1"
-                : bi.g04010sn.isChecked() ? "2"
+        json.put("g403b", bi.g403ba.isChecked() ? "1"
+                : bi.g403bb.isChecked() ? "2"
                 : "-1");
 
-        json.put("g04010sd", bi.g04010sd.getText().toString().trim().length() > 0 ? bi.g04010sd.getText().toString() : "-1");
-        json.put("g04010sm", bi.g04010sm.getText().toString().trim().length() > 0 ? bi.g04010sm.getText().toString() : "-1");
+        json.put("g403cd", bi.g403cd.getText().toString().trim().length() > 0 ? bi.g403cd.getText().toString() : "-1");
+        json.put("g403cm", bi.g403cm.getText().toString().trim().length() > 0 ? bi.g403cm.getText().toString() : "-1");
 
 
-        json.put("g040150a", bi.g040150ay.isChecked() ? "1"
-                : bi.g040150an.isChecked() ? "2"
+        json.put("g404a", bi.g404aa.isChecked() ? "1"
+                : bi.g404ab.isChecked() ? "2"
                 : "-1");
 
-        json.put("g040150s", bi.g040150sy.isChecked() ? "1"
-                : bi.g040150sn.isChecked() ? "2"
+        json.put("g404b", bi.g404ba.isChecked() ? "1"
+                : bi.g404bb.isChecked() ? "2"
                 : "-1");
 
-        json.put("g040150sd", bi.g040150sd.getText().toString().trim().length() > 0 ? bi.g040150sd.getText().toString() : "-1");
-        json.put("g040150sm", bi.g040150sm.getText().toString().trim().length() > 0 ? bi.g040150sm.getText().toString() : "-1");
+        json.put("g404cd", bi.g404cd.getText().toString().trim().length() > 0 ? bi.g404cd.getText().toString() : "-1");
+        json.put("g404cm", bi.g404cm.getText().toString().trim().length() > 0 ? bi.g404cm.getText().toString() : "-1");
 
 
-        json.put("g040160a", bi.g040160ay.isChecked() ? "1"
-                : bi.g040160an.isChecked() ? "2"
+        json.put("g405a", bi.g405aa.isChecked() ? "1"
+                : bi.g405ab.isChecked() ? "2"
                 : "-1");
 
-        json.put("g040160s", bi.g040160sy.isChecked() ? "1"
-                : bi.g040160sn.isChecked() ? "2"
+        json.put("g405b", bi.g405ba.isChecked() ? "1"
+                : bi.g405bb.isChecked() ? "2"
                 : "-1");
 
-        json.put("g040160sd", bi.g040160sd.getText().toString().trim().length() > 0 ? bi.g040160sd.getText().toString() : "-1");
-        json.put("g040160sm", bi.g040160sm.getText().toString().trim().length() > 0 ? bi.g040160sm.getText().toString() : "-1");
+        json.put("g405cd", bi.g405cd.getText().toString().trim().length() > 0 ? bi.g405cd.getText().toString() : "-1");
+        json.put("g405cm", bi.g405cm.getText().toString().trim().length() > 0 ? bi.g405cm.getText().toString() : "-1");
 
 
-        json.put("g040170a", bi.g040170ay.isChecked() ? "1"
-                : bi.g040170an.isChecked() ? "2"
+        json.put("g406a", bi.g406aa.isChecked() ? "1"
+                : bi.g406ab.isChecked() ? "2"
                 : "-1");
 
-        json.put("g040170s", bi.g040170sy.isChecked() ? "1"
-                : bi.g040170sn.isChecked() ? "2"
+        json.put("g406b", bi.g406ba.isChecked() ? "1"
+                : bi.g406bb.isChecked() ? "2"
                 : "-1");
 
-        json.put("g040170sd", bi.g040170sd.getText().toString().trim().length() > 0 ? bi.g040170sd.getText().toString() : "-1");
-        json.put("g040170sm", bi.g040170sm.getText().toString().trim().length() > 0 ? bi.g040170sm.getText().toString() : "-1");
+        json.put("g406cd", bi.g406cd.getText().toString().trim().length() > 0 ? bi.g406cd.getText().toString() : "-1");
+        json.put("g406cm", bi.g406cm.getText().toString().trim().length() > 0 ? bi.g406cm.getText().toString() : "-1");
 
 
-        json.put("g040180a", bi.g040180ay.isChecked() ? "1"
-                : bi.g040180an.isChecked() ? "2"
+        json.put("g407a", bi.g407aa.isChecked() ? "1"
+                : bi.g407ab.isChecked() ? "2"
                 : "-1");
 
-        json.put("g040180s", bi.g040180sy.isChecked() ? "1"
-                : bi.g040180sn.isChecked() ? "2"
+        json.put("g407b", bi.g407ba.isChecked() ? "1"
+                : bi.g407bb.isChecked() ? "2"
                 : "-1");
 
-        json.put("g040180sd", bi.g040180sd.getText().toString().trim().length() > 0 ? bi.g040180sd.getText().toString() : "-1");
-        json.put("g040180sm", bi.g040180sm.getText().toString().trim().length() > 0 ? bi.g040180sm.getText().toString() : "-1");
+        json.put("g407cd", bi.g407cd.getText().toString().trim().length() > 0 ? bi.g407cd.getText().toString() : "-1");
+        json.put("g407cm", bi.g407cm.getText().toString().trim().length() > 0 ? bi.g407cm.getText().toString() : "-1");
 
 
-        json.put("g040190a", bi.g040190ay.isChecked() ? "1"
-                : bi.g040190an.isChecked() ? "2"
+        json.put("g408a", bi.g408aa.isChecked() ? "1"
+                : bi.g408ab.isChecked() ? "2"
                 : "-1");
 
-        json.put("g040190s", bi.g040190sy.isChecked() ? "1"
-                : bi.g040190sn.isChecked() ? "2"
+        json.put("g408b", bi.g408ba.isChecked() ? "1"
+                : bi.g408bb.isChecked() ? "2"
                 : "-1");
 
-        json.put("g040190sd", bi.g040190sd.getText().toString().trim().length() > 0 ? bi.g040190sd.getText().toString() : "-1");
-        json.put("g040190sm", bi.g040190sm.getText().toString().trim().length() > 0 ? bi.g040190sm.getText().toString() : "-1");
+        json.put("g408cd", bi.g408cd.getText().toString().trim().length() > 0 ? bi.g408cd.getText().toString() : "-1");
+        json.put("g408cm", bi.g408cm.getText().toString().trim().length() > 0 ? bi.g408cm.getText().toString() : "-1");
 
 
-        json.put("g0401100a", bi.g0401100ay.isChecked() ? "1"
-                : bi.g0401100an.isChecked() ? "2"
+        json.put("g409a", bi.g409aa.isChecked() ? "1"
+                : bi.g409ab.isChecked() ? "2"
                 : "-1");
 
-        json.put("g0401100s", bi.g0401100sy.isChecked() ? "1"
-                : bi.g0401100sn.isChecked() ? "2"
+        json.put("g409b", bi.g409ba.isChecked() ? "1"
+                : bi.g409bb.isChecked() ? "2"
                 : "-1");
 
-        json.put("g0401100sd", bi.g0401100sd.getText().toString().trim().length() > 0 ? bi.g0401100sd.getText().toString() : "-1");
-        json.put("g0401100sm", bi.g0401100sm.getText().toString().trim().length() > 0 ? bi.g0401100sm.getText().toString() : "-1");
+        json.put("g409cd", bi.g409cd.getText().toString().trim().length() > 0 ? bi.g409cd.getText().toString() : "-1");
+        json.put("g409cm", bi.g409cm.getText().toString().trim().length() > 0 ? bi.g409cm.getText().toString() : "-1");
 
 
-        json.put("g0401110a", bi.g0401110ay.isChecked() ? "1"
-                : bi.g0401110an.isChecked() ? "2"
+        json.put("g410a", bi.g410aa.isChecked() ? "1"
+                : bi.g410ab.isChecked() ? "2"
                 : "-1");
 
-        json.put("g0401110s", bi.g0401110sy.isChecked() ? "1"
-                : bi.g0401110sn.isChecked() ? "2"
+        json.put("g410b", bi.g410ba.isChecked() ? "1"
+                : bi.g410bb.isChecked() ? "2"
                 : "-1");
 
-        json.put("g0401110sd", bi.g0401110sd.getText().toString().trim().length() > 0 ? bi.g0401110sd.getText().toString() : "-1");
-        json.put("g0401110sm", bi.g0401110sm.getText().toString().trim().length() > 0 ? bi.g0401110sm.getText().toString() : "-1");
+        json.put("g410cd", bi.g410cd.getText().toString().trim().length() > 0 ? bi.g410cd.getText().toString() : "-1");
+        json.put("g410cm", bi.g410cm.getText().toString().trim().length() > 0 ? bi.g410cm.getText().toString() : "-1");
 
 
         try {
