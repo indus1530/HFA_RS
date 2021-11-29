@@ -4,6 +4,7 @@ import static edu.aku.hassannaqvi.hfa_rs.utils.UtilKt.openSectionMainActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -144,7 +145,7 @@ public class SectionK4Activity extends AppCompatActivity {
 
 
     private boolean formValidation() {
-        return Validator.emptyCheckingContainer(this, bi.GrpNameSectionK4);
+        return Validator.emptyCheckingContainer(this, bi.GrpName);
     }
 
 

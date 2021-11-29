@@ -28,9 +28,9 @@
             android:minHeight="?attr/actionBarSize"
             android:theme="@style/CustomToolbarTheme"
             app:popupTheme="@style/CustomPopupTheme"
-            app:subtitle="@string/h01"
+            app:subtitle="@string/k002"
             app:subtitleTextAppearance="@style/Toolbar.SubtitleText"
-            app:title="@string/modhtitle"
+            app:title="@string/modktitle"
             app:titleTextAppearance="@style/Toolbar.TitleText" />
 
 
@@ -44,22 +44,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
-
-
-                <!-- k002  Title   -->
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVk02"
-                    style="@style/cardView">
-
-                    <LinearLayout style="@style/cardView">
-
-                        <TextView
-                            style="@style/textView3Head"
-                            android:text="@string/k002" />
-
-                    </LinearLayout>
-
-                </androidx.cardview.widget.CardView>
 
 
                 <!-- k0021  Radio   -->

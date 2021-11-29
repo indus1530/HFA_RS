@@ -3,9 +3,11 @@ package edu.aku.hassannaqvi.hfa_rs.ui.sections;
 import static edu.aku.hassannaqvi.hfa_rs.core.MainApp.fc;
 import static edu.aku.hassannaqvi.hfa_rs.utils.UtilKt.openSectionMainActivity;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
@@ -44,6 +46,12 @@ public class SectionJ8Activity extends AppCompatActivity {
     }
 
 
+    public void hideKeyboard(View v) {
+        InputMethodManager im = (InputMethodManager) getSystemService(Activity.INPUT_METHOD_SERVICE);
+        im.hideSoftInputFromWindow(v.getWindowToken(), 0);
+    }
+
+
     private void setupSkips() {
         radioGroup(bi.j0801a);
         radioGroup(bi.j0801b);
@@ -55,10 +63,13 @@ public class SectionJ8Activity extends AppCompatActivity {
 
 
     public void radioGroup(RadioGroup grp) {
-
         grp.setOnCheckedChangeListener(((radioGroup, i) -> {
-            if (bi.j0801ab.isChecked() || bi.j0801bb.isChecked() || bi.j0801cb.isChecked()
-                    || bi.j0801db.isChecked() || bi.j0801eb.isChecked() || bi.j0801fb.isChecked()) {
+            if (bi.j0801ab.isChecked()
+                    || bi.j0801bb.isChecked()
+                    || bi.j0801cb.isChecked()
+                    || bi.j0801db.isChecked()
+                    || bi.j0801eb.isChecked()
+                    || bi.j0801fb.isChecked()) {
                 Clear.clearAllFields(bi.fldGrpCVj0801g);
                 bi.fldGrpCVj0801g.setVisibility(View.VISIBLE);
             } else {
@@ -83,6 +94,7 @@ public class SectionJ8Activity extends AppCompatActivity {
             Toast.makeText(this, "Failed to Update Database!", Toast.LENGTH_SHORT).show();
         }
     }
+
 
     private boolean UpdateDB() {
         DatabaseHelper db = MainApp.appInfo.getDbHelper();
@@ -158,7 +170,7 @@ public class SectionJ8Activity extends AppCompatActivity {
 
 
     private boolean formValidation() {
-        return Validator.emptyCheckingContainer(this, bi.GrpNameSectionJ8);
+        return Validator.emptyCheckingContainer(this, bi.GrpName);
     }
 
 
