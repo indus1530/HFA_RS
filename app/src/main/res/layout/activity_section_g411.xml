@@ -9,6 +9,7 @@
         <variable
             name="callback"
             type="edu.aku.hassannaqvi.hfa_rs.ui.sections.SectionG411Activity" />
+
     </data>
 
 
@@ -1601,6 +1602,1818 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text="@{g410bb.checked ? `` : g410cm.getText().toString()}"
+                                app:maxValue="11"
+                                app:minValue="0"
+                                app:type="range" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <!-- g411 -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fldGrpCVg41110a"
+                    style="@style/cardView">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bottom"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/quesNum"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="@string/Q_g411" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="@string/g411" />
+
+                        </LinearLayout>
+
+                        <!--g411a-->
+                        <RadioGroup
+                            android:id="@+id/g411a"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="235dp"
+                                android:layout_height="match_parent"
+                                android:text="@string/g411a" />
+
+                            <RadioButton
+                                android:id="@+id/g411aa"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/g411aa" />
+
+                            <RadioButton
+                                android:id="@+id/g411ab"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/g411ab" />
+
+                        </RadioGroup>
+
+                        <!--g411b-->
+                        <RadioGroup
+                            android:id="@+id/g411b"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="235dp"
+                                android:layout_height="match_parent"
+                                android:text="@string/g411b" />
+
+                            <RadioButton
+                                android:id="@+id/g411ba"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/g411ba" />
+
+                            <RadioButton
+                                android:id="@+id/g411bb"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/g411bb" />
+
+                        </RadioGroup>
+
+                        <!--g411c-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:visibility='@{g411bb.checked ? View.GONE : View.VISIBLE}'>
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="235dp"
+                                android:layout_height="match_parent"
+                                android:text="@string/g411c" />
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/g411cd"
+                                android:textSize="15sp" />
+
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/g411cd"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:hint="##"
+                                android:inputType="number"
+                                android:maxLength="2"
+                                android:text="@{g411bb.checked ? `` : g411cd.getText().toString()}"
+                                app:maxValue="30"
+                                app:minValue="0"
+                                app:type="range" />
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/g411cm"
+                                android:textSize="14sp" />
+
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/g411cm"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:hint="##"
+                                android:inputType="number"
+                                android:maxLength="2"
+                                android:text="@{g411bb.checked ? `` : g411cm.getText().toString()}"
+                                app:maxValue="11"
+                                app:minValue="0"
+                                app:type="range" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <!-- g412 -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fldGrpCVg41210a"
+                    style="@style/cardView">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bottom"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/quesNum"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="@string/Q_g412" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="@string/g412" />
+
+                        </LinearLayout>
+
+                        <!--g412a-->
+                        <RadioGroup
+                            android:id="@+id/g412a"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="235dp"
+                                android:layout_height="match_parent"
+                                android:text="@string/g412a" />
+
+                            <RadioButton
+                                android:id="@+id/g412aa"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/g412aa" />
+
+                            <RadioButton
+                                android:id="@+id/g412ab"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/g412ab" />
+
+                        </RadioGroup>
+
+                        <!--g412b-->
+                        <RadioGroup
+                            android:id="@+id/g412b"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="235dp"
+                                android:layout_height="match_parent"
+                                android:text="@string/g412b" />
+
+                            <RadioButton
+                                android:id="@+id/g412ba"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/g412ba" />
+
+                            <RadioButton
+                                android:id="@+id/g412bb"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/g412bb" />
+
+                        </RadioGroup>
+
+                        <!--g412c-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:visibility='@{g412bb.checked ? View.GONE : View.VISIBLE}'>
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="235dp"
+                                android:layout_height="match_parent"
+                                android:text="@string/g412c" />
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/g412cd"
+                                android:textSize="15sp" />
+
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/g412cd"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:hint="##"
+                                android:inputType="number"
+                                android:maxLength="2"
+                                android:text="@{g412bb.checked ? `` : g412cd.getText().toString()}"
+                                app:maxValue="30"
+                                app:minValue="0"
+                                app:type="range" />
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/g412cm"
+                                android:textSize="14sp" />
+
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/g412cm"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:hint="##"
+                                android:inputType="number"
+                                android:maxLength="2"
+                                android:text="@{g412bb.checked ? `` : g412cm.getText().toString()}"
+                                app:maxValue="11"
+                                app:minValue="0"
+                                app:type="range" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <!-- g413 -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fldGrpCVg41310a"
+                    style="@style/cardView">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bottom"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/quesNum"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="@string/Q_g413" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="@string/g413" />
+
+                        </LinearLayout>
+
+                        <!--g413a-->
+                        <RadioGroup
+                            android:id="@+id/g413a"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="235dp"
+                                android:layout_height="match_parent"
+                                android:text="@string/g413a" />
+
+                            <RadioButton
+                                android:id="@+id/g413aa"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/g413aa" />
+
+                            <RadioButton
+                                android:id="@+id/g413ab"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/g413ab" />
+
+                        </RadioGroup>
+
+                        <!--g413b-->
+                        <RadioGroup
+                            android:id="@+id/g413b"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="235dp"
+                                android:layout_height="match_parent"
+                                android:text="@string/g413b" />
+
+                            <RadioButton
+                                android:id="@+id/g413ba"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/g413ba" />
+
+                            <RadioButton
+                                android:id="@+id/g413bb"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/g413bb" />
+
+                        </RadioGroup>
+
+                        <!--g413c-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:visibility='@{g413bb.checked ? View.GONE : View.VISIBLE}'>
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="235dp"
+                                android:layout_height="match_parent"
+                                android:text="@string/g413c" />
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/g413cd"
+                                android:textSize="15sp" />
+
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/g413cd"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:hint="##"
+                                android:inputType="number"
+                                android:maxLength="2"
+                                android:text="@{g413bb.checked ? `` : g413cd.getText().toString()}"
+                                app:maxValue="30"
+                                app:minValue="0"
+                                app:type="range" />
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/g413cm"
+                                android:textSize="14sp" />
+
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/g413cm"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:hint="##"
+                                android:inputType="number"
+                                android:maxLength="2"
+                                android:text="@{g413bb.checked ? `` : g413cm.getText().toString()}"
+                                app:maxValue="11"
+                                app:minValue="0"
+                                app:type="range" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <!-- g414 -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fldGrpCVg41410a"
+                    style="@style/cardView">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bottom"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/quesNum"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="@string/Q_g414" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="@string/g414" />
+
+                        </LinearLayout>
+
+                        <!--g414a-->
+                        <RadioGroup
+                            android:id="@+id/g414a"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="235dp"
+                                android:layout_height="match_parent"
+                                android:text="@string/g414a" />
+
+                            <RadioButton
+                                android:id="@+id/g414aa"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/g414aa" />
+
+                            <RadioButton
+                                android:id="@+id/g414ab"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/g414ab" />
+
+                        </RadioGroup>
+
+                        <!--g414b-->
+                        <RadioGroup
+                            android:id="@+id/g414b"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="235dp"
+                                android:layout_height="match_parent"
+                                android:text="@string/g414b" />
+
+                            <RadioButton
+                                android:id="@+id/g414ba"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/g414ba" />
+
+                            <RadioButton
+                                android:id="@+id/g414bb"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/g414bb" />
+
+                        </RadioGroup>
+
+                        <!--g414c-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:visibility='@{g414bb.checked ? View.GONE : View.VISIBLE}'>
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="235dp"
+                                android:layout_height="match_parent"
+                                android:text="@string/g414c" />
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/g414cd"
+                                android:textSize="15sp" />
+
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/g414cd"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:hint="##"
+                                android:inputType="number"
+                                android:maxLength="2"
+                                android:text="@{g414bb.checked ? `` : g414cd.getText().toString()}"
+                                app:maxValue="30"
+                                app:minValue="0"
+                                app:type="range" />
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/g414cm"
+                                android:textSize="14sp" />
+
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/g414cm"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:hint="##"
+                                android:inputType="number"
+                                android:maxLength="2"
+                                android:text="@{g414bb.checked ? `` : g414cm.getText().toString()}"
+                                app:maxValue="11"
+                                app:minValue="0"
+                                app:type="range" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <!-- g415 -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fldGrpCVg41510a"
+                    style="@style/cardView">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bottom"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/quesNum"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="@string/Q_g415" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="@string/g415" />
+
+                        </LinearLayout>
+
+                        <!--g415a-->
+                        <RadioGroup
+                            android:id="@+id/g415a"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="235dp"
+                                android:layout_height="match_parent"
+                                android:text="@string/g415a" />
+
+                            <RadioButton
+                                android:id="@+id/g415aa"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/g415aa" />
+
+                            <RadioButton
+                                android:id="@+id/g415ab"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/g415ab" />
+
+                        </RadioGroup>
+
+                        <!--g415b-->
+                        <RadioGroup
+                            android:id="@+id/g415b"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="235dp"
+                                android:layout_height="match_parent"
+                                android:text="@string/g415b" />
+
+                            <RadioButton
+                                android:id="@+id/g415ba"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/g415ba" />
+
+                            <RadioButton
+                                android:id="@+id/g415bb"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/g415bb" />
+
+                        </RadioGroup>
+
+                        <!--g415c-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:visibility='@{g415bb.checked ? View.GONE : View.VISIBLE}'>
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="235dp"
+                                android:layout_height="match_parent"
+                                android:text="@string/g415c" />
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/g415cd"
+                                android:textSize="15sp" />
+
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/g415cd"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:hint="##"
+                                android:inputType="number"
+                                android:maxLength="2"
+                                android:text="@{g415bb.checked ? `` : g415cd.getText().toString()}"
+                                app:maxValue="30"
+                                app:minValue="0"
+                                app:type="range" />
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/g415cm"
+                                android:textSize="14sp" />
+
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/g415cm"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:hint="##"
+                                android:inputType="number"
+                                android:maxLength="2"
+                                android:text="@{g415bb.checked ? `` : g415cm.getText().toString()}"
+                                app:maxValue="11"
+                                app:minValue="0"
+                                app:type="range" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <!-- g416 -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fldGrpCVg41610a"
+                    style="@style/cardView">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bottom"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/quesNum"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="@string/Q_g416" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="@string/g416" />
+
+                        </LinearLayout>
+
+                        <!--g416a-->
+                        <RadioGroup
+                            android:id="@+id/g416a"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="235dp"
+                                android:layout_height="match_parent"
+                                android:text="@string/g416a" />
+
+                            <RadioButton
+                                android:id="@+id/g416aa"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/g416aa" />
+
+                            <RadioButton
+                                android:id="@+id/g416ab"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/g416ab" />
+
+                        </RadioGroup>
+
+                        <!--g416b-->
+                        <RadioGroup
+                            android:id="@+id/g416b"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="235dp"
+                                android:layout_height="match_parent"
+                                android:text="@string/g416b" />
+
+                            <RadioButton
+                                android:id="@+id/g416ba"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/g416ba" />
+
+                            <RadioButton
+                                android:id="@+id/g416bb"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/g416bb" />
+
+                        </RadioGroup>
+
+                        <!--g416c-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:visibility='@{g416bb.checked ? View.GONE : View.VISIBLE}'>
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="235dp"
+                                android:layout_height="match_parent"
+                                android:text="@string/g416c" />
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/g416cd"
+                                android:textSize="15sp" />
+
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/g416cd"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:hint="##"
+                                android:inputType="number"
+                                android:maxLength="2"
+                                android:text="@{g416bb.checked ? `` : g416cd.getText().toString()}"
+                                app:maxValue="30"
+                                app:minValue="0"
+                                app:type="range" />
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/g416cm"
+                                android:textSize="14sp" />
+
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/g416cm"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:hint="##"
+                                android:inputType="number"
+                                android:maxLength="2"
+                                android:text="@{g416bb.checked ? `` : g416cm.getText().toString()}"
+                                app:maxValue="11"
+                                app:minValue="0"
+                                app:type="range" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <!-- g417 -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fldGrpCVg41710a"
+                    style="@style/cardView">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bottom"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/quesNum"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="@string/Q_g417" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="@string/g417" />
+
+                        </LinearLayout>
+
+                        <!--g417a-->
+                        <RadioGroup
+                            android:id="@+id/g417a"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="235dp"
+                                android:layout_height="match_parent"
+                                android:text="@string/g417a" />
+
+                            <RadioButton
+                                android:id="@+id/g417aa"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/g417aa" />
+
+                            <RadioButton
+                                android:id="@+id/g417ab"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/g417ab" />
+
+                        </RadioGroup>
+
+                        <!--g417b-->
+                        <RadioGroup
+                            android:id="@+id/g417b"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="235dp"
+                                android:layout_height="match_parent"
+                                android:text="@string/g417b" />
+
+                            <RadioButton
+                                android:id="@+id/g417ba"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/g417ba" />
+
+                            <RadioButton
+                                android:id="@+id/g417bb"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/g417bb" />
+
+                        </RadioGroup>
+
+                        <!--g417c-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:visibility='@{g417bb.checked ? View.GONE : View.VISIBLE}'>
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="235dp"
+                                android:layout_height="match_parent"
+                                android:text="@string/g417c" />
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/g417cd"
+                                android:textSize="15sp" />
+
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/g417cd"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:hint="##"
+                                android:inputType="number"
+                                android:maxLength="2"
+                                android:text="@{g417bb.checked ? `` : g417cd.getText().toString()}"
+                                app:maxValue="30"
+                                app:minValue="0"
+                                app:type="range" />
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/g417cm"
+                                android:textSize="14sp" />
+
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/g417cm"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:hint="##"
+                                android:inputType="number"
+                                android:maxLength="2"
+                                android:text="@{g417bb.checked ? `` : g417cm.getText().toString()}"
+                                app:maxValue="11"
+                                app:minValue="0"
+                                app:type="range" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <!-- g419 -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fldGrpCVg41910a"
+                    style="@style/cardView">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bottom"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/quesNum"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="@string/Q_g419" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="@string/g419" />
+
+                        </LinearLayout>
+
+                        <!--g419a-->
+                        <RadioGroup
+                            android:id="@+id/g419a"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="235dp"
+                                android:layout_height="match_parent"
+                                android:text="@string/g419a" />
+
+                            <RadioButton
+                                android:id="@+id/g419aa"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/g419aa" />
+
+                            <RadioButton
+                                android:id="@+id/g419ab"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/g419ab" />
+
+                        </RadioGroup>
+
+                        <!--g419b-->
+                        <RadioGroup
+                            android:id="@+id/g419b"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="235dp"
+                                android:layout_height="match_parent"
+                                android:text="@string/g419b" />
+
+                            <RadioButton
+                                android:id="@+id/g419ba"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/g419ba" />
+
+                            <RadioButton
+                                android:id="@+id/g419bb"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/g419bb" />
+
+                        </RadioGroup>
+
+                        <!--g419c-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:visibility='@{g419bb.checked ? View.GONE : View.VISIBLE}'>
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="235dp"
+                                android:layout_height="match_parent"
+                                android:text="@string/g419c" />
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/g419cd"
+                                android:textSize="15sp" />
+
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/g419cd"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:hint="##"
+                                android:inputType="number"
+                                android:maxLength="2"
+                                android:text="@{g419bb.checked ? `` : g419cd.getText().toString()}"
+                                app:maxValue="30"
+                                app:minValue="0"
+                                app:type="range" />
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/g419cm"
+                                android:textSize="14sp" />
+
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/g419cm"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:hint="##"
+                                android:inputType="number"
+                                android:maxLength="2"
+                                android:text="@{g419bb.checked ? `` : g419cm.getText().toString()}"
+                                app:maxValue="11"
+                                app:minValue="0"
+                                app:type="range" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <!-- g420 -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fldGrpCVg42010a"
+                    style="@style/cardView">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bottom"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/quesNum"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="@string/Q_g420" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="@string/g420" />
+
+                        </LinearLayout>
+
+                        <!--g420a-->
+                        <RadioGroup
+                            android:id="@+id/g420a"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="235dp"
+                                android:layout_height="match_parent"
+                                android:text="@string/g420a" />
+
+                            <RadioButton
+                                android:id="@+id/g420aa"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/g420aa" />
+
+                            <RadioButton
+                                android:id="@+id/g420ab"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/g420ab" />
+
+                        </RadioGroup>
+
+                        <!--g420b-->
+                        <RadioGroup
+                            android:id="@+id/g420b"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="235dp"
+                                android:layout_height="match_parent"
+                                android:text="@string/g420b" />
+
+                            <RadioButton
+                                android:id="@+id/g420ba"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/g420ba" />
+
+                            <RadioButton
+                                android:id="@+id/g420bb"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/g420bb" />
+
+                        </RadioGroup>
+
+                        <!--g420c-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:visibility='@{g420bb.checked ? View.GONE : View.VISIBLE}'>
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="235dp"
+                                android:layout_height="match_parent"
+                                android:text="@string/g420c" />
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/g420cd"
+                                android:textSize="15sp" />
+
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/g420cd"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:hint="##"
+                                android:inputType="number"
+                                android:maxLength="2"
+                                android:text="@{g420bb.checked ? `` : g420cd.getText().toString()}"
+                                app:maxValue="30"
+                                app:minValue="0"
+                                app:type="range" />
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/g420cm"
+                                android:textSize="14sp" />
+
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/g420cm"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:hint="##"
+                                android:inputType="number"
+                                android:maxLength="2"
+                                android:text="@{g420bb.checked ? `` : g420cm.getText().toString()}"
+                                app:maxValue="11"
+                                app:minValue="0"
+                                app:type="range" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <!-- g421 -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fldGrpCVg42110a"
+                    style="@style/cardView">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bottom"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/quesNum"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="@string/Q_g421" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="@string/g421" />
+
+                        </LinearLayout>
+
+                        <!--g421a-->
+                        <RadioGroup
+                            android:id="@+id/g421a"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="235dp"
+                                android:layout_height="match_parent"
+                                android:text="@string/g421a" />
+
+                            <RadioButton
+                                android:id="@+id/g421aa"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/g421aa" />
+
+                            <RadioButton
+                                android:id="@+id/g421ab"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/g421ab" />
+
+                        </RadioGroup>
+
+                        <!--g421b-->
+                        <RadioGroup
+                            android:id="@+id/g421b"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="235dp"
+                                android:layout_height="match_parent"
+                                android:text="@string/g421b" />
+
+                            <RadioButton
+                                android:id="@+id/g421ba"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/g421ba" />
+
+                            <RadioButton
+                                android:id="@+id/g421bb"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/g421bb" />
+
+                        </RadioGroup>
+
+                        <!--g421c-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:visibility='@{g421bb.checked ? View.GONE : View.VISIBLE}'>
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="235dp"
+                                android:layout_height="match_parent"
+                                android:text="@string/g421c" />
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/g421cd"
+                                android:textSize="15sp" />
+
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/g421cd"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:hint="##"
+                                android:inputType="number"
+                                android:maxLength="2"
+                                android:text="@{g421bb.checked ? `` : g421cd.getText().toString()}"
+                                app:maxValue="30"
+                                app:minValue="0"
+                                app:type="range" />
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/g421cm"
+                                android:textSize="14sp" />
+
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/g421cm"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:hint="##"
+                                android:inputType="number"
+                                android:maxLength="2"
+                                android:text="@{g421bb.checked ? `` : g421cm.getText().toString()}"
+                                app:maxValue="11"
+                                app:minValue="0"
+                                app:type="range" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <!-- g422 -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fldGrpCVg42210a"
+                    style="@style/cardView">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bottom"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/quesNum"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="@string/Q_g422" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="@string/g422" />
+
+                        </LinearLayout>
+
+                        <!--g422a-->
+                        <RadioGroup
+                            android:id="@+id/g422a"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="235dp"
+                                android:layout_height="match_parent"
+                                android:text="@string/g422a" />
+
+                            <RadioButton
+                                android:id="@+id/g422aa"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/g422aa" />
+
+                            <RadioButton
+                                android:id="@+id/g422ab"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/g422ab" />
+
+                        </RadioGroup>
+
+                        <!--g422b-->
+                        <RadioGroup
+                            android:id="@+id/g422b"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="235dp"
+                                android:layout_height="match_parent"
+                                android:text="@string/g422b" />
+
+                            <RadioButton
+                                android:id="@+id/g422ba"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/g422ba" />
+
+                            <RadioButton
+                                android:id="@+id/g422bb"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/g422bb" />
+
+                        </RadioGroup>
+
+                        <!--g422c-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:visibility='@{g422bb.checked ? View.GONE : View.VISIBLE}'>
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="235dp"
+                                android:layout_height="match_parent"
+                                android:text="@string/g422c" />
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/g422cd"
+                                android:textSize="15sp" />
+
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/g422cd"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:hint="##"
+                                android:inputType="number"
+                                android:maxLength="2"
+                                android:text="@{g422bb.checked ? `` : g422cd.getText().toString()}"
+                                app:maxValue="30"
+                                app:minValue="0"
+                                app:type="range" />
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/g422cm"
+                                android:textSize="14sp" />
+
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/g422cm"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:hint="##"
+                                android:inputType="number"
+                                android:maxLength="2"
+                                android:text="@{g422bb.checked ? `` : g422cm.getText().toString()}"
+                                app:maxValue="11"
+                                app:minValue="0"
+                                app:type="range" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <!-- g423 -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fldGrpCVg42310a"
+                    style="@style/cardView">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bottom"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/quesNum"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="@string/Q_g423" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="@string/g423" />
+
+                        </LinearLayout>
+
+                        <!--g423a-->
+                        <RadioGroup
+                            android:id="@+id/g423a"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="235dp"
+                                android:layout_height="match_parent"
+                                android:text="@string/g423a" />
+
+                            <RadioButton
+                                android:id="@+id/g423aa"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/g423aa" />
+
+                            <RadioButton
+                                android:id="@+id/g423ab"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/g423ab" />
+
+                        </RadioGroup>
+
+                        <!--g423b-->
+                        <RadioGroup
+                            android:id="@+id/g423b"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="235dp"
+                                android:layout_height="match_parent"
+                                android:text="@string/g423b" />
+
+                            <RadioButton
+                                android:id="@+id/g423ba"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/g423ba" />
+
+                            <RadioButton
+                                android:id="@+id/g423bb"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/g423bb" />
+
+                        </RadioGroup>
+
+                        <!--g423c-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:visibility='@{g423bb.checked ? View.GONE : View.VISIBLE}'>
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="235dp"
+                                android:layout_height="match_parent"
+                                android:text="@string/g423c" />
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/g423cd"
+                                android:textSize="15sp" />
+
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/g423cd"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:hint="##"
+                                android:inputType="number"
+                                android:maxLength="2"
+                                android:text="@{g423bb.checked ? `` : g423cd.getText().toString()}"
+                                app:maxValue="30"
+                                app:minValue="0"
+                                app:type="range" />
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/g423cm"
+                                android:textSize="14sp" />
+
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/g423cm"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:hint="##"
+                                android:inputType="number"
+                                android:maxLength="2"
+                                android:text="@{g423bb.checked ? `` : g423cm.getText().toString()}"
                                 app:maxValue="11"
                                 app:minValue="0"
                                 app:type="range" />
