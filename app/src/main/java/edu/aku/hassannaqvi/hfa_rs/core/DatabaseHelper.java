@@ -594,11 +594,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
 
     public Long addForm(FormsContract fc) {
-
-        // Gets the data repository in write mode
         SQLiteDatabase db = this.getWritableDatabase();
-
-// Create a new map of values, where column names are the keys
         ContentValues values = new ContentValues();
         values.put(FormsTable.COLUMN_PROJECT_NAME, fc.getProjectName());
         values.put(FormsTable.COLUMN_UID, fc.get_UID());
@@ -641,8 +637,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         values.put(FormsTable.COLUMN_DEVICETAGID, fc.getDevicetagID());
         values.put(FormsTable.COLUMN_DEVICEID, fc.getDeviceID());
         values.put(FormsTable.COLUMN_APPVERSION, fc.getAppversion());
-
-        // Insert the new row, returning the primary key value of the new row
         long newRowId;
         newRowId = db.insert(
                 FormsTable.TABLE_NAME,
