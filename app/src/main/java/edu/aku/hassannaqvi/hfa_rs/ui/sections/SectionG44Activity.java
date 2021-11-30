@@ -20,18 +20,18 @@ import edu.aku.hassannaqvi.hfa_rs.R;
 import edu.aku.hassannaqvi.hfa_rs.contracts.FormsContract;
 import edu.aku.hassannaqvi.hfa_rs.core.DatabaseHelper;
 import edu.aku.hassannaqvi.hfa_rs.core.MainApp;
-import edu.aku.hassannaqvi.hfa_rs.databinding.ActivitySectionG423Binding;
+import edu.aku.hassannaqvi.hfa_rs.databinding.ActivitySectionG44Binding;
+import edu.aku.hassannaqvi.hfa_rs.ui.other.SectionMainActivity;
 import edu.aku.hassannaqvi.hfa_rs.utils.JSONUtils;
 
 
-public class SectionG423Activity extends AppCompatActivity {
-
-    ActivitySectionG423Binding bi;
+public class SectionG44Activity extends AppCompatActivity {
+    ActivitySectionG44Binding bi;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        bi = DataBindingUtil.setContentView(this, R.layout.activity_section_g423);
+        bi = DataBindingUtil.setContentView(this, R.layout.activity_section_g44);
         bi.setCallback(this);
     }
 
@@ -151,7 +151,7 @@ public class SectionG423Activity extends AppCompatActivity {
         }
         if (UpdateDB()) {
             finish();
-            startActivity(new Intent(this, SectionG424Activity.class));
+            startActivity(new Intent(this, SectionMainActivity.class));
         } else {
             Toast.makeText(this, "Failed to Update Database!", Toast.LENGTH_SHORT).show();
         }
