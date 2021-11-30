@@ -36,7 +36,7 @@ public class FormsContract {
     public static String nSeven = "97";
     public static String nEight = "98";
     public static String nNine = "99";
-    private final String projectName = "UEN_HFA_ML2020";
+    private final String projectName = "HFA_RapidSurvey";
     private final String synced_date02 = "";
     private final String synced03 = "";
     private String _ID = _EMPTY_;

@@ -3,7 +3,8 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
 android {
-    compileSdkVersion 30
+    compileSdkVersion 31
+    buildToolsVersion '31.0.0'
     buildFeatures {
         dataBinding true
     }
@@ -57,7 +58,7 @@ android {
             versionCode versionBuild
             versionName "${versionNumber}.${versionPatch}${versionType}"
             minSdkVersion 22
-            targetSdkVersion 29
+            targetSdkVersion 22
         }
 
         applicationVariants.all { variant ->
@@ -94,7 +95,7 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
-    buildToolsVersion '30.0.3'
+    //buildToolsVersion '30.0.3'
 
 }
 

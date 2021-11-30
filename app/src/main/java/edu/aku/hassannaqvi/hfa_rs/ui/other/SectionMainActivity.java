@@ -73,47 +73,51 @@ public class SectionMainActivity extends AppCompatActivity {
 
         try {
 
-            if (!new JSONObject(fc.getsB()).get("b05").equals("")) {
-                bi.formB.setEnabled(false);
-                bi.checkedB.setVisibility(View.VISIBLE);
-                bi.formB.setBackgroundResource(R.color.dullWhite);
+            if (!fc.getsB().isEmpty()) {
+                if (new JSONObject(fc.getsB()).has("b05")) {
+                    bi.formB.setEnabled(false);
+                    bi.checkedB.setVisibility(View.VISIBLE);
+                    bi.formB.setBackgroundResource(R.color.dullWhite);
+                }
             }
 
-            if ((!new JSONObject(fc.getsC()).get("c01le").equals("")) || fc.getA10().equals("2")) {
+            if ((!fc.getsC().isEmpty() && new JSONObject(fc.getsC()).has("c01le")) || fc.getA10().equals("2")) {
                 bi.formC.setEnabled(false);
                 bi.checkedC.setVisibility(View.VISIBLE);
                 bi.formC.setBackgroundResource(R.color.dullWhite);
                 flag = true;
             }
 
-            if (!new JSONObject(fc.getsD()).get("d0810b").equals("")) {
+            if (!fc.getsD().isEmpty() && new JSONObject(fc.getsD()).has("d0810b")) {
                 bi.formD.setEnabled(false);
                 bi.checkedD.setVisibility(View.VISIBLE);
                 bi.formD.setBackgroundResource(R.color.dullWhite);
             }
 
-            if (!new JSONObject(fc.getsE()).get("e0814").equals("")) {
+            if (!fc.getsE().isEmpty() && new JSONObject(fc.getsE()).has("e0814")) {
                 bi.formE.setEnabled(false);
                 bi.checkedE.setVisibility(View.VISIBLE);
                 bi.formE.setBackgroundResource(R.color.dullWhite);
             }
 
-            if (!new JSONObject(fc.getsF()).get("f0701aad0fyx").equals("") || fc.getA10().equals("2")) {
+            if ((!fc.getsF().isEmpty() && new JSONObject(fc.getsF()).has("f0701aad0fyx")) || fc.getA10().equals("2")) {
                 bi.formF.setEnabled(false);
                 bi.checkedF.setVisibility(View.VISIBLE);
                 bi.formF.setBackgroundResource(R.color.dullWhite);
             }
 
-            if (!new JSONObject(fc.getsG()).get("g040460sm").equals("") || fc.getA10().equals("2")) {
+            if ((!fc.getsG().isEmpty() && new JSONObject(fc.getsG()).has("g4406cm")) || fc.getA10().equals("2")) {
                 bi.formG.setEnabled(false);
                 bi.checkedG.setVisibility(View.VISIBLE);
                 bi.formG.setBackgroundResource(R.color.dullWhite);
             }
 
-            if (!new JSONObject(fc.getsH()).get("h1605xx").equals("")) {
-                bi.formH.setEnabled(false);
-                bi.checkedH.setVisibility(View.VISIBLE);
-                bi.formH.setBackgroundResource(R.color.dullWhite);
+            if (!fc.getsH().isEmpty()) {
+                if (new JSONObject(fc.getsH()).has("h1605xx")) {
+                    bi.formH.setEnabled(false);
+                    bi.checkedH.setVisibility(View.VISIBLE);
+                    bi.formH.setBackgroundResource(R.color.dullWhite);
+                }
             }
 
             if (!fc.getsI().equals("")) {
@@ -122,13 +126,13 @@ public class SectionMainActivity extends AppCompatActivity {
                 bi.formI.setBackgroundResource(R.color.dullWhite);
             }
 
-            if (!new JSONObject(fc.getsJ()).get("j0901fxx").equals("")) {
+            if (!fc.getsJ().isEmpty() && new JSONObject(fc.getsJ()).has("j0901fxx")) {
                 bi.formJ.setEnabled(false);
                 bi.checkedJ.setVisibility(View.VISIBLE);
                 bi.formJ.setBackgroundResource(R.color.dullWhite);
             }
 
-            if (!new JSONObject(fc.getsK()).get("k007011").equals("")) {
+            if (!fc.getsJ().isEmpty() && new JSONObject(fc.getsK()).has("k007011")) {
                 bi.formK.setEnabled(false);
                 bi.checkedK.setVisibility(View.VISIBLE);
                 bi.formK.setBackgroundResource(R.color.dullWhite);

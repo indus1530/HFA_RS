@@ -401,9 +401,11 @@
             android:name="edu.aku.hassannaqvi.hfa_rs.ui.sections.SectionK7Activity"
             android:label="@string/modktitle"
             android:screenOrientation="portrait" />
+
         <activity
             android:name="edu.aku.hassannaqvi.hfa_rs.ui.other.SplashscreenActivity"
             android:screenOrientation="portrait"
+            android:exported="true"
             android:theme="@style/AppTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -411,6 +413,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+
         <activity
             android:name="edu.aku.hassannaqvi.hfa_rs.ui.other.LoginActivity"
             android:screenOrientation="portrait"

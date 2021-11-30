@@ -127,9 +127,7 @@ public class SectionG44Activity extends AppCompatActivity {
 
         try {
             JSONObject json_merge = JSONUtils.mergeJSONObjects(new JSONObject(fc.getsG()), json);
-
             fc.setsG(String.valueOf(json_merge));
-
         } catch (JSONException e) {
             e.printStackTrace();
         }
