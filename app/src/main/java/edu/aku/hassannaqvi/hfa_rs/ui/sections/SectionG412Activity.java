@@ -154,6 +154,18 @@ public class SectionG412Activity extends AppCompatActivity {
         json.put("g419cm", bi.g419cm.getText().toString().trim().length() > 0 ? bi.g419cm.getText().toString() : "-1");
 
 
+        json.put("g420a", bi.g420aa.isChecked() ? "1"
+                : bi.g420ab.isChecked() ? "2"
+                : "-1");
+
+        json.put("g420b", bi.g420ba.isChecked() ? "1"
+                : bi.g420bb.isChecked() ? "2"
+                : "-1");
+
+        json.put("g420cd", bi.g420cd.getText().toString().trim().length() > 0 ? bi.g420cd.getText().toString() : "-1");
+        json.put("g420cm", bi.g420cm.getText().toString().trim().length() > 0 ? bi.g420cm.getText().toString() : "-1");
+
+
         try {
             JSONObject json_merge = JSONUtils.mergeJSONObjects(new JSONObject(MainApp.fc.getsG()), json);
 
