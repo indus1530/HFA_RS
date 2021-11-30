@@ -20,18 +20,17 @@ import edu.aku.hassannaqvi.hfa_rs.R;
 import edu.aku.hassannaqvi.hfa_rs.contracts.FormsContract;
 import edu.aku.hassannaqvi.hfa_rs.core.DatabaseHelper;
 import edu.aku.hassannaqvi.hfa_rs.core.MainApp;
-import edu.aku.hassannaqvi.hfa_rs.databinding.ActivitySectionG421Binding;
+import edu.aku.hassannaqvi.hfa_rs.databinding.ActivitySectionG42Binding;
 import edu.aku.hassannaqvi.hfa_rs.utils.JSONUtils;
 
 
-public class SectionG421Activity extends AppCompatActivity {
-
-    ActivitySectionG421Binding bi;
+public class SectionG42Activity extends AppCompatActivity {
+    ActivitySectionG42Binding bi;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        bi = DataBindingUtil.setContentView(this, R.layout.activity_section_g421);
+        bi = DataBindingUtil.setContentView(this, R.layout.activity_section_g42);
         bi.setCallback(this);
     }
 
