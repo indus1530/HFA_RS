@@ -132,7 +132,7 @@ public class SectionMainActivity extends AppCompatActivity {
                 bi.formJ.setBackgroundResource(R.color.dullWhite);
             }
 
-            if (!fc.getsJ().isEmpty() && new JSONObject(fc.getsK()).has("k007011")) {
+            if (!fc.getsK().isEmpty() && new JSONObject(fc.getsK()).has("k711")) {
                 bi.formK.setEnabled(false);
                 bi.checkedK.setVisibility(View.VISIBLE);
                 bi.formK.setBackgroundResource(R.color.dullWhite);
