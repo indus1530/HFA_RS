@@ -4,16 +4,12 @@ import static edu.aku.hassannaqvi.hfa_rs.utils.UtilKt.openSectionMainActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.text.Editable;
-import android.text.TextUtils;
-import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
-import com.validatorcrawler.aliazaz.Clear;
 import com.validatorcrawler.aliazaz.Validator;
 
 import org.json.JSONException;
@@ -42,7 +38,7 @@ public class SectionK3Activity extends AppCompatActivity {
 
     private void setupSkips() {
 
-        bi.k0031.setOnCheckedChangeListener(((radioGroup, i) -> {
+        /*bi.k0031.setOnCheckedChangeListener(((radioGroup, i) -> {
             Clear.clearAllFields(bi.llk0031);
         }));
 
@@ -63,7 +59,7 @@ public class SectionK3Activity extends AppCompatActivity {
             @Override
             public void afterTextChanged(Editable editable) {
             }
-        });
+        });*/
 
     }
 
@@ -100,38 +96,39 @@ public class SectionK3Activity extends AppCompatActivity {
 
         JSONObject json = new JSONObject();
 
-        json.put("k0031", bi.k0031a.isChecked() ? "1"
-                : bi.k0031b.isChecked() ? "2"
-                : bi.k0031c.isChecked() ? "3"
+        json.put("k301", bi.k30101.isChecked() ? "1"
+                : bi.k30102.isChecked() ? "2"
+                : bi.k30103.isChecked() ? "3"
                 : "-1");
 
-        json.put("k0032", bi.k0032a.isChecked() ? "1"
-                : bi.k0032b.isChecked() ? "2"
-                : bi.k0032c.isChecked() ? "3"
+        json.put("k302", bi.k30201.isChecked() ? "1"
+                : bi.k30202.isChecked() ? "2"
+                : bi.k30203.isChecked() ? "3"
                 : "-1");
 
-        json.put("k0033", bi.k0033a.isChecked() ? "1"
-                : bi.k0033b.isChecked() ? "2"
+        json.put("k303", bi.k30301.isChecked() ? "1"
+                : bi.k30302.isChecked() ? "2"
                 : "-1");
 
-        json.put("k0034", bi.k0034a.isChecked() ? "1"
-                : bi.k0034b.isChecked() ? "2"
+        json.put("k304", bi.k30401.isChecked() ? "1"
+                : bi.k30402.isChecked() ? "2"
                 : "-1");
 
-        json.put("k0035", bi.k0035.getText().toString().trim().isEmpty() ? "-1" : bi.k0035.getText().toString());
+        json.put("k305", bi.k305.getText().toString());
 
-        json.put("k0036", bi.k0036.getText().toString().trim().isEmpty() ? "-1" : bi.k0036.getText().toString());
+        json.put("k306", bi.k306.getText().toString());
 
-        json.put("k0037", bi.k0037a.isChecked() ? "1"
-                : bi.k0037b.isChecked() ? "2"
-                : bi.k0037c.isChecked() ? "3"
+        json.put("k307", bi.k30701.isChecked() ? "1"
+                : bi.k30702.isChecked() ? "2"
+                : bi.k30703.isChecked() ? "3"
+                : bi.k30704.isChecked() ? "4"
                 : "-1");
-        json.put("k0037d", bi.k0037d.getText().toString().trim().isEmpty() ? "-1" : bi.k0037d.getText().toString());
 
-        json.put("k0038", bi.k0038a.isChecked() ? "1"
-                : bi.k0038b.isChecked() ? "2"
-                : bi.k0038c.isChecked() ? "3"
-                : bi.k0038d.isChecked() ? "4"
+        json.put("k30704x", bi.k30704x.getText().toString());
+        json.put("k308", bi.k30801.isChecked() ? "1"
+                : bi.k30802.isChecked() ? "2"
+                : bi.k30803.isChecked() ? "3"
+                : bi.k30804.isChecked() ? "4"
                 : "-1");
 
         try {

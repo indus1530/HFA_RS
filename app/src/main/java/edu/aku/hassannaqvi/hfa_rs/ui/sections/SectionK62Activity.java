@@ -14,7 +14,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
 import com.edittextpicker.aliazaz.EditTextPicker;
-import com.validatorcrawler.aliazaz.Clear;
 import com.validatorcrawler.aliazaz.Validator;
 
 import org.json.JSONException;
@@ -45,7 +44,7 @@ public class SectionK62Activity extends AppCompatActivity {
 
     private void setupSkips() {
 
-        bi.k0060101.setOnCheckedChangeListener(((radioGroup, i) -> {
+        /*bi.k0060101.setOnCheckedChangeListener(((radioGroup, i) -> {
             Clear.clearAllFields(bi.llk0060102);
         }));
 
@@ -84,12 +83,12 @@ public class SectionK62Activity extends AppCompatActivity {
         bi.k0060191.setOnCheckedChangeListener(((radioGroup, i) -> {
             Clear.clearAllFields(bi.llk0060192);
         }));
-
+*/
     }
 
 
     private void setupTextWatchers() {
-        editTextImplementation(bi.k0060101q, bi.k0060102q);
+        /*editTextImplementation(bi.k0060101q, bi.k0060102q);
         editTextImplementation(bi.k0060111q, bi.k0060112q);
         editTextImplementation(bi.k0060121q, bi.k0060122q);
         editTextImplementation(bi.k0060131q, bi.k0060132q);
@@ -98,7 +97,7 @@ public class SectionK62Activity extends AppCompatActivity {
         editTextImplementation(bi.k0060161q, bi.k0060162q);
         editTextImplementation(bi.k0060171q, bi.k0060172q);
         editTextImplementation(bi.k0060181q, bi.k0060182q);
-        editTextImplementation(bi.k0060191q, bi.k0060192q);
+        editTextImplementation(bi.k0060191q, bi.k0060192q);*/
     }
 
 
@@ -157,7 +156,7 @@ public class SectionK62Activity extends AppCompatActivity {
         JSONObject json = new JSONObject();
 
 
-        json.put("k0060101", bi.k0060101a.isChecked() ? "1"
+        /*json.put("k0060101", bi.k0060101a.isChecked() ? "1"
                 : bi.k0060101b.isChecked() ? "2"
                 : bi.k0060101c.isChecked() ? "3"
                 : "-1");
@@ -274,7 +273,7 @@ public class SectionK62Activity extends AppCompatActivity {
         json.put("k0060192", bi.k0060192a.isChecked() ? "1"
                 : bi.k0060192b.isChecked() ? "2"
                 : "-1");
-        json.put("k0060192q", bi.k0060192q.getText().toString().trim().isEmpty() ? "-1" : bi.k0060192q.getText().toString());
+        json.put("k0060192q", bi.k0060192q.getText().toString().trim().isEmpty() ? "-1" : bi.k0060192q.getText().toString());*/
 
 
         try {

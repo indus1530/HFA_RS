@@ -11,7 +11,6 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
-import com.validatorcrawler.aliazaz.Clear;
 import com.validatorcrawler.aliazaz.Validator;
 
 import org.jetbrains.annotations.NotNull;
@@ -40,14 +39,14 @@ public class SectionK2Activity extends AppCompatActivity {
 
     private void setupSkips() {
 
-        bi.k0021.setOnCheckedChangeListener(((radioGroup, i) -> {
+        /*bi.k0021.setOnCheckedChangeListener(((radioGroup, i) -> {
             Clear.clearAllFields(bi.llk0021);
         }));
 
 
         bi.k0023.setOnCheckedChangeListener(((radioGroup, i) -> {
             Clear.clearAllFields(bi.cvk0024);
-        }));
+        }));*/
 
     }
 
@@ -84,23 +83,23 @@ public class SectionK2Activity extends AppCompatActivity {
 
         JSONObject json = new JSONObject();
 
-        json.put("k0021", bi.k0021a.isChecked() ? "1"
-                : bi.k0021b.isChecked() ? "2"
+        json.put("k201", bi.k20101.isChecked() ? "1"
+                : bi.k20102.isChecked() ? "2"
                 : "-1");
 
-        json.put("k0022", bi.k0022a.isChecked() ? "1"
-                : bi.k0022b.isChecked() ? "2"
-                : bi.k0022c.isChecked() ? "3"
+        json.put("k202", bi.k20201.isChecked() ? "1"
+                : bi.k20202.isChecked() ? "2"
+                : bi.k20203.isChecked() ? "3"
                 : "-1");
 
-        json.put("k0023", bi.k0023a.isChecked() ? "1"
-                : bi.k0023b.isChecked() ? "2"
+        json.put("k203", bi.k20301.isChecked() ? "1"
+                : bi.k20302.isChecked() ? "2"
                 : "-1");
 
-        json.put("k0024", bi.k0024a.isChecked() ? "1"
-                : bi.k0024b.isChecked() ? "2"
-                : bi.k0024c.isChecked() ? "3"
-                : bi.k0024d.isChecked() ? "4"
+        json.put("k204", bi.k20401.isChecked() ? "1"
+                : bi.k20402.isChecked() ? "2"
+                : bi.k20403.isChecked() ? "3"
+                : bi.k20404.isChecked() ? "4"
                 : "-1");
 
         try {

@@ -14,7 +14,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
 import com.edittextpicker.aliazaz.EditTextPicker;
-import com.validatorcrawler.aliazaz.Clear;
 import com.validatorcrawler.aliazaz.Validator;
 
 import org.json.JSONException;
@@ -45,7 +44,7 @@ public class SectionK63Activity extends AppCompatActivity {
 
     private void setupSkips() {
 
-        bi.k0060201.setOnCheckedChangeListener(((radioGroup, i) -> {
+        /*bi.k0060201.setOnCheckedChangeListener(((radioGroup, i) -> {
             Clear.clearAllFields(bi.llk0060202);
         }));
 
@@ -79,13 +78,13 @@ public class SectionK63Activity extends AppCompatActivity {
 
         bi.k0060281.setOnCheckedChangeListener(((radioGroup, i) -> {
             Clear.clearAllFields(bi.llk0060282);
-        }));
+        }));*/
 
     }
 
 
     private void setupTextWatchers() {
-        editTextImplementation(bi.k0060201q, bi.k0060202q);
+        /*editTextImplementation(bi.k0060201q, bi.k0060202q);
         editTextImplementation(bi.k0060211q, bi.k0060212q);
         editTextImplementation(bi.k0060221q, bi.k0060222q);
         editTextImplementation(bi.k0060231q, bi.k0060232q);
@@ -93,7 +92,7 @@ public class SectionK63Activity extends AppCompatActivity {
         editTextImplementation(bi.k0060251q, bi.k0060252q);
         editTextImplementation(bi.k0060261q, bi.k0060262q);
         editTextImplementation(bi.k0060271q, bi.k0060272q);
-        editTextImplementation(bi.k0060281q, bi.k0060282q);
+        editTextImplementation(bi.k0060281q, bi.k0060282q);*/
     }
 
 
@@ -152,7 +151,7 @@ public class SectionK63Activity extends AppCompatActivity {
         JSONObject json = new JSONObject();
 
 
-        json.put("k0060201", bi.k0060201a.isChecked() ? "1"
+        /*json.put("k0060201", bi.k0060201a.isChecked() ? "1"
                 : bi.k0060201b.isChecked() ? "2"
                 : bi.k0060201c.isChecked() ? "3"
                 : "-1");
@@ -257,7 +256,7 @@ public class SectionK63Activity extends AppCompatActivity {
         json.put("k0060282", bi.k0060282a.isChecked() ? "1"
                 : bi.k0060282b.isChecked() ? "2"
                 : "-1");
-        json.put("k0060282q", bi.k0060282q.getText().toString().trim().isEmpty() ? "-1" : bi.k0060282q.getText().toString());
+        json.put("k0060282q", bi.k0060282q.getText().toString().trim().isEmpty() ? "-1" : bi.k0060282q.getText().toString());*/
 
 
         try {
