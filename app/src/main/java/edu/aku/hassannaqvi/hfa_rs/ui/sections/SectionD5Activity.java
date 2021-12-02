@@ -16,7 +16,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
 import com.edittextpicker.aliazaz.EditTextPicker;
-import com.validatorcrawler.aliazaz.Clear;
 import com.validatorcrawler.aliazaz.Validator;
 
 import org.jetbrains.annotations.NotNull;
@@ -40,7 +39,6 @@ public class SectionD5Activity extends AppCompatActivity {
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_d5);
         bi.setCallback(this);
         setupTextWatchers();
-        setupSkips();
 
     }
 
@@ -75,35 +73,6 @@ public class SectionD5Activity extends AppCompatActivity {
     }
 
 
-    private void setupSkips() {
-
-        bi.d0502a0a.setOnCheckedChangeListener(((radioGroup, i) -> {
-            if (i == bi.d0502a0an.getId()) {
-                Clear.clearAllFields(bi.fldGrpCVd0502a0f);
-            }
-        }));
-
-        bi.d0502b0a.setOnCheckedChangeListener(((radioGroup, i) -> {
-            if (i == bi.d0502b0an.getId()) {
-                Clear.clearAllFields(bi.fldGrpCVd0502b0f);
-            }
-        }));
-
-        bi.d0502c0a.setOnCheckedChangeListener(((radioGroup, i) -> {
-            if (i == bi.d0502c0an.getId()) {
-                Clear.clearAllFields(bi.fldGrpCVd0502c0f);
-            }
-        }));
-
-        bi.d0502d0a.setOnCheckedChangeListener(((radioGroup, i) -> {
-            if (i == bi.d0502d0an.getId()) {
-                Clear.clearAllFields(bi.fldGrpCVd0502d0f);
-            }
-        }));
-
-    }
-
-
     private boolean UpdateDB() {
         DatabaseHelper db = MainApp.appInfo.getDbHelper();
         int updcount = db.updatesFormColumn(FormsContract.FormsTable.COLUMN_SD, fc.getsD());
@@ -124,6 +93,17 @@ public class SectionD5Activity extends AppCompatActivity {
                 : bi.d0501b.isChecked() ? "2"
                 : bi.d0501c.isChecked() ? "3"
                 : "-1");
+
+        json.put("d05011", bi.d05011a.isChecked() ? "1"
+                : bi.d05011b.isChecked() ? "2"
+                : "-1");
+
+        json.put("d05012", bi.d05012a.isChecked() ? "1"
+                : bi.d05012b.isChecked() ? "2"
+                : bi.d05012c.isChecked() ? "3"
+                : bi.d0501296.isChecked() ? "96"
+                : "-1");
+        json.put("d0501296x", bi.d0501296x.getText().toString().trim().isEmpty() ? "-1" : bi.d0501296x.getText().toString());
 
         json.put("d0502a0a", bi.d0502a0ay.isChecked() ? "1"
                 : bi.d0502a0an.isChecked() ? "2"

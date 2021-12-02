@@ -40,17 +40,13 @@ public class MainApp extends Application {
     public static final String TAG = "AppMain";
 
     /*VCOE1 LIVE SERVER*/
-    public static final String _IP = "vcoe1.aku.edu"; // .Net server
-    public static final String _HOST_URL = "https://" + MainApp._IP + "/uen_hfa/api/"; // .VOC server
-
-    /*F38158 TEST SERVER*/
-/*    public static final String _IP = "f38158";// .TEST server
-    public static final String _HOST_URL = "http://" + MainApp._IP + "/uen_hfa/api/"; // .TEST server*/
-
+    public static final String _IP = "https://vcoe1.aku.edu";// .LIVE server
+    //public static final String _IP = "http://cls-pae-fp51764";// .TEST server
+    public static final String _HOST_URL = MainApp._IP + "/uen_hfa/api/";// .TEST server;
     public static final String _SERVER_URL = "sync.php";
-
-    public static final String _UPDATE_URL = "https://" + MainApp._IP + "/uen_hfa/app/";
-
+    public static final String _SERVER_GET_URL = "getData.php";
+    public static final String _PHOTO_UPLOAD_URL = _HOST_URL + "uploads.php";
+    public static final String _UPDATE_URL = MainApp._IP + "/uen_hfa/app/";
 
     public static final Integer MONTHS_LIMIT = 11;
     public static final Integer DAYS_LIMIT = 29;
