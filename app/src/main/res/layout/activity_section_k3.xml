@@ -405,7 +405,7 @@
                                 android:maxLength="3"
                                 android:tag="k30704"
                                 android:text='@{k30704.checked ? k30704x.getText().toString() : ""}'
-
+                                app:minValue="0"
                                 android:visibility='@{k30704.checked? View.VISIBLE : View.GONE}'
                                 app:maxValue="100"
                                 app:type="range" />
