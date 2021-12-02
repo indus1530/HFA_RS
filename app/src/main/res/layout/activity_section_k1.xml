@@ -248,9 +248,11 @@
                             android:inputType="number"
                             android:maxLength="3"
                             app:maxValue="100"
-
+                            app:minValue="0"
                             app:type="range" />
+
                     </LinearLayout>
+
                 </androidx.cardview.widget.CardView>
 
                 <!-- k101bb  Radio   -->
@@ -339,7 +341,7 @@
                             android:inputType="number"
                             android:maxLength="3"
                             app:maxValue="100"
-
+                            app:minValue="0"
                             app:type="range" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
@@ -430,7 +432,7 @@
                             android:inputType="number"
                             android:maxLength="3"
                             app:maxValue="100"
-
+                            app:minValue="0"
                             app:type="range" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
@@ -521,7 +523,7 @@
                             android:inputType="number"
                             android:maxLength="3"
                             app:maxValue="100"
-
+                            app:minValue="0"
                             app:type="range" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
@@ -612,7 +614,7 @@
                             android:inputType="number"
                             android:maxLength="3"
                             app:maxValue="100"
-
+                            app:minValue="0"
                             app:type="range" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
@@ -703,7 +705,7 @@
                             android:inputType="number"
                             android:maxLength="3"
                             app:maxValue="100"
-
+                            app:minValue="0"
                             app:type="range" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
@@ -794,7 +796,7 @@
                             android:inputType="number"
                             android:maxLength="3"
                             app:maxValue="100"
-
+                            app:minValue="0"
                             app:type="range" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
@@ -901,7 +903,7 @@
                             android:inputType="number"
                             android:maxLength="3"
                             app:maxValue="100"
-
+                            app:minValue="0"
                             app:type="range" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
