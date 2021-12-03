@@ -90,79 +90,70 @@ public class SectionK1Activity extends AppCompatActivity {
         json.put("KDate", new SimpleDateFormat("dd-MM-yyyy").format(new Date().getTime()));
         json.put("KTime", new SimpleDateFormat("HH:mm").format(new Date().getTime()));
 
-        json.put("k101", bi.k10101.isChecked() ? "1"
-                : bi.k10102.isChecked() ? "2"
+        json.put("k101", bi.k101a.isChecked() ? "1"
+                : bi.k101b.isChecked() ? "2"
                 : "-1");
 
-        json.put("k101a", bi.k101a01.isChecked() ? "1"
-                : bi.k101a02.isChecked() ? "2"
+        json.put("k102", bi.k102a.isChecked() ? "1"
+                : bi.k102b.isChecked() ? "2"
                 : "-1");
 
-        json.put("k101ba", bi.k101ba01.isChecked() ? "1"
-                : bi.k101ba02.isChecked() ? "2"
+        json.put("k1031", bi.k1031a.isChecked() ? "1"
+                : bi.k1031b.isChecked() ? "2"
+                : "-1");
+        json.put("k1031ax", bi.k1031ax.getText().toString().trim().isEmpty() ? "-1" : bi.k1031ax.getText().toString());
+
+        json.put("k1032", bi.k1032a.isChecked() ? "1"
+                : bi.k1032b.isChecked() ? "2"
+                : "-1");
+        json.put("k1032ax", bi.k1032ax.getText().toString().trim().isEmpty() ? "-1" : bi.k1032ax.getText().toString());
+
+        json.put("k1033", bi.k1033a.isChecked() ? "1"
+                : bi.k1033b.isChecked() ? "2"
+                : "-1");
+        json.put("k1033ax", bi.k1033ax.getText().toString().trim().isEmpty() ? "-1" : bi.k1033ax.getText().toString());
+
+        json.put("k1034", bi.k1034a.isChecked() ? "1"
+                : bi.k1034b.isChecked() ? "2"
+                : "-1");
+        json.put("k1034ax", bi.k1034ax.getText().toString().trim().isEmpty() ? "-1" : bi.k1034ax.getText().toString());
+
+        json.put("k1035", bi.k1035a.isChecked() ? "1"
+                : bi.k1035b.isChecked() ? "2"
+                : "-1");
+        json.put("k1035ax", bi.k1035ax.getText().toString().trim().isEmpty() ? "-1" : bi.k1035ax.getText().toString());
+
+        json.put("k1036", bi.k1036a.isChecked() ? "1"
+                : bi.k1036b.isChecked() ? "2"
+                : "-1");
+        json.put("k1036ax", bi.k1036ax.getText().toString().trim().isEmpty() ? "-1" : bi.k1036ax.getText().toString());
+
+        json.put("k1037", bi.k1037a.isChecked() ? "1"
+                : bi.k1037b.isChecked() ? "2"
+                : "-1");
+        json.put("k1037ax", bi.k1037ax.getText().toString().trim().isEmpty() ? "-1" : bi.k1037ax.getText().toString());
+
+        json.put("k10396", bi.k10396a.isChecked() ? "1"
+                : bi.k10396b.isChecked() ? "2"
+                : "-1");
+        json.put("k10396ax", bi.k10396ax.getText().toString().trim().isEmpty() ? "-1" : bi.k10396ax.getText().toString());
+        json.put("k10396x", bi.k10396x.getText().toString().trim().isEmpty() ? "-1" : bi.k10396x.getText().toString());
+
+        json.put("k104", bi.k104a.isChecked() ? "1"
+                : bi.k104b.isChecked() ? "2"
+                : bi.k104c.isChecked() ? "3"
+                : bi.k10497.isChecked() ? "97"
+                : bi.k10496.isChecked() ? "96"
+                : "-1");
+        json.put("k10496x", bi.k10496x.getText().toString().trim().isEmpty() ? "-1" : bi.k10496x.getText().toString());
+
+        json.put("k105", bi.k105a.isChecked() ? "1"
+                : bi.k105b.isChecked() ? "2"
+                : bi.k105c.isChecked() ? "3"
                 : "-1");
 
-        json.put("k101ba03", bi.k101ba03.getText().toString());
-
-        json.put("k101bb", bi.k101bb01.isChecked() ? "1"
-                : bi.k101bb02.isChecked() ? "2"
-                : "-1");
-
-        json.put("k101bb03", bi.k101bb03.getText().toString());
-
-        json.put("k101bc", bi.k101bc01.isChecked() ? "1"
-                : bi.k101bc02.isChecked() ? "2"
-                : "-1");
-
-        json.put("k101bc03", bi.k101bc03.getText().toString());
-
-        json.put("k101bd", bi.k101bd01.isChecked() ? "1"
-                : bi.k101bd02.isChecked() ? "2"
-                : "-1");
-
-        json.put("k101bd03", bi.k101bd03.getText().toString());
-
-        json.put("k101be", bi.k101be01.isChecked() ? "1"
-                : bi.k101be02.isChecked() ? "2"
-                : "-1");
-
-        json.put("k101be03", bi.k101be03.getText().toString());
-
-        json.put("k101bf", bi.k101bf01.isChecked() ? "1"
-                : bi.k101bf02.isChecked() ? "2"
-                : "-1");
-
-        json.put("k101bf03", bi.k101bf03.getText().toString());
-
-        json.put("k101bg", bi.k101bg01.isChecked() ? "1"
-                : bi.k101bg02.isChecked() ? "2"
-                : "-1");
-
-        json.put("k101bg03", bi.k101bg03.getText().toString());
-
-        json.put("k101b96", bi.k101b9601.isChecked() ? "1"
-                : bi.k101b9602.isChecked() ? "2"
-                : bi.k101b9603.isChecked() ? "96"
-                : "-1");
-
-        json.put("k101b9603x", bi.k101b9603x.getText().toString());
-        json.put("k101b9604", bi.k101b9604.getText().toString());
-
-        json.put("k102", bi.k10201.isChecked() ? "1"
-                : bi.k10202.isChecked() ? "2"
-                : bi.k10203.isChecked() ? "3"
-                : bi.k10204.isChecked() ? "4"
-                : bi.k10296.isChecked() ? "96"
-                : "-1");
-
-        json.put("k10296x", bi.k10296x.getText().toString());
-        json.put("k103", bi.k10301.isChecked() ? "1"
-                : bi.k10302.isChecked() ? "2"
-                : bi.k10303.isChecked() ? "3"
-                : "-1");
-
-        json.put("k104", bi.k10401.isChecked() ? "1"
-                : bi.k10402.isChecked() ? "2"
+        json.put("k106", bi.k106a.isChecked() ? "1"
+                : bi.k106b.isChecked() ? "2"
                 : "-1");
 
         MainApp.fc.setsK(String.valueOf(json));
