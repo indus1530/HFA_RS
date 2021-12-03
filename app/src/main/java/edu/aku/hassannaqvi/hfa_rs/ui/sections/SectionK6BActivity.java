@@ -23,18 +23,17 @@ import edu.aku.hassannaqvi.hfa_rs.R;
 import edu.aku.hassannaqvi.hfa_rs.contracts.FormsContract;
 import edu.aku.hassannaqvi.hfa_rs.core.DatabaseHelper;
 import edu.aku.hassannaqvi.hfa_rs.core.MainApp;
-import edu.aku.hassannaqvi.hfa_rs.databinding.ActivitySectionK62Binding;
+import edu.aku.hassannaqvi.hfa_rs.databinding.ActivitySectionK6bBinding;
 import edu.aku.hassannaqvi.hfa_rs.utils.JSONUtils;
 
 
-public class SectionK62Activity extends AppCompatActivity {
-
-    ActivitySectionK62Binding bi;
+public class SectionK6BActivity extends AppCompatActivity {
+    ActivitySectionK6bBinding bi;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        bi = DataBindingUtil.setContentView(this, R.layout.activity_section_k62);
+        bi = DataBindingUtil.setContentView(this, R.layout.activity_section_k6b);
         bi.setCallback(this);
         setupTextWatchers();
 
