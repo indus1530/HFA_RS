@@ -23,69 +23,18 @@ import edu.aku.hassannaqvi.hfa_rs.R;
 import edu.aku.hassannaqvi.hfa_rs.contracts.FormsContract;
 import edu.aku.hassannaqvi.hfa_rs.core.DatabaseHelper;
 import edu.aku.hassannaqvi.hfa_rs.core.MainApp;
-import edu.aku.hassannaqvi.hfa_rs.databinding.ActivitySectionK61Binding;
+import edu.aku.hassannaqvi.hfa_rs.databinding.ActivitySectionK6aBinding;
 import edu.aku.hassannaqvi.hfa_rs.utils.JSONUtils;
 
-public class SectionK61Activity extends AppCompatActivity {
-
-    ActivitySectionK61Binding bi;
+public class SectionK6AActivity extends AppCompatActivity {
+    ActivitySectionK6aBinding bi;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        bi = DataBindingUtil.setContentView(this, R.layout.activity_section_k61);
+        bi = DataBindingUtil.setContentView(this, R.layout.activity_section_k6a);
         bi.setCallback(this);
-        setupSkips();
         setupTextWatchers();
-
-    }
-
-
-    private void setupSkips() {
-
-        /*bi.k00611.setOnCheckedChangeListener(((radioGroup, i) -> {
-            Clear.clearAllFields(bi.llk00612);
-        }));
-
-
-        bi.k00621.setOnCheckedChangeListener(((radioGroup, i) -> {
-            Clear.clearAllFields(bi.llk00622);
-        }));
-
-
-        bi.k00631.setOnCheckedChangeListener(((radioGroup, i) -> {
-            Clear.clearAllFields(bi.llk00632);
-        }));
-
-
-        bi.k00641.setOnCheckedChangeListener(((radioGroup, i) -> {
-            Clear.clearAllFields(bi.llk00642);
-        }));
-
-
-        bi.k00651.setOnCheckedChangeListener(((radioGroup, i) -> {
-            Clear.clearAllFields(bi.llk00652);
-        }));
-
-
-        bi.k00661.setOnCheckedChangeListener(((radioGroup, i) -> {
-            Clear.clearAllFields(bi.llk00662);
-        }));
-
-
-        bi.k00671.setOnCheckedChangeListener(((radioGroup, i) -> {
-            Clear.clearAllFields(bi.llk00672);
-        }));
-
-
-        bi.k00681.setOnCheckedChangeListener(((radioGroup, i) -> {
-            Clear.clearAllFields(bi.llk00682);
-        }));
-
-
-        bi.k00691.setOnCheckedChangeListener(((radioGroup, i) -> {
-            Clear.clearAllFields(bi.llk00692);
-        }));*/
 
     }
 
