@@ -11,6 +11,7 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
+import com.validatorcrawler.aliazaz.Clear;
 import com.validatorcrawler.aliazaz.Validator;
 
 import org.jetbrains.annotations.NotNull;
@@ -42,9 +43,20 @@ public class SectionK1Activity extends AppCompatActivity {
 
     private void setupSkips() {
 
-       /* bi.k0001.setOnCheckedChangeListener(((radioGroup, i) -> {
-            Clear.clearAllFields(bi.llk0001);
-        }));*/
+        bi.k101.setOnCheckedChangeListener(((radioGroup, i) -> {
+            Clear.clearAllFields(bi.fldGrpCVk102);
+            Clear.clearAllFields(bi.fldGrpCVk103);
+            Clear.clearAllFields(bi.fldGrpCVk104);
+            bi.fldGrpCVk102.setVisibility(View.GONE);
+            bi.fldGrpCVk103.setVisibility(View.GONE);
+            bi.fldGrpCVk104.setVisibility(View.GONE);
+            if (i == bi.k101a.getId()) {
+                bi.fldGrpCVk102.setVisibility(View.VISIBLE);
+                bi.fldGrpCVk103.setVisibility(View.VISIBLE);
+            } else {
+                bi.fldGrpCVk104.setVisibility(View.VISIBLE);
+            }
+        }));
 
     }
 
