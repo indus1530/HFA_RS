@@ -11,6 +11,7 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
+import com.validatorcrawler.aliazaz.Clear;
 import com.validatorcrawler.aliazaz.Validator;
 
 import org.jetbrains.annotations.NotNull;
@@ -39,14 +40,21 @@ public class SectionK2Activity extends AppCompatActivity {
 
     private void setupSkips() {
 
-        /*bi.k0021.setOnCheckedChangeListener(((radioGroup, i) -> {
-            Clear.clearAllFields(bi.llk0021);
+        bi.k201.setOnCheckedChangeListener(((radioGroup, i) -> {
+            Clear.clearAllFields(bi.llk201);
+            bi.llk201.setVisibility(View.GONE);
+            if (i == bi.k201a.getId()) {
+                bi.llk201.setVisibility(View.VISIBLE);
+            }
         }));
 
-
-        bi.k0023.setOnCheckedChangeListener(((radioGroup, i) -> {
-            Clear.clearAllFields(bi.cvk0024);
-        }));*/
+        bi.k203.setOnCheckedChangeListener(((radioGroup, i) -> {
+            Clear.clearAllFields(bi.fldGrpCVk204);
+            bi.fldGrpCVk204.setVisibility(View.GONE);
+            if (i == bi.k203a.getId()) {
+                bi.fldGrpCVk204.setVisibility(View.VISIBLE);
+            }
+        }));
 
     }
 
@@ -83,23 +91,23 @@ public class SectionK2Activity extends AppCompatActivity {
 
         JSONObject json = new JSONObject();
 
-        json.put("k201", bi.k20101.isChecked() ? "1"
-                : bi.k20102.isChecked() ? "2"
+        json.put("k201", bi.k201a.isChecked() ? "1"
+                : bi.k201b.isChecked() ? "2"
                 : "-1");
 
-        json.put("k202", bi.k20201.isChecked() ? "1"
-                : bi.k20202.isChecked() ? "2"
-                : bi.k20203.isChecked() ? "3"
+        json.put("k202", bi.k202a.isChecked() ? "1"
+                : bi.k202b.isChecked() ? "2"
+                : bi.k202c.isChecked() ? "3"
                 : "-1");
 
-        json.put("k203", bi.k20301.isChecked() ? "1"
-                : bi.k20302.isChecked() ? "2"
+        json.put("k203", bi.k203a.isChecked() ? "1"
+                : bi.k203b.isChecked() ? "2"
                 : "-1");
 
-        json.put("k204", bi.k20401.isChecked() ? "1"
-                : bi.k20402.isChecked() ? "2"
-                : bi.k20403.isChecked() ? "3"
-                : bi.k20404.isChecked() ? "4"
+        json.put("k204", bi.k204a.isChecked() ? "1"
+                : bi.k204b.isChecked() ? "2"
+                : bi.k204c.isChecked() ? "3"
+                : bi.k204d.isChecked() ? "4"
                 : "-1");
 
         try {
