@@ -9,6 +9,7 @@
         <variable
             name="callback"
             type="edu.aku.hassannaqvi.hfa_rs.ui.sections.SectionK62Activity" />
+
     </data>
 
 
@@ -46,9 +47,9 @@
                 android:orientation="vertical">
 
 
-                <!-- k615  Radio   -->
+                <!--k615 Radio EditText-->
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVk615"
+                    android:id="@+id/cvk615"
                     style="@style/cardView">
 
                     <LinearLayout
@@ -69,10 +70,10 @@
                                 android:text="@string/Q_k615" />
 
                             <TextView
-                                android:layout_width="0dp"
+                                android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:layout_weight="1"
                                 android:text="@string/k615" />
+
                         </LinearLayout>
 
                         <RadioGroup
@@ -98,52 +99,71 @@
                                 android:layout_height="wrap_content"
                                 android:text="@string/k615c" />
 
-                            <RadioButton
-                                android:id="@+id/k615d"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                        </RadioGroup>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:visibility="@{k615a.checked ? View.GONE : View.VISIBLE }">
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
                                 android:text="@string/k615d" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/k615dx"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:hint="@string/k615d"
+                                android:id="@+id/k615d"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:hint="######"
                                 android:inputType="number"
-                                android:maxLength="3"
-                                android:tag="k615d"
-                                android:text='@{k615d.checked ? k615dx.getText().toString() : ""}'
-                                android:visibility='@{k615d.checked? View.VISIBLE : View.GONE}'
-                                app:maxValue="100"
-                                app:minValue="0"
+                                android:maxLength="6"
+                                android:text="@{k615a.checked ? `` : k615d.getText().toString()}"
+                                app:maxValue="999999"
+                                app:minValue="1"
                                 app:type="range" />
 
-                            <RadioButton
-                                android:id="@+id/k615e"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                            <View
+                                style="@style/textView"
+                                android:layout_width="5dp"
+                                android:layout_height="match_parent" />
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
                                 android:text="@string/k615e" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/k615ex"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:hint="@string/k615e"
+                                android:id="@+id/k615e"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:hint="######"
                                 android:inputType="number"
-                                android:maxLength="3"
-                                android:tag="k615e"
-                                android:text='@{k615e.checked ? k615ex.getText().toString() : ""}'
-                                android:visibility='@{k615e.checked? View.VISIBLE : View.GONE}'
-                                app:maxValue="100"
-                                app:minValue="0"
+                                android:maxLength="6"
+                                android:text="@{k615a.checked ? `` : k615e.getText().toString()}"
+                                app:maxValue="999999"
+                                app:minValue="1"
                                 app:type="range" />
-                        </RadioGroup>
+
+                        </LinearLayout>
+
                     </LinearLayout>
+
                 </androidx.cardview.widget.CardView>
 
-                <!-- k616  Radio   -->
+
+                <!--k616 Radio EditText-->
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVk616"
+                    android:id="@+id/cvk616"
                     style="@style/cardView">
 
                     <LinearLayout
@@ -164,10 +184,10 @@
                                 android:text="@string/Q_k616" />
 
                             <TextView
-                                android:layout_width="0dp"
+                                android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:layout_weight="1"
                                 android:text="@string/k616" />
+
                         </LinearLayout>
 
                         <RadioGroup
@@ -193,52 +213,71 @@
                                 android:layout_height="wrap_content"
                                 android:text="@string/k616c" />
 
-                            <RadioButton
-                                android:id="@+id/k616d"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                        </RadioGroup>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:visibility="@{k616a.checked ? View.GONE : View.VISIBLE }">
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
                                 android:text="@string/k616d" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/k616dx"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:hint="@string/k616d"
+                                android:id="@+id/k616d"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:hint="######"
                                 android:inputType="number"
-                                android:maxLength="3"
-                                android:tag="k616d"
-                                android:text='@{k616d.checked ? k616dx.getText().toString() : ""}'
-                                android:visibility='@{k616d.checked? View.VISIBLE : View.GONE}'
-                                app:maxValue="100"
-                                app:minValue="0"
+                                android:maxLength="6"
+                                android:text="@{k616a.checked ? `` : k616d.getText().toString()}"
+                                app:maxValue="999999"
+                                app:minValue="1"
                                 app:type="range" />
 
-                            <RadioButton
-                                android:id="@+id/k616e"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                            <View
+                                style="@style/textView"
+                                android:layout_width="5dp"
+                                android:layout_height="match_parent" />
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
                                 android:text="@string/k616e" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/k616ex"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:hint="@string/k616e"
+                                android:id="@+id/k616e"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:hint="######"
                                 android:inputType="number"
-                                android:maxLength="3"
-                                android:tag="k616e"
-                                android:text='@{k616e.checked ? k616ex.getText().toString() : ""}'
-                                android:visibility='@{k616e.checked? View.VISIBLE : View.GONE}'
-                                app:maxValue="100"
-                                app:minValue="0"
+                                android:maxLength="6"
+                                android:text="@{k616a.checked ? `` : k616e.getText().toString()}"
+                                app:maxValue="999999"
+                                app:minValue="1"
                                 app:type="range" />
-                        </RadioGroup>
+
+                        </LinearLayout>
+
                     </LinearLayout>
+
                 </androidx.cardview.widget.CardView>
 
-                <!-- k617  Radio   -->
+
+                <!--k617 Radio EditText-->
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVk617"
+                    android:id="@+id/cvk617"
                     style="@style/cardView">
 
                     <LinearLayout
@@ -259,10 +298,10 @@
                                 android:text="@string/Q_k617" />
 
                             <TextView
-                                android:layout_width="0dp"
+                                android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:layout_weight="1"
                                 android:text="@string/k617" />
+
                         </LinearLayout>
 
                         <RadioGroup
@@ -288,52 +327,71 @@
                                 android:layout_height="wrap_content"
                                 android:text="@string/k617c" />
 
-                            <RadioButton
-                                android:id="@+id/k617d"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                        </RadioGroup>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:visibility="@{k617a.checked ? View.GONE : View.VISIBLE }">
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
                                 android:text="@string/k617d" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/k617dx"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:hint="@string/k617d"
+                                android:id="@+id/k617d"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:hint="######"
                                 android:inputType="number"
-                                android:maxLength="3"
-                                android:tag="k617d"
-                                android:text='@{k617d.checked ? k617dx.getText().toString() : ""}'
-                                android:visibility='@{k617d.checked? View.VISIBLE : View.GONE}'
-                                app:maxValue="100"
-                                app:minValue="0"
+                                android:maxLength="6"
+                                android:text="@{k617a.checked ? `` : k617d.getText().toString()}"
+                                app:maxValue="999999"
+                                app:minValue="1"
                                 app:type="range" />
 
-                            <RadioButton
-                                android:id="@+id/k617e"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                            <View
+                                style="@style/textView"
+                                android:layout_width="5dp"
+                                android:layout_height="match_parent" />
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
                                 android:text="@string/k617e" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/k617ex"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:hint="@string/k617e"
+                                android:id="@+id/k617e"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:hint="######"
                                 android:inputType="number"
-                                android:maxLength="3"
-                                android:tag="k617e"
-                                android:text='@{k617e.checked ? k617ex.getText().toString() : ""}'
-                                android:visibility='@{k617e.checked? View.VISIBLE : View.GONE}'
-                                app:maxValue="100"
-                                app:minValue="0"
+                                android:maxLength="6"
+                                android:text="@{k617a.checked ? `` : k617e.getText().toString()}"
+                                app:maxValue="999999"
+                                app:minValue="1"
                                 app:type="range" />
-                        </RadioGroup>
+
+                        </LinearLayout>
+
                     </LinearLayout>
+
                 </androidx.cardview.widget.CardView>
 
-                <!-- k618  Radio   -->
+
+                <!--k618 Radio EditText-->
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVk618"
+                    android:id="@+id/cvk618"
                     style="@style/cardView">
 
                     <LinearLayout
@@ -354,10 +412,10 @@
                                 android:text="@string/Q_k618" />
 
                             <TextView
-                                android:layout_width="0dp"
+                                android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:layout_weight="1"
                                 android:text="@string/k618" />
+
                         </LinearLayout>
 
                         <RadioGroup
@@ -383,52 +441,71 @@
                                 android:layout_height="wrap_content"
                                 android:text="@string/k618c" />
 
-                            <RadioButton
-                                android:id="@+id/k618d"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                        </RadioGroup>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:visibility="@{k618a.checked ? View.GONE : View.VISIBLE }">
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
                                 android:text="@string/k618d" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/k618dx"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:hint="@string/k618d"
+                                android:id="@+id/k618d"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:hint="######"
                                 android:inputType="number"
-                                android:maxLength="3"
-                                android:tag="k618d"
-                                android:text='@{k618d.checked ? k618dx.getText().toString() : ""}'
-                                android:visibility='@{k618d.checked? View.VISIBLE : View.GONE}'
-                                app:maxValue="100"
-                                app:minValue="0"
+                                android:maxLength="6"
+                                android:text="@{k618a.checked ? `` : k618d.getText().toString()}"
+                                app:maxValue="999999"
+                                app:minValue="1"
                                 app:type="range" />
 
-                            <RadioButton
-                                android:id="@+id/k618e"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                            <View
+                                style="@style/textView"
+                                android:layout_width="5dp"
+                                android:layout_height="match_parent" />
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
                                 android:text="@string/k618e" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/k618ex"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:hint="@string/k618e"
+                                android:id="@+id/k618e"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:hint="######"
                                 android:inputType="number"
-                                android:maxLength="3"
-                                android:tag="k618e"
-                                android:text='@{k618e.checked ? k618ex.getText().toString() : ""}'
-                                android:visibility='@{k618e.checked? View.VISIBLE : View.GONE}'
-                                app:maxValue="100"
-                                app:minValue="0"
+                                android:maxLength="6"
+                                android:text="@{k618a.checked ? `` : k618e.getText().toString()}"
+                                app:maxValue="999999"
+                                app:minValue="1"
                                 app:type="range" />
-                        </RadioGroup>
+
+                        </LinearLayout>
+
                     </LinearLayout>
+
                 </androidx.cardview.widget.CardView>
 
-                <!-- k619  Radio   -->
+
+                <!--k619 Radio EditText-->
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVk619"
+                    android:id="@+id/cvk619"
                     style="@style/cardView">
 
                     <LinearLayout
@@ -449,10 +526,10 @@
                                 android:text="@string/Q_k619" />
 
                             <TextView
-                                android:layout_width="0dp"
+                                android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:layout_weight="1"
                                 android:text="@string/k619" />
+
                         </LinearLayout>
 
                         <RadioGroup
@@ -478,52 +555,71 @@
                                 android:layout_height="wrap_content"
                                 android:text="@string/k619c" />
 
-                            <RadioButton
-                                android:id="@+id/k619d"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                        </RadioGroup>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:visibility="@{k619a.checked ? View.GONE : View.VISIBLE }">
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
                                 android:text="@string/k619d" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/k619dx"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:hint="@string/k619d"
+                                android:id="@+id/k619d"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:hint="######"
                                 android:inputType="number"
-                                android:maxLength="3"
-                                android:tag="k619d"
-                                android:text='@{k619d.checked ? k619dx.getText().toString() : ""}'
-                                android:visibility='@{k619d.checked? View.VISIBLE : View.GONE}'
-                                app:maxValue="100"
-                                app:minValue="0"
+                                android:maxLength="6"
+                                android:text="@{k619a.checked ? `` : k619d.getText().toString()}"
+                                app:maxValue="999999"
+                                app:minValue="1"
                                 app:type="range" />
 
-                            <RadioButton
-                                android:id="@+id/k619e"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                            <View
+                                style="@style/textView"
+                                android:layout_width="5dp"
+                                android:layout_height="match_parent" />
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
                                 android:text="@string/k619e" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/k619ex"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:hint="@string/k619e"
+                                android:id="@+id/k619e"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:hint="######"
                                 android:inputType="number"
-                                android:maxLength="3"
-                                android:tag="k619e"
-                                android:text='@{k619e.checked ? k619ex.getText().toString() : ""}'
-                                android:visibility='@{k619e.checked? View.VISIBLE : View.GONE}'
-                                app:maxValue="100"
-                                app:minValue="0"
+                                android:maxLength="6"
+                                android:text="@{k619a.checked ? `` : k619e.getText().toString()}"
+                                app:maxValue="999999"
+                                app:minValue="1"
                                 app:type="range" />
-                        </RadioGroup>
+
+                        </LinearLayout>
+
                     </LinearLayout>
+
                 </androidx.cardview.widget.CardView>
 
-                <!-- k620  Radio   -->
+
+                <!--k620 Radio EditText-->
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVk620"
+                    android:id="@+id/cvk620"
                     style="@style/cardView">
 
                     <LinearLayout
@@ -544,10 +640,10 @@
                                 android:text="@string/Q_k620" />
 
                             <TextView
-                                android:layout_width="0dp"
+                                android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:layout_weight="1"
                                 android:text="@string/k620" />
+
                         </LinearLayout>
 
                         <RadioGroup
@@ -573,52 +669,71 @@
                                 android:layout_height="wrap_content"
                                 android:text="@string/k620c" />
 
-                            <RadioButton
-                                android:id="@+id/k620d"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                        </RadioGroup>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:visibility="@{k620a.checked ? View.GONE : View.VISIBLE }">
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
                                 android:text="@string/k620d" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/k620dx"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:hint="@string/k620d"
+                                android:id="@+id/k620d"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:hint="######"
                                 android:inputType="number"
-                                android:maxLength="3"
-                                android:tag="k620d"
-                                android:text='@{k620d.checked ? k620dx.getText().toString() : ""}'
-                                android:visibility='@{k620d.checked? View.VISIBLE : View.GONE}'
-                                app:maxValue="100"
-                                app:minValue="0"
+                                android:maxLength="6"
+                                android:text="@{k620a.checked ? `` : k620d.getText().toString()}"
+                                app:maxValue="999999"
+                                app:minValue="1"
                                 app:type="range" />
 
-                            <RadioButton
-                                android:id="@+id/k620e"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                            <View
+                                style="@style/textView"
+                                android:layout_width="5dp"
+                                android:layout_height="match_parent" />
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
                                 android:text="@string/k620e" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/k620ex"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:hint="@string/k620e"
+                                android:id="@+id/k620e"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:hint="######"
                                 android:inputType="number"
-                                android:maxLength="3"
-                                android:tag="k620e"
-                                android:text='@{k620e.checked ? k620ex.getText().toString() : ""}'
-                                android:visibility='@{k620e.checked? View.VISIBLE : View.GONE}'
-                                app:maxValue="100"
-                                app:minValue="0"
+                                android:maxLength="6"
+                                android:text="@{k620a.checked ? `` : k620e.getText().toString()}"
+                                app:maxValue="999999"
+                                app:minValue="1"
                                 app:type="range" />
-                        </RadioGroup>
+
+                        </LinearLayout>
+
                     </LinearLayout>
+
                 </androidx.cardview.widget.CardView>
 
-                <!-- k621  Radio   -->
+
+                <!--k621 Radio EditText-->
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVk621"
+                    android:id="@+id/cvk621"
                     style="@style/cardView">
 
                     <LinearLayout
@@ -639,10 +754,10 @@
                                 android:text="@string/Q_k621" />
 
                             <TextView
-                                android:layout_width="0dp"
+                                android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:layout_weight="1"
                                 android:text="@string/k621" />
+
                         </LinearLayout>
 
                         <RadioGroup
@@ -668,52 +783,71 @@
                                 android:layout_height="wrap_content"
                                 android:text="@string/k621c" />
 
-                            <RadioButton
-                                android:id="@+id/k621d"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                        </RadioGroup>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:visibility="@{k621a.checked ? View.GONE : View.VISIBLE }">
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
                                 android:text="@string/k621d" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/k621dx"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:hint="@string/k621d"
+                                android:id="@+id/k621d"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:hint="######"
                                 android:inputType="number"
-                                android:maxLength="3"
-                                android:tag="k621d"
-                                android:text='@{k621d.checked ? k621dx.getText().toString() : ""}'
-                                android:visibility='@{k621d.checked? View.VISIBLE : View.GONE}'
-                                app:maxValue="100"
-                                app:minValue="0"
+                                android:maxLength="6"
+                                android:text="@{k621a.checked ? `` : k621d.getText().toString()}"
+                                app:maxValue="999999"
+                                app:minValue="1"
                                 app:type="range" />
 
-                            <RadioButton
-                                android:id="@+id/k621e"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                            <View
+                                style="@style/textView"
+                                android:layout_width="5dp"
+                                android:layout_height="match_parent" />
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
                                 android:text="@string/k621e" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/k621ex"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:hint="@string/k621e"
+                                android:id="@+id/k621e"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:hint="######"
                                 android:inputType="number"
-                                android:maxLength="3"
-                                android:tag="k621e"
-                                android:text='@{k621e.checked ? k621ex.getText().toString() : ""}'
-                                android:visibility='@{k621e.checked? View.VISIBLE : View.GONE}'
-                                app:maxValue="100"
-                                app:minValue="0"
+                                android:maxLength="6"
+                                android:text="@{k621a.checked ? `` : k621e.getText().toString()}"
+                                app:maxValue="999999"
+                                app:minValue="1"
                                 app:type="range" />
-                        </RadioGroup>
+
+                        </LinearLayout>
+
                     </LinearLayout>
+
                 </androidx.cardview.widget.CardView>
 
-                <!-- k622  Radio   -->
+
+                <!--k622 Radio EditText-->
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVk622"
+                    android:id="@+id/cvk622"
                     style="@style/cardView">
 
                     <LinearLayout
@@ -734,10 +868,10 @@
                                 android:text="@string/Q_k622" />
 
                             <TextView
-                                android:layout_width="0dp"
+                                android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:layout_weight="1"
                                 android:text="@string/k622" />
+
                         </LinearLayout>
 
                         <RadioGroup
@@ -763,52 +897,71 @@
                                 android:layout_height="wrap_content"
                                 android:text="@string/k622c" />
 
-                            <RadioButton
-                                android:id="@+id/k622d"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                        </RadioGroup>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:visibility="@{k622a.checked ? View.GONE : View.VISIBLE }">
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
                                 android:text="@string/k622d" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/k622dx"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:hint="@string/k622d"
+                                android:id="@+id/k622d"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:hint="######"
                                 android:inputType="number"
-                                android:maxLength="3"
-                                android:tag="k622d"
-                                android:text='@{k622d.checked ? k622dx.getText().toString() : ""}'
-                                android:visibility='@{k622d.checked? View.VISIBLE : View.GONE}'
-                                app:maxValue="100"
-                                app:minValue="0"
+                                android:maxLength="6"
+                                android:text="@{k622a.checked ? `` : k622d.getText().toString()}"
+                                app:maxValue="999999"
+                                app:minValue="1"
                                 app:type="range" />
 
-                            <RadioButton
-                                android:id="@+id/k622e"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                            <View
+                                style="@style/textView"
+                                android:layout_width="5dp"
+                                android:layout_height="match_parent" />
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
                                 android:text="@string/k622e" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/k622ex"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:hint="@string/k622e"
+                                android:id="@+id/k622e"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:hint="######"
                                 android:inputType="number"
-                                android:maxLength="3"
-                                android:tag="k622e"
-                                android:text='@{k622e.checked ? k622ex.getText().toString() : ""}'
-                                android:visibility='@{k622e.checked? View.VISIBLE : View.GONE}'
-                                app:maxValue="100"
-                                app:minValue="0"
+                                android:maxLength="6"
+                                android:text="@{k622a.checked ? `` : k622e.getText().toString()}"
+                                app:maxValue="999999"
+                                app:minValue="1"
                                 app:type="range" />
-                        </RadioGroup>
+
+                        </LinearLayout>
+
                     </LinearLayout>
+
                 </androidx.cardview.widget.CardView>
 
-                <!-- k623  Radio   -->
+
+                <!--k623 Radio EditText-->
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVk623"
+                    android:id="@+id/cvk623"
                     style="@style/cardView">
 
                     <LinearLayout
@@ -829,10 +982,10 @@
                                 android:text="@string/Q_k623" />
 
                             <TextView
-                                android:layout_width="0dp"
+                                android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:layout_weight="1"
                                 android:text="@string/k623" />
+
                         </LinearLayout>
 
                         <RadioGroup
@@ -858,52 +1011,71 @@
                                 android:layout_height="wrap_content"
                                 android:text="@string/k623c" />
 
-                            <RadioButton
-                                android:id="@+id/k623d"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                        </RadioGroup>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:visibility="@{k623a.checked ? View.GONE : View.VISIBLE }">
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
                                 android:text="@string/k623d" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/k623dx"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:hint="@string/k623d"
+                                android:id="@+id/k623d"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:hint="######"
                                 android:inputType="number"
-                                android:maxLength="3"
-                                android:tag="k623d"
-                                android:text='@{k623d.checked ? k623dx.getText().toString() : ""}'
-                                android:visibility='@{k623d.checked? View.VISIBLE : View.GONE}'
-                                app:maxValue="100"
-                                app:minValue="0"
+                                android:maxLength="6"
+                                android:text="@{k623a.checked ? `` : k623d.getText().toString()}"
+                                app:maxValue="999999"
+                                app:minValue="1"
                                 app:type="range" />
 
-                            <RadioButton
-                                android:id="@+id/k623e"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                            <View
+                                style="@style/textView"
+                                android:layout_width="5dp"
+                                android:layout_height="match_parent" />
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
                                 android:text="@string/k623e" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/k623ex"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:hint="@string/k623e"
+                                android:id="@+id/k623e"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:hint="######"
                                 android:inputType="number"
-                                android:maxLength="3"
-                                android:tag="k623e"
-                                android:text='@{k623e.checked ? k623ex.getText().toString() : ""}'
-                                android:visibility='@{k623e.checked? View.VISIBLE : View.GONE}'
-                                app:maxValue="100"
-                                app:minValue="0"
+                                android:maxLength="6"
+                                android:text="@{k623a.checked ? `` : k623e.getText().toString()}"
+                                app:maxValue="999999"
+                                app:minValue="1"
                                 app:type="range" />
-                        </RadioGroup>
+
+                        </LinearLayout>
+
                     </LinearLayout>
+
                 </androidx.cardview.widget.CardView>
 
-                <!-- k624  Radio   -->
+
+                <!--k624 Radio EditText-->
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVk624"
+                    android:id="@+id/cvk624"
                     style="@style/cardView">
 
                     <LinearLayout
@@ -924,10 +1096,10 @@
                                 android:text="@string/Q_k624" />
 
                             <TextView
-                                android:layout_width="0dp"
+                                android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:layout_weight="1"
                                 android:text="@string/k624" />
+
                         </LinearLayout>
 
                         <RadioGroup
@@ -953,52 +1125,71 @@
                                 android:layout_height="wrap_content"
                                 android:text="@string/k624c" />
 
-                            <RadioButton
-                                android:id="@+id/k624d"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                        </RadioGroup>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:visibility="@{k624a.checked ? View.GONE : View.VISIBLE }">
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
                                 android:text="@string/k624d" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/k624dx"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:hint="@string/k624d"
+                                android:id="@+id/k624d"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:hint="######"
                                 android:inputType="number"
-                                android:maxLength="3"
-                                android:tag="k624d"
-                                android:text='@{k624d.checked ? k624dx.getText().toString() : ""}'
-                                android:visibility='@{k624d.checked? View.VISIBLE : View.GONE}'
-                                app:maxValue="100"
-                                app:minValue="0"
+                                android:maxLength="6"
+                                android:text="@{k624a.checked ? `` : k624d.getText().toString()}"
+                                app:maxValue="999999"
+                                app:minValue="1"
                                 app:type="range" />
 
-                            <RadioButton
-                                android:id="@+id/k624e"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                            <View
+                                style="@style/textView"
+                                android:layout_width="5dp"
+                                android:layout_height="match_parent" />
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
                                 android:text="@string/k624e" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/k624ex"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:hint="@string/k624e"
+                                android:id="@+id/k624e"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:hint="######"
                                 android:inputType="number"
-                                android:maxLength="3"
-                                android:tag="k624e"
-                                android:text='@{k624e.checked ? k624ex.getText().toString() : ""}'
-                                android:visibility='@{k624e.checked? View.VISIBLE : View.GONE}'
-                                app:maxValue="100"
-                                app:minValue="0"
+                                android:maxLength="6"
+                                android:text="@{k624a.checked ? `` : k624e.getText().toString()}"
+                                app:maxValue="999999"
+                                app:minValue="1"
                                 app:type="range" />
-                        </RadioGroup>
+
+                        </LinearLayout>
+
                     </LinearLayout>
+
                 </androidx.cardview.widget.CardView>
 
-                <!-- k625  Radio   -->
+
+                <!--k625 Radio EditText-->
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVk625"
+                    android:id="@+id/cvk625"
                     style="@style/cardView">
 
                     <LinearLayout
@@ -1019,10 +1210,10 @@
                                 android:text="@string/Q_k625" />
 
                             <TextView
-                                android:layout_width="0dp"
+                                android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:layout_weight="1"
                                 android:text="@string/k625" />
+
                         </LinearLayout>
 
                         <RadioGroup
@@ -1048,52 +1239,71 @@
                                 android:layout_height="wrap_content"
                                 android:text="@string/k625c" />
 
-                            <RadioButton
-                                android:id="@+id/k625d"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                        </RadioGroup>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:visibility="@{k625a.checked ? View.GONE : View.VISIBLE }">
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
                                 android:text="@string/k625d" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/k625dx"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:hint="@string/k625d"
+                                android:id="@+id/k625d"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:hint="######"
                                 android:inputType="number"
-                                android:maxLength="3"
-                                android:tag="k625d"
-                                android:text='@{k625d.checked ? k625dx.getText().toString() : ""}'
-                                android:visibility='@{k625d.checked? View.VISIBLE : View.GONE}'
-                                app:maxValue="100"
-                                app:minValue="0"
+                                android:maxLength="6"
+                                android:text="@{k625a.checked ? `` : k625d.getText().toString()}"
+                                app:maxValue="999999"
+                                app:minValue="1"
                                 app:type="range" />
 
-                            <RadioButton
-                                android:id="@+id/k625e"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                            <View
+                                style="@style/textView"
+                                android:layout_width="5dp"
+                                android:layout_height="match_parent" />
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
                                 android:text="@string/k625e" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/k625ex"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:hint="@string/k625e"
+                                android:id="@+id/k625e"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:hint="######"
                                 android:inputType="number"
-                                android:maxLength="3"
-                                android:tag="k625e"
-                                android:text='@{k625e.checked ? k625ex.getText().toString() : ""}'
-                                android:visibility='@{k625e.checked? View.VISIBLE : View.GONE}'
-                                app:maxValue="100"
-                                app:minValue="0"
+                                android:maxLength="6"
+                                android:text="@{k625a.checked ? `` : k625e.getText().toString()}"
+                                app:maxValue="999999"
+                                app:minValue="1"
                                 app:type="range" />
-                        </RadioGroup>
+
+                        </LinearLayout>
+
                     </LinearLayout>
+
                 </androidx.cardview.widget.CardView>
 
-                <!-- k626  Radio   -->
+
+                <!--k626 Radio EditText-->
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVk626"
+                    android:id="@+id/cvk626"
                     style="@style/cardView">
 
                     <LinearLayout
@@ -1114,10 +1324,10 @@
                                 android:text="@string/Q_k626" />
 
                             <TextView
-                                android:layout_width="0dp"
+                                android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:layout_weight="1"
                                 android:text="@string/k626" />
+
                         </LinearLayout>
 
                         <RadioGroup
@@ -1143,52 +1353,71 @@
                                 android:layout_height="wrap_content"
                                 android:text="@string/k626c" />
 
-                            <RadioButton
-                                android:id="@+id/k626d"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                        </RadioGroup>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:visibility="@{k626a.checked ? View.GONE : View.VISIBLE }">
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
                                 android:text="@string/k626d" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/k626dx"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:hint="@string/k626d"
+                                android:id="@+id/k626d"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:hint="######"
                                 android:inputType="number"
-                                android:maxLength="3"
-                                android:tag="k626d"
-                                android:text='@{k626d.checked ? k626dx.getText().toString() : ""}'
-                                android:visibility='@{k626d.checked? View.VISIBLE : View.GONE}'
-                                app:maxValue="100"
-                                app:minValue="0"
+                                android:maxLength="6"
+                                android:text="@{k626a.checked ? `` : k626d.getText().toString()}"
+                                app:maxValue="999999"
+                                app:minValue="1"
                                 app:type="range" />
 
-                            <RadioButton
-                                android:id="@+id/k626e"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                            <View
+                                style="@style/textView"
+                                android:layout_width="5dp"
+                                android:layout_height="match_parent" />
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
                                 android:text="@string/k626e" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/k626ex"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:hint="@string/k626e"
+                                android:id="@+id/k626e"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:hint="######"
                                 android:inputType="number"
-                                android:maxLength="3"
-                                android:tag="k626e"
-                                android:text='@{k626e.checked ? k626ex.getText().toString() : ""}'
-                                android:visibility='@{k626e.checked? View.VISIBLE : View.GONE}'
-                                app:maxValue="100"
-                                app:minValue="0"
+                                android:maxLength="6"
+                                android:text="@{k626a.checked ? `` : k626e.getText().toString()}"
+                                app:maxValue="999999"
+                                app:minValue="1"
                                 app:type="range" />
-                        </RadioGroup>
+
+                        </LinearLayout>
+
                     </LinearLayout>
+
                 </androidx.cardview.widget.CardView>
 
-                <!-- k627  Radio   -->
+
+                <!--k627 Radio EditText-->
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVk627"
+                    android:id="@+id/cvk627"
                     style="@style/cardView">
 
                     <LinearLayout
@@ -1209,10 +1438,10 @@
                                 android:text="@string/Q_k627" />
 
                             <TextView
-                                android:layout_width="0dp"
+                                android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:layout_weight="1"
                                 android:text="@string/k627" />
+
                         </LinearLayout>
 
                         <RadioGroup
@@ -1238,52 +1467,71 @@
                                 android:layout_height="wrap_content"
                                 android:text="@string/k627c" />
 
-                            <RadioButton
-                                android:id="@+id/k627d"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                        </RadioGroup>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:visibility="@{k627a.checked ? View.GONE : View.VISIBLE }">
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
                                 android:text="@string/k627d" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/k627dx"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:hint="@string/k627d"
+                                android:id="@+id/k627d"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:hint="######"
                                 android:inputType="number"
-                                android:maxLength="3"
-                                android:tag="k627d"
-                                android:text='@{k627d.checked ? k627dx.getText().toString() : ""}'
-                                android:visibility='@{k627d.checked? View.VISIBLE : View.GONE}'
-                                app:maxValue="100"
-                                app:minValue="0"
+                                android:maxLength="6"
+                                android:text="@{k627a.checked ? `` : k627d.getText().toString()}"
+                                app:maxValue="999999"
+                                app:minValue="1"
                                 app:type="range" />
 
-                            <RadioButton
-                                android:id="@+id/k627e"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                            <View
+                                style="@style/textView"
+                                android:layout_width="5dp"
+                                android:layout_height="match_parent" />
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
                                 android:text="@string/k627e" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/k627ex"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:hint="@string/k627e"
+                                android:id="@+id/k627e"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:hint="######"
                                 android:inputType="number"
-                                android:maxLength="3"
-                                android:tag="k627e"
-                                android:text='@{k627e.checked ? k627ex.getText().toString() : ""}'
-                                android:visibility='@{k627e.checked? View.VISIBLE : View.GONE}'
-                                app:maxValue="100"
-                                app:minValue="0"
+                                android:maxLength="6"
+                                android:text="@{k627a.checked ? `` : k627e.getText().toString()}"
+                                app:maxValue="999999"
+                                app:minValue="1"
                                 app:type="range" />
-                        </RadioGroup>
+
+                        </LinearLayout>
+
                     </LinearLayout>
+
                 </androidx.cardview.widget.CardView>
 
-                <!-- k628  Radio   -->
+
+                <!--k628 Radio EditText-->
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVk628"
+                    android:id="@+id/cvk628"
                     style="@style/cardView">
 
                     <LinearLayout
@@ -1304,10 +1552,10 @@
                                 android:text="@string/Q_k628" />
 
                             <TextView
-                                android:layout_width="0dp"
+                                android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:layout_weight="1"
                                 android:text="@string/k628" />
+
                         </LinearLayout>
 
                         <RadioGroup
@@ -1333,47 +1581,65 @@
                                 android:layout_height="wrap_content"
                                 android:text="@string/k628c" />
 
-                            <RadioButton
-                                android:id="@+id/k628d"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                        </RadioGroup>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:visibility="@{k628a.checked ? View.GONE : View.VISIBLE }">
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
                                 android:text="@string/k628d" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/k628dx"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:hint="@string/k628d"
+                                android:id="@+id/k628d"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:hint="######"
                                 android:inputType="number"
-                                android:maxLength="3"
-                                android:tag="k628d"
-                                android:text='@{k628d.checked ? k628dx.getText().toString() : ""}'
-                                android:visibility='@{k628d.checked? View.VISIBLE : View.GONE}'
-                                app:maxValue="100"
-                                app:minValue="0"
+                                android:maxLength="6"
+                                android:text="@{k628a.checked ? `` : k628d.getText().toString()}"
+                                app:maxValue="999999"
+                                app:minValue="1"
                                 app:type="range" />
 
-                            <RadioButton
-                                android:id="@+id/k628e"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                            <View
+                                style="@style/textView"
+                                android:layout_width="5dp"
+                                android:layout_height="match_parent" />
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
                                 android:text="@string/k628e" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/k628ex"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:hint="@string/k628e"
+                                android:id="@+id/k628e"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:hint="######"
                                 android:inputType="number"
-                                android:maxLength="3"
-                                android:tag="k628e"
-                                android:text='@{k628e.checked ? k628ex.getText().toString() : ""}'
-                                android:visibility='@{k628e.checked? View.VISIBLE : View.GONE}'
-                                app:maxValue="100"
-                                app:minValue="0"
+                                android:maxLength="6"
+                                android:text="@{k628a.checked ? `` : k628e.getText().toString()}"
+                                app:maxValue="999999"
+                                app:minValue="1"
                                 app:type="range" />
-                        </RadioGroup>
+
+                        </LinearLayout>
+
                     </LinearLayout>
+
                 </androidx.cardview.widget.CardView>
 
 
@@ -1423,5 +1689,6 @@
 
 
     </LinearLayout>
+
 
 </layout>

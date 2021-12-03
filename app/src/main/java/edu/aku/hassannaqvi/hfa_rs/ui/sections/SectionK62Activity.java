@@ -36,68 +36,26 @@ public class SectionK62Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_k62);
         bi.setCallback(this);
-        setupSkips();
         setupTextWatchers();
 
     }
 
 
-    private void setupSkips() {
-
-        /*bi.k0060101.setOnCheckedChangeListener(((radioGroup, i) -> {
-            Clear.clearAllFields(bi.llk0060102);
-        }));
-
-        bi.k0060111.setOnCheckedChangeListener(((radioGroup, i) -> {
-            Clear.clearAllFields(bi.llk0060112);
-        }));
-
-        bi.k0060121.setOnCheckedChangeListener(((radioGroup, i) -> {
-            Clear.clearAllFields(bi.llk0060122);
-        }));
-
-        bi.k0060131.setOnCheckedChangeListener(((radioGroup, i) -> {
-            Clear.clearAllFields(bi.llk0060132);
-        }));
-
-        bi.k0060141.setOnCheckedChangeListener(((radioGroup, i) -> {
-            Clear.clearAllFields(bi.llk0060142);
-        }));
-
-        bi.k0060151.setOnCheckedChangeListener(((radioGroup, i) -> {
-            Clear.clearAllFields(bi.llk0060152);
-        }));
-
-        bi.k0060161.setOnCheckedChangeListener(((radioGroup, i) -> {
-            Clear.clearAllFields(bi.llk0060162);
-        }));
-
-        bi.k0060171.setOnCheckedChangeListener(((radioGroup, i) -> {
-            Clear.clearAllFields(bi.llk0060172);
-        }));
-
-        bi.k0060181.setOnCheckedChangeListener(((radioGroup, i) -> {
-            Clear.clearAllFields(bi.llk0060182);
-        }));
-
-        bi.k0060191.setOnCheckedChangeListener(((radioGroup, i) -> {
-            Clear.clearAllFields(bi.llk0060192);
-        }));
-*/
-    }
-
-
     private void setupTextWatchers() {
-        /*editTextImplementation(bi.k0060101q, bi.k0060102q);
-        editTextImplementation(bi.k0060111q, bi.k0060112q);
-        editTextImplementation(bi.k0060121q, bi.k0060122q);
-        editTextImplementation(bi.k0060131q, bi.k0060132q);
-        editTextImplementation(bi.k0060141q, bi.k0060142q);
-        editTextImplementation(bi.k0060151q, bi.k0060152q);
-        editTextImplementation(bi.k0060161q, bi.k0060162q);
-        editTextImplementation(bi.k0060171q, bi.k0060172q);
-        editTextImplementation(bi.k0060181q, bi.k0060182q);
-        editTextImplementation(bi.k0060191q, bi.k0060192q);*/
+        editTextImplementation(bi.k615d, bi.k615e);
+        editTextImplementation(bi.k616d, bi.k616e);
+        editTextImplementation(bi.k617d, bi.k617e);
+        editTextImplementation(bi.k618d, bi.k618e);
+        editTextImplementation(bi.k619d, bi.k619e);
+        editTextImplementation(bi.k620d, bi.k620e);
+        editTextImplementation(bi.k621d, bi.k621e);
+        editTextImplementation(bi.k622d, bi.k622e);
+        editTextImplementation(bi.k623d, bi.k623e);
+        editTextImplementation(bi.k624d, bi.k624e);
+        editTextImplementation(bi.k625d, bi.k625e);
+        editTextImplementation(bi.k626d, bi.k626e);
+        editTextImplementation(bi.k627d, bi.k627e);
+        editTextImplementation(bi.k628d, bi.k628e);
     }
 
 
@@ -156,132 +114,144 @@ public class SectionK62Activity extends AppCompatActivity {
         JSONObject json = new JSONObject();
 
 
+        //K615
         json.put("k615", bi.k615a.isChecked() ? "1"
                 : bi.k615b.isChecked() ? "2"
                 : bi.k615c.isChecked() ? "3"
-                : bi.k615d.isChecked() ? "4"
-                : bi.k615e.isChecked() ? "5"
                 : "-1");
 
-        json.put("k615dx", bi.k615dx.getText().toString());
-        json.put("k615ex", bi.k615ex.getText().toString());
+        json.put("k615d", bi.k615d.getText().toString().trim().isEmpty() ? "-1" : bi.k615d.getText().toString());
+        json.put("k615e", bi.k615e.getText().toString().trim().isEmpty() ? "-1" : bi.k615e.getText().toString());
+
+
+        //K616
         json.put("k616", bi.k616a.isChecked() ? "1"
                 : bi.k616b.isChecked() ? "2"
                 : bi.k616c.isChecked() ? "3"
-                : bi.k616d.isChecked() ? "4"
-                : bi.k616e.isChecked() ? "5"
                 : "-1");
 
-        json.put("k616dx", bi.k616dx.getText().toString());
-        json.put("k616ex", bi.k616ex.getText().toString());
+        json.put("k616d", bi.k616d.getText().toString().trim().isEmpty() ? "-1" : bi.k616d.getText().toString());
+        json.put("k616e", bi.k616e.getText().toString().trim().isEmpty() ? "-1" : bi.k616e.getText().toString());
+
+
+        //K617
         json.put("k617", bi.k617a.isChecked() ? "1"
                 : bi.k617b.isChecked() ? "2"
                 : bi.k617c.isChecked() ? "3"
-                : bi.k617d.isChecked() ? "4"
-                : bi.k617e.isChecked() ? "5"
                 : "-1");
 
-        json.put("k617dx", bi.k617dx.getText().toString());
-        json.put("k617ex", bi.k617ex.getText().toString());
+        json.put("k617d", bi.k617d.getText().toString().trim().isEmpty() ? "-1" : bi.k617d.getText().toString());
+        json.put("k617e", bi.k617e.getText().toString().trim().isEmpty() ? "-1" : bi.k617e.getText().toString());
+
+
+        //K618
         json.put("k618", bi.k618a.isChecked() ? "1"
                 : bi.k618b.isChecked() ? "2"
                 : bi.k618c.isChecked() ? "3"
-                : bi.k618d.isChecked() ? "4"
-                : bi.k618e.isChecked() ? "5"
                 : "-1");
 
-        json.put("k618dx", bi.k618dx.getText().toString());
-        json.put("k618ex", bi.k618ex.getText().toString());
+        json.put("k618d", bi.k618d.getText().toString().trim().isEmpty() ? "-1" : bi.k618d.getText().toString());
+        json.put("k618e", bi.k618e.getText().toString().trim().isEmpty() ? "-1" : bi.k618e.getText().toString());
+
+
+        //K619
         json.put("k619", bi.k619a.isChecked() ? "1"
                 : bi.k619b.isChecked() ? "2"
                 : bi.k619c.isChecked() ? "3"
-                : bi.k619d.isChecked() ? "4"
-                : bi.k619e.isChecked() ? "5"
                 : "-1");
 
-        json.put("k619dx", bi.k619dx.getText().toString());
-        json.put("k619ex", bi.k619ex.getText().toString());
+        json.put("k619d", bi.k619d.getText().toString().trim().isEmpty() ? "-1" : bi.k619d.getText().toString());
+        json.put("k619e", bi.k619e.getText().toString().trim().isEmpty() ? "-1" : bi.k619e.getText().toString());
+
+
+        //K620
         json.put("k620", bi.k620a.isChecked() ? "1"
                 : bi.k620b.isChecked() ? "2"
                 : bi.k620c.isChecked() ? "3"
-                : bi.k620d.isChecked() ? "4"
-                : bi.k620e.isChecked() ? "5"
                 : "-1");
 
-        json.put("k620dx", bi.k620dx.getText().toString());
-        json.put("k620ex", bi.k620ex.getText().toString());
+        json.put("k620d", bi.k620d.getText().toString().trim().isEmpty() ? "-1" : bi.k620d.getText().toString());
+        json.put("k620e", bi.k620e.getText().toString().trim().isEmpty() ? "-1" : bi.k620e.getText().toString());
+
+
+        //K621
         json.put("k621", bi.k621a.isChecked() ? "1"
                 : bi.k621b.isChecked() ? "2"
                 : bi.k621c.isChecked() ? "3"
-                : bi.k621d.isChecked() ? "4"
-                : bi.k621e.isChecked() ? "5"
                 : "-1");
 
-        json.put("k621dx", bi.k621dx.getText().toString());
-        json.put("k621ex", bi.k621ex.getText().toString());
+        json.put("k621d", bi.k621d.getText().toString().trim().isEmpty() ? "-1" : bi.k621d.getText().toString());
+        json.put("k621e", bi.k621e.getText().toString().trim().isEmpty() ? "-1" : bi.k621e.getText().toString());
+
+
+        //K622
         json.put("k622", bi.k622a.isChecked() ? "1"
                 : bi.k622b.isChecked() ? "2"
                 : bi.k622c.isChecked() ? "3"
-                : bi.k622d.isChecked() ? "4"
-                : bi.k622e.isChecked() ? "5"
                 : "-1");
 
-        json.put("k622dx", bi.k622dx.getText().toString());
-        json.put("k622ex", bi.k622ex.getText().toString());
+        json.put("k622d", bi.k622d.getText().toString().trim().isEmpty() ? "-1" : bi.k622d.getText().toString());
+        json.put("k622e", bi.k622e.getText().toString().trim().isEmpty() ? "-1" : bi.k622e.getText().toString());
+
+
+        //K623
         json.put("k623", bi.k623a.isChecked() ? "1"
                 : bi.k623b.isChecked() ? "2"
                 : bi.k623c.isChecked() ? "3"
-                : bi.k623d.isChecked() ? "4"
-                : bi.k623e.isChecked() ? "5"
                 : "-1");
 
-        json.put("k623dx", bi.k623dx.getText().toString());
-        json.put("k623ex", bi.k623ex.getText().toString());
+        json.put("k623d", bi.k623d.getText().toString().trim().isEmpty() ? "-1" : bi.k623d.getText().toString());
+        json.put("k623e", bi.k623e.getText().toString().trim().isEmpty() ? "-1" : bi.k623e.getText().toString());
+
+
+        //K624
         json.put("k624", bi.k624a.isChecked() ? "1"
                 : bi.k624b.isChecked() ? "2"
                 : bi.k624c.isChecked() ? "3"
-                : bi.k624d.isChecked() ? "4"
-                : bi.k624e.isChecked() ? "5"
                 : "-1");
 
-        json.put("k624dx", bi.k624dx.getText().toString());
-        json.put("k624ex", bi.k624ex.getText().toString());
+        json.put("k624d", bi.k624d.getText().toString().trim().isEmpty() ? "-1" : bi.k624d.getText().toString());
+        json.put("k624e", bi.k624e.getText().toString().trim().isEmpty() ? "-1" : bi.k624e.getText().toString());
+
+
+        //K625
         json.put("k625", bi.k625a.isChecked() ? "1"
                 : bi.k625b.isChecked() ? "2"
                 : bi.k625c.isChecked() ? "3"
-                : bi.k625d.isChecked() ? "4"
-                : bi.k625e.isChecked() ? "5"
                 : "-1");
 
-        json.put("k625dx", bi.k625dx.getText().toString());
-        json.put("k625ex", bi.k625ex.getText().toString());
+        json.put("k625d", bi.k625d.getText().toString().trim().isEmpty() ? "-1" : bi.k625d.getText().toString());
+        json.put("k625e", bi.k625e.getText().toString().trim().isEmpty() ? "-1" : bi.k625e.getText().toString());
+
+
+        //K626
         json.put("k626", bi.k626a.isChecked() ? "1"
                 : bi.k626b.isChecked() ? "2"
                 : bi.k626c.isChecked() ? "3"
-                : bi.k626d.isChecked() ? "4"
-                : bi.k626e.isChecked() ? "5"
                 : "-1");
 
-        json.put("k626dx", bi.k626dx.getText().toString());
-        json.put("k626ex", bi.k626ex.getText().toString());
+        json.put("k626d", bi.k626d.getText().toString().trim().isEmpty() ? "-1" : bi.k626d.getText().toString());
+        json.put("k626e", bi.k626e.getText().toString().trim().isEmpty() ? "-1" : bi.k626e.getText().toString());
+
+
+        //K627
         json.put("k627", bi.k627a.isChecked() ? "1"
                 : bi.k627b.isChecked() ? "2"
                 : bi.k627c.isChecked() ? "3"
-                : bi.k627d.isChecked() ? "4"
-                : bi.k627e.isChecked() ? "5"
                 : "-1");
 
-        json.put("k627dx", bi.k627dx.getText().toString());
-        json.put("k627ex", bi.k627ex.getText().toString());
+        json.put("k627d", bi.k627d.getText().toString().trim().isEmpty() ? "-1" : bi.k627d.getText().toString());
+        json.put("k627e", bi.k627e.getText().toString().trim().isEmpty() ? "-1" : bi.k627e.getText().toString());
+
+
+        //K628
         json.put("k628", bi.k628a.isChecked() ? "1"
                 : bi.k628b.isChecked() ? "2"
                 : bi.k628c.isChecked() ? "3"
-                : bi.k628d.isChecked() ? "4"
-                : bi.k628e.isChecked() ? "5"
                 : "-1");
 
-        json.put("k628dx", bi.k628dx.getText().toString());
-        json.put("k628ex", bi.k628ex.getText().toString());
+        json.put("k628d", bi.k628d.getText().toString().trim().isEmpty() ? "-1" : bi.k628d.getText().toString());
+        json.put("k628e", bi.k628e.getText().toString().trim().isEmpty() ? "-1" : bi.k628e.getText().toString());
 
 
         try {

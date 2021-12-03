@@ -92,14 +92,19 @@ public class SectionK61Activity extends AppCompatActivity {
 
     private void setupTextWatchers() {
         editTextImplementation(bi.k601d, bi.k601e);
-        /*editTextImplementation(bi.k00621q, bi.k00622q);
-        editTextImplementation(bi.k00631q, bi.k00632q);
-        editTextImplementation(bi.k00641q, bi.k00642q);
-        editTextImplementation(bi.k00651q, bi.k00652q);
-        editTextImplementation(bi.k00661q, bi.k00662q);
-        editTextImplementation(bi.k00671q, bi.k00672q);
-        editTextImplementation(bi.k00681q, bi.k00682q);
-        editTextImplementation(bi.k00691q, bi.k00692q);*/
+        editTextImplementation(bi.k602d, bi.k602e);
+        editTextImplementation(bi.k603d, bi.k603e);
+        editTextImplementation(bi.k604d, bi.k604e);
+        editTextImplementation(bi.k605d, bi.k605e);
+        editTextImplementation(bi.k606d, bi.k606e);
+        editTextImplementation(bi.k607d, bi.k607e);
+        editTextImplementation(bi.k608d, bi.k608e);
+        editTextImplementation(bi.k609d, bi.k609e);
+        editTextImplementation(bi.k610d, bi.k610e);
+        editTextImplementation(bi.k611d, bi.k611e);
+        editTextImplementation(bi.k612d, bi.k612e);
+        editTextImplementation(bi.k613d, bi.k613e);
+        editTextImplementation(bi.k614d, bi.k614e);
     }
 
 
