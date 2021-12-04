@@ -285,7 +285,7 @@ public class SectionAActivity extends AppCompatActivity {
                 : bi.a11b.isChecked() ? "2"
                 : "-1");
 
-        MainApp.setGPS(this); // Set GPS
+        //MainApp.setGPS(this); // Set GPS
     }
 
 
