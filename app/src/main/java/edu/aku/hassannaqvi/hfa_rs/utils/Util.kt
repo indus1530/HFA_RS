@@ -13,6 +13,7 @@ import androidx.core.content.ContextCompat
 import edu.aku.hassannaqvi.hfa_rs.CONSTANTS
 import edu.aku.hassannaqvi.hfa_rs.R
 import edu.aku.hassannaqvi.hfa_rs.core.MainApp
+import edu.aku.hassannaqvi.hfa_rs.core.MainApp._EMPTY_
 import edu.aku.hassannaqvi.hfa_rs.ui.other.EndingActivity
 import edu.aku.hassannaqvi.hfa_rs.ui.other.SectionMainActivity
 import java.util.*
@@ -131,11 +132,11 @@ fun openSectionMainActivityI(activity: Activity) {
     dialog.window!!.attributes = params
     dialog.findViewById<View>(R.id.btnOk).setOnClickListener { view: View? ->
 
-        if (!MainApp.fc.getsI().equals("")) MainApp.fc.setsI("")
-        if (!MainApp.psc.getsI1().equals("")) MainApp.psc.setsI1("")
-        if (!MainApp.psc.getsI2().equals("")) MainApp.psc.setsI2("")
-        if (!MainApp.psc.getsI3().equals("")) MainApp.psc.setsI3("")
-        if (!MainApp.psc.getsI4().equals("")) MainApp.psc.setsI4("")
+        if (MainApp.fc.getsI().isNotEmpty()) MainApp.fc.setsI(_EMPTY_)
+        if (MainApp.psc.getsI1().isNotEmpty()) MainApp.psc.setsI1(_EMPTY_)
+        if (MainApp.psc.getsI2().isNotEmpty()) MainApp.psc.setsI2(_EMPTY_)
+        if (MainApp.psc.getsI3().isNotEmpty()) MainApp.psc.setsI3(_EMPTY_)
+        if (MainApp.psc.getsI4().isNotEmpty()) MainApp.psc.setsI4(_EMPTY_)
 
         activity.finish()
         val intent = Intent(activity, SectionMainActivity::class.java)

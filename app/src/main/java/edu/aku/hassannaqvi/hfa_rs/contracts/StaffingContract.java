@@ -1,5 +1,7 @@
 package edu.aku.hassannaqvi.hfa_rs.contracts;
 
+import static edu.aku.hassannaqvi.hfa_rs.core.MainApp._EMPTY_;
+
 import android.database.Cursor;
 import android.provider.BaseColumns;
 
@@ -13,24 +15,24 @@ import org.json.JSONObject;
 public class StaffingContract {
 
 
-    private String _ID = "";
-    private String _UID = "";
-    private String _UUID = "";
-    private String sysdate = "";
-    private String userName = "";
-    private String serialno = "";
-    private String deviceID = "";
-    private String status = "";
-    private String synced = "";
-    private String synced_date = "";
-    private String appversion = "";
-    private String devicetagID = "";
-    private String districtCode = "";
-    private String districtType = "";
-    private String tehsilCode = "";
-    private String ucCode = "";
-    private String hfCode = "";
-    private String sC2;
+    private String _ID = _EMPTY_;
+    private String _UID = _EMPTY_;
+    private String _UUID = _EMPTY_;
+    private String sysdate = _EMPTY_;
+    private String userName = _EMPTY_;
+    private String serialno = _EMPTY_;
+    private String deviceID = _EMPTY_;
+    private String status = _EMPTY_;
+    private String synced = _EMPTY_;
+    private String synced_date = _EMPTY_;
+    private String appversion = _EMPTY_;
+    private String devicetagID = _EMPTY_;
+    private String districtCode = _EMPTY_;
+    private String districtType = _EMPTY_;
+    private String tehsilCode = _EMPTY_;
+    private String ucCode = _EMPTY_;
+    private String hfCode = _EMPTY_;
+    private String sC2 = _EMPTY_;
 
 
     public StaffingContract() {
@@ -63,24 +65,24 @@ public class StaffingContract {
 
 
     public StaffingContract hydrate(Cursor cursor) {
-        this._ID = cursor.getString(cursor.getColumnIndex(StaffingTable.COLUMN_ID));
-        this._UID = cursor.getString(cursor.getColumnIndex(StaffingTable.COLUMN_UID));
-        this._UUID = cursor.getString(cursor.getColumnIndex(StaffingTable.COLUMN_UUID));
-        this.sysdate = cursor.getString(cursor.getColumnIndex(StaffingTable.COLUMN_SYSDATE));
-        this.userName = cursor.getString(cursor.getColumnIndex(StaffingTable.COLUMN_USERNAME));
-        this.serialno = cursor.getString(cursor.getColumnIndex(StaffingTable.COLUMN_SERIALNO));
-        this.districtCode = cursor.getString(cursor.getColumnIndex(StaffingTable.COLUMN_DISTRICT_CODE));
-        this.districtType = cursor.getString(cursor.getColumnIndex(StaffingTable.COLUMN_DISTRICT_TYPE));
-        this.tehsilCode = cursor.getString(cursor.getColumnIndex(StaffingTable.COLUMN_TEHSIL_CODE));
-        this.ucCode = cursor.getString(cursor.getColumnIndex(StaffingTable.COLUMN_UC_CODE));
-        this.hfCode = cursor.getString(cursor.getColumnIndex(StaffingTable.COLUMN_HF_CODE));
-        this.sC2 = cursor.getString(cursor.getColumnIndex(StaffingTable.COLUMN_SC2));
-        this.deviceID = cursor.getString(cursor.getColumnIndex(StaffingTable.COLUMN_DEVICEID));
-        this.devicetagID = cursor.getString(cursor.getColumnIndex(StaffingTable.COLUMN_DEVICETAGID));
-        this.synced = cursor.getString(cursor.getColumnIndex(StaffingTable.COLUMN_SYNCED));
-        this.synced_date = cursor.getString(cursor.getColumnIndex(StaffingTable.COLUMN_SYNCED_DATE));
-        this.status = cursor.getString(cursor.getColumnIndex(StaffingTable.COLUMN_STATUS));
-        this.appversion = cursor.getString(cursor.getColumnIndex(StaffingTable.COLUMN_APPVERSION));
+        this._ID = cursor.getString(cursor.getColumnIndexOrThrow(StaffingTable.COLUMN_ID));
+        this._UID = cursor.getString(cursor.getColumnIndexOrThrow(StaffingTable.COLUMN_UID));
+        this._UUID = cursor.getString(cursor.getColumnIndexOrThrow(StaffingTable.COLUMN_UUID));
+        this.sysdate = cursor.getString(cursor.getColumnIndexOrThrow(StaffingTable.COLUMN_SYSDATE));
+        this.userName = cursor.getString(cursor.getColumnIndexOrThrow(StaffingTable.COLUMN_USERNAME));
+        this.serialno = cursor.getString(cursor.getColumnIndexOrThrow(StaffingTable.COLUMN_SERIALNO));
+        this.districtCode = cursor.getString(cursor.getColumnIndexOrThrow(StaffingTable.COLUMN_DISTRICT_CODE));
+        this.districtType = cursor.getString(cursor.getColumnIndexOrThrow(StaffingTable.COLUMN_DISTRICT_TYPE));
+        this.tehsilCode = cursor.getString(cursor.getColumnIndexOrThrow(StaffingTable.COLUMN_TEHSIL_CODE));
+        this.ucCode = cursor.getString(cursor.getColumnIndexOrThrow(StaffingTable.COLUMN_UC_CODE));
+        this.hfCode = cursor.getString(cursor.getColumnIndexOrThrow(StaffingTable.COLUMN_HF_CODE));
+        this.sC2 = cursor.getString(cursor.getColumnIndexOrThrow(StaffingTable.COLUMN_SC2));
+        this.deviceID = cursor.getString(cursor.getColumnIndexOrThrow(StaffingTable.COLUMN_DEVICEID));
+        this.devicetagID = cursor.getString(cursor.getColumnIndexOrThrow(StaffingTable.COLUMN_DEVICETAGID));
+        this.synced = cursor.getString(cursor.getColumnIndexOrThrow(StaffingTable.COLUMN_SYNCED));
+        this.synced_date = cursor.getString(cursor.getColumnIndexOrThrow(StaffingTable.COLUMN_SYNCED_DATE));
+        this.status = cursor.getString(cursor.getColumnIndexOrThrow(StaffingTable.COLUMN_STATUS));
+        this.appversion = cursor.getString(cursor.getColumnIndexOrThrow(StaffingTable.COLUMN_APPVERSION));
 
         return this;
     }

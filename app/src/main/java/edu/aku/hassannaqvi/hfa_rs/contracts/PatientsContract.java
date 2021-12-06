@@ -1,5 +1,7 @@
 package edu.aku.hassannaqvi.hfa_rs.contracts;
 
+import static edu.aku.hassannaqvi.hfa_rs.core.MainApp._EMPTY_;
+
 import android.database.Cursor;
 import android.provider.BaseColumns;
 
@@ -13,27 +15,27 @@ import org.json.JSONObject;
 public class PatientsContract {
 
 
-    private String _ID = "";
-    private String _UID = "";
-    private String _UUID = "";
-    private String sysdate = "";
-    private String userName = "";
-    private String serialno = "";
-    private String deviceID = "";
-    private String devicetagID = "";
-    private String districtCode = "";
-    private String districtType = "";
-    private String tehsilCode = "";
-    private String ucCode = "";
-    private String hfCode = "";
-    private String status = "";
-    private String synced = "";
-    private String synced_date = "";
-    private String appversion = "";
-    private String sI1;
-    private String sI2;
-    private String sI3;
-    private String sI4;
+    private String _ID = _EMPTY_;
+    private String _UID = _EMPTY_;
+    private String _UUID = _EMPTY_;
+    private String sysdate = _EMPTY_;
+    private String userName = _EMPTY_;
+    private String serialno = _EMPTY_;
+    private String deviceID = _EMPTY_;
+    private String devicetagID = _EMPTY_;
+    private String districtCode = _EMPTY_;
+    private String districtType = _EMPTY_;
+    private String tehsilCode = _EMPTY_;
+    private String ucCode = _EMPTY_;
+    private String hfCode = _EMPTY_;
+    private String status = _EMPTY_;
+    private String synced = _EMPTY_;
+    private String synced_date = _EMPTY_;
+    private String appversion = _EMPTY_;
+    private String sI1 = _EMPTY_;
+    private String sI2 = _EMPTY_;
+    private String sI3 = _EMPTY_;
+    private String sI4 = _EMPTY_;
 
 
     public PatientsContract() {
@@ -69,27 +71,27 @@ public class PatientsContract {
 
 
     public PatientsContract hydrate(Cursor cursor) {
-        this._ID = cursor.getString(cursor.getColumnIndex(PatientsTable.COLUMN_ID));
-        this._UID = cursor.getString(cursor.getColumnIndex(PatientsTable.COLUMN_UID));
-        this._UUID = cursor.getString(cursor.getColumnIndex(PatientsTable.COLUMN_UUID));
-        this.sysdate = cursor.getString(cursor.getColumnIndex(PatientsTable.COLUMN_SYSDATE));
-        this.userName = cursor.getString(cursor.getColumnIndex(PatientsTable.COLUMN_USERNAME));
-        this.serialno = cursor.getString(cursor.getColumnIndex(PatientsTable.COLUMN_SERIALNO));
-        this.districtCode = cursor.getString(cursor.getColumnIndex(PatientsTable.COLUMN_DISTRICT_CODE));
-        this.districtType = cursor.getString(cursor.getColumnIndex(PatientsTable.COLUMN_DISTRICT_TYPE));
-        this.tehsilCode = cursor.getString(cursor.getColumnIndex(PatientsTable.COLUMN_TEHSIL_CODE));
-        this.ucCode = cursor.getString(cursor.getColumnIndex(PatientsTable.COLUMN_UC_CODE));
-        this.hfCode = cursor.getString(cursor.getColumnIndex(PatientsTable.COLUMN_HF_CODE));
-        this.sI1 = cursor.getString(cursor.getColumnIndex(PatientsTable.COLUMN_SI1));
-        this.sI2 = cursor.getString(cursor.getColumnIndex(PatientsTable.COLUMN_SI2));
-        this.sI3 = cursor.getString(cursor.getColumnIndex(PatientsTable.COLUMN_SI3));
-        this.sI4 = cursor.getString(cursor.getColumnIndex(PatientsTable.COLUMN_SI4));
-        this.deviceID = cursor.getString(cursor.getColumnIndex(PatientsTable.COLUMN_DEVICEID));
-        this.devicetagID = cursor.getString(cursor.getColumnIndex(PatientsTable.COLUMN_DEVICETAGID));
-        this.synced = cursor.getString(cursor.getColumnIndex(PatientsTable.COLUMN_SYNCED));
-        this.synced_date = cursor.getString(cursor.getColumnIndex(PatientsTable.COLUMN_SYNCED_DATE));
-        this.status = cursor.getString(cursor.getColumnIndex(PatientsTable.COLUMN_STATUS));
-        this.appversion = cursor.getString(cursor.getColumnIndex(PatientsTable.COLUMN_APPVERSION));
+        this._ID = cursor.getString(cursor.getColumnIndexOrThrow(PatientsTable.COLUMN_ID));
+        this._UID = cursor.getString(cursor.getColumnIndexOrThrow(PatientsTable.COLUMN_UID));
+        this._UUID = cursor.getString(cursor.getColumnIndexOrThrow(PatientsTable.COLUMN_UUID));
+        this.sysdate = cursor.getString(cursor.getColumnIndexOrThrow(PatientsTable.COLUMN_SYSDATE));
+        this.userName = cursor.getString(cursor.getColumnIndexOrThrow(PatientsTable.COLUMN_USERNAME));
+        this.serialno = cursor.getString(cursor.getColumnIndexOrThrow(PatientsTable.COLUMN_SERIALNO));
+        this.districtCode = cursor.getString(cursor.getColumnIndexOrThrow(PatientsTable.COLUMN_DISTRICT_CODE));
+        this.districtType = cursor.getString(cursor.getColumnIndexOrThrow(PatientsTable.COLUMN_DISTRICT_TYPE));
+        this.tehsilCode = cursor.getString(cursor.getColumnIndexOrThrow(PatientsTable.COLUMN_TEHSIL_CODE));
+        this.ucCode = cursor.getString(cursor.getColumnIndexOrThrow(PatientsTable.COLUMN_UC_CODE));
+        this.hfCode = cursor.getString(cursor.getColumnIndexOrThrow(PatientsTable.COLUMN_HF_CODE));
+        this.sI1 = cursor.getString(cursor.getColumnIndexOrThrow(PatientsTable.COLUMN_SI1));
+        this.sI2 = cursor.getString(cursor.getColumnIndexOrThrow(PatientsTable.COLUMN_SI2));
+        this.sI3 = cursor.getString(cursor.getColumnIndexOrThrow(PatientsTable.COLUMN_SI3));
+        this.sI4 = cursor.getString(cursor.getColumnIndexOrThrow(PatientsTable.COLUMN_SI4));
+        this.deviceID = cursor.getString(cursor.getColumnIndexOrThrow(PatientsTable.COLUMN_DEVICEID));
+        this.devicetagID = cursor.getString(cursor.getColumnIndexOrThrow(PatientsTable.COLUMN_DEVICETAGID));
+        this.synced = cursor.getString(cursor.getColumnIndexOrThrow(PatientsTable.COLUMN_SYNCED));
+        this.synced_date = cursor.getString(cursor.getColumnIndexOrThrow(PatientsTable.COLUMN_SYNCED_DATE));
+        this.status = cursor.getString(cursor.getColumnIndexOrThrow(PatientsTable.COLUMN_STATUS));
+        this.appversion = cursor.getString(cursor.getColumnIndexOrThrow(PatientsTable.COLUMN_APPVERSION));
 
         return this;
     }
