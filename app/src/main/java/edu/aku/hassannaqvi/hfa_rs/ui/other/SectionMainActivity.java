@@ -103,7 +103,7 @@ public class SectionMainActivity extends AppCompatActivity {
                 bi.checkedG.setVisibility(View.VISIBLE);
             }
 
-            if (!fc.getsH().isEmpty() && new JSONObject(fc.getsH()).has("h1605xx")) {
+            if (!fc.getsH().isEmpty() && (new JSONObject(fc.getsH()).has("h1605xx") || new JSONObject(fc.getsH()).has("h1501z0dn"))) {
                 bi.formH.setEnabled(false);
                 bi.checkedH.setVisibility(View.VISIBLE);
             }
