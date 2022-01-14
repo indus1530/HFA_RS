@@ -15,12 +15,15 @@
   */
  package edu.aku.hassannaqvi.hfa_rs.providers;
 
+ import static edu.aku.hassannaqvi.hfa_rs.core.MainApp.IBAHC;
+
  import android.content.ContentProvider;
  import android.content.ContentValues;
  import android.content.UriMatcher;
  import android.database.Cursor;
- import android.database.sqlite.SQLiteDatabase;
  import android.net.Uri;
+
+ import net.sqlcipher.database.SQLiteDatabase;
 
  import edu.aku.hassannaqvi.hfa_rs.contracts.FormsContract;
  import edu.aku.hassannaqvi.hfa_rs.core.DatabaseHelper;
@@ -36,6 +39,8 @@
      private static final int CHILDREN = 300;
      private static final int CHILDREN_ID = 301;
      private DatabaseHelper mOpenHelper;
+
+     private static final String DATABASE_PASSWORD = IBAHC;
 
      private static UriMatcher buildUriMatcher() {
          // I know what you're thinking.  Why create a UriMatcher when you can use regular
@@ -153,7 +158,7 @@
              }
              // "FORMS"
              case FORMS: {
-                 retCursor = mOpenHelper.getReadableDatabase().query(
+                 retCursor = mOpenHelper.getReadableDatabase(DATABASE_PASSWORD).query(
                          FormsContract.FormsTable.TABLE_NAME,
                          projection,
                          selection,
@@ -202,7 +207,7 @@
 
      @Override
      public Uri insert(Uri uri, ContentValues values) {
-         final SQLiteDatabase db = mOpenHelper.getWritableDatabase();
+         final SQLiteDatabase db = mOpenHelper.getWritableDatabase(DATABASE_PASSWORD);
          final int match = sUriMatcher.match(uri);
          Uri returnUri;
 
@@ -237,7 +242,7 @@
 
      @Override
      public int delete(Uri uri, String selection, String[] selectionArgs) {
-         final SQLiteDatabase db = mOpenHelper.getWritableDatabase();
+         final SQLiteDatabase db = mOpenHelper.getWritableDatabase(DATABASE_PASSWORD);
          final int match = sUriMatcher.match(uri);
          int rowsDeleted;
          switch (match) {
@@ -273,7 +278,7 @@
 
      @Override
      public int bulkInsert(Uri uri, ContentValues[] values) {
-         final SQLiteDatabase db = mOpenHelper.getWritableDatabase();
+         final SQLiteDatabase db = mOpenHelper.getWritableDatabase(DATABASE_PASSWORD);
          final int match = sUriMatcher.match(uri);
          switch (match) {
              case FORMS:
