@@ -14,9 +14,10 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.List;
+
+import javax.net.ssl.HttpsURLConnection;
 
 import edu.aku.hassannaqvi.hfa_rs.adapter.SyncListAdapter;
 import edu.aku.hassannaqvi.hfa_rs.contracts.DistrictContract;
@@ -37,7 +38,7 @@ public class GetAllData extends AsyncTask<String, String, String> {
 
     private final Context mContext;
     private final String syncClass;
-    private HttpURLConnection urlConnection;
+    private HttpsURLConnection urlConnection;
     private SyncListAdapter adapter;
     private List<SyncModel> list;
     private int position;
@@ -157,13 +158,13 @@ public class GetAllData extends AsyncTask<String, String, String> {
                     break;
             }
             Log.d(TAG, "doInBackground: " + url);
-            urlConnection = (HttpURLConnection) url.openConnection();
+            urlConnection = (HttpsURLConnection) url.openConnection();
             urlConnection.setReadTimeout(100000 /* milliseconds */);
             urlConnection.setConnectTimeout(150000 /* milliseconds */);
 
             Log.d(TAG, "doInBackground: " + urlConnection.getResponseCode());
             publishProgress(syncClass);
-            if (urlConnection.getResponseCode() == HttpURLConnection.HTTP_OK) {
+            if (urlConnection.getResponseCode() == HttpsURLConnection.HTTP_OK) {
                 InputStream in = new BufferedInputStream(urlConnection.getInputStream());
 
                 BufferedReader reader = new BufferedReader(new InputStreamReader(in));

@@ -18,9 +18,10 @@ import java.io.BufferedReader;
 import java.io.DataOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.net.HttpURLConnection;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
+
+import javax.net.ssl.HttpsURLConnection;
 
 import edu.aku.hassannaqvi.hfa_rs.R;
 import edu.aku.hassannaqvi.hfa_rs.core.MainApp;
@@ -58,16 +59,16 @@ public class SyncDevice extends AsyncTask<Void, Integer, String> {
 
     private String downloadUrl() {
         String line = "No Response";
-        HttpURLConnection connection = null;
+        HttpsURLConnection connection = null;
         try {
             String request = MainApp._HOST_URL + MainApp.DeviceURL;
             URL url = new URL(request);
-            connection = (HttpURLConnection) url.openConnection();
+            connection = (HttpsURLConnection) url.openConnection();
             connection.connect();
             int HttpResult = connection.getResponseCode();
-            if (HttpResult == HttpURLConnection.HTTP_OK) {
+            if (HttpResult == HttpsURLConnection.HTTP_OK) {
 
-                connection = (HttpURLConnection) url.openConnection();
+                connection = (HttpsURLConnection) url.openConnection();
                 JsonObject jsonObject = new JsonObject();
                 connection.setDoOutput(true);
                 connection.setDoInput(true);

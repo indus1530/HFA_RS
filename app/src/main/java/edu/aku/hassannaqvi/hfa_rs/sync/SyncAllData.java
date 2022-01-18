@@ -19,11 +19,12 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
-import java.net.HttpURLConnection;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
 import java.util.Collection;
 import java.util.List;
+
+import javax.net.ssl.HttpsURLConnection;
 
 import edu.aku.hassannaqvi.hfa_rs.adapter.UploadListAdapter;
 import edu.aku.hassannaqvi.hfa_rs.core.DatabaseHelper;
@@ -114,17 +115,17 @@ public class SyncAllData extends AsyncTask<Integer, Integer, String> {
 
         if (DBData.size() > 0) {
 
-            HttpURLConnection connection = null;
+            HttpsURLConnection connection = null;
             try {
                 String request = url;
                 publishProgress(position);
                 URL url = new URL(request);
-                connection = (HttpURLConnection) url.openConnection();
+                connection = (HttpsURLConnection) url.openConnection();
                 connection.connect();
                 int HttpResult = connection.getResponseCode();
-                if (HttpResult == HttpURLConnection.HTTP_OK) {
+                if (HttpResult == HttpsURLConnection.HTTP_OK) {
                     JSONArray jsonSync = new JSONArray();
-                    connection = (HttpURLConnection) url.openConnection();
+                    connection = (HttpsURLConnection) url.openConnection();
 
                     connection.setDoOutput(true);
                     connection.setDoInput(true);
